@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>com.github.hiwepy</groupId>
 		<artifactId>hitool</artifactId>
-		<version>3.0.x.20241003-SNAPSHOT</version>
+		<version>3.0.x.20241003.RELEASE</version>
 	</parent>
 	<artifactId>hitool-freemarker</artifactId> 
 	<packaging>jar</packaging>
