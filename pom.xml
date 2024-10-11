@@ -4,7 +4,7 @@
 
 	<groupId>com.github.hiwepy</groupId>
 	<artifactId>hitool</artifactId>
-	<version>1.0.3-SNAPSHOT</version>
+	<version>3.0.x.20241003-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>${project.groupId}:${project.artifactId}</name>
@@ -14,7 +14,7 @@
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
 		</license>
 	</licenses>
 
@@ -28,7 +28,7 @@
 	<developers>
 		<developer>
 			<name>wandl</name>
-			<email>hnxyhcwdl1003@163.com</email>
+			<email>hiwepy@gmail.com</email>
 			<roles>
 				<role>developer</role>
 			</roles>
@@ -591,20 +591,6 @@
 						<artifactId>xml-apis</artifactId>
 					</exclusion>
 				</exclusions>
-			</dependency>
-			<!--
-				JAXB能够使用Jackson对JAXB注解的支持实现(jackson-module-jaxb-annotations)，既方便生成XML，也方便生成JSON，
-				这样一来可以更好的标志可以转换为JSON对象的JAVA类。JAXB允许JAVA人员将JAVA类映射为XML表示方式，常用的注解包括：@XmlRootElement,@XmlElement等等。
-			-->
-			<dependency>
-				<groupId>com.sun.xml.bind</groupId>
-				<artifactId>jaxb-core</artifactId>
-				<version>${jaxb.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.sun.xml.bind</groupId>
-				<artifactId>jaxb-impl</artifactId>
-				<version>${jaxb.version}</version>
 			</dependency>
 			<!-- XMLBeans是一个XML-Java绑定工具，利用它可以很方便地解析XML文档。 -->
 			<dependency>
