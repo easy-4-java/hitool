@@ -31,7 +31,7 @@ public class DESedeCrypto implements Crypto,SecretKeyEncryptor,SecretKeyDecrypto
 		return  instance;
 	}
 	
-	public byte[] initkey() throws GeneralSecurityException {
+	public byte[] initKey() throws GeneralSecurityException {
         //获取二进制密钥编码形式  ；并进行Base64加密
         return Base64.encodeBase64(SecretKeyUtils.genSecretKey(null,Algorithm.KEY_DESEDE, 168).getEncoded()); 
 	}

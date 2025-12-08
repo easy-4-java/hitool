@@ -6,12 +6,11 @@ import java.security.Key;
 public interface Crypto {
 	
 	/*
-	 * 
-	 *  初始化key
+	 * 初始化key
 	 * @return
 	 * @throws Exception
 	 */
-	 public byte[] initkey() throws GeneralSecurityException;
+	 byte[] initKey() throws GeneralSecurityException;
 	 
 	 /*
 	  * 
@@ -20,8 +19,8 @@ public interface Crypto {
 	  * @return
 	  * @throws Exception
 	  */
-	 public Key toKey(byte[] key) throws GeneralSecurityException;
+	 Key toKey(byte[] key) throws GeneralSecurityException;
 	 
-	 public Key toKey(String key) throws GeneralSecurityException;
+	 Key toKey(String key) throws GeneralSecurityException;
 	 
 }

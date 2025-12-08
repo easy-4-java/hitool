@@ -44,7 +44,7 @@ public class PBECrypto implements Crypto {
 	 * @return byte[] 盐
 	 * @throws GeneralSecurityException
 	 */
-	public byte[] initkey() throws GeneralSecurityException {
+	public byte[] initKey() throws GeneralSecurityException {
 		//实例化安全随机数
 		SecureRandom random = new SecureRandom();
 		//产出盐

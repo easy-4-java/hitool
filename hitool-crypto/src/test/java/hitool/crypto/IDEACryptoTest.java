@@ -30,7 +30,7 @@ public class IDEACryptoTest {
 		String str="IDEA";
 		System.out.println("原文："+str);
 		//初始化密钥
-		byte[] key = IDEACrypto.initkey();
+		byte[] key = IDEACrypto.initKey();
 		System.out.println("密钥："+Base64.encodeBase64String(key));
 		//加密数据
 		byte[] data=IDEACrypto.encrypt(str.getBytes(), key);

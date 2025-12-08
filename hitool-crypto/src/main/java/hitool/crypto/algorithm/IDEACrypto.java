@@ -22,7 +22,7 @@ public class IDEACrypto {
 	 * 生成密钥，只有bouncycastle支持
 	 * @return byte[] 二进制密钥
 	 * */
-	public static byte[] initkey() throws Exception{
+	public static byte[] initKey() throws Exception{
 		//实例化密钥生成器；初始化密钥生成器，IDEA要求密钥长度为128位；生成密钥
 		SecretKey secretKey = SecretKeyUtils.genSecretKey(Algorithm.KEY_IDEA, 128);
 		//获取二进制密钥编码形式
