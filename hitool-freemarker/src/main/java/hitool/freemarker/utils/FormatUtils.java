@@ -27,7 +27,7 @@ import freemarker.template.TemplateException;
 public abstract class FormatUtils{
 	
 	private static final Logger LOG = LoggerFactory.getLogger(FormatUtils.class);
-	private static String charset = "UTF-8"; 
+	private static final String charset = "UTF-8";
 	
 	public static Writer buildWriter(OutputStream outStream) throws UnsupportedEncodingException{
 		return new BufferedWriter(new OutputStreamWriter(outStream,charset),2048);
