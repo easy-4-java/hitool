@@ -2,7 +2,7 @@ package hitool.mail.utils;
 
 import hitool.mail.JavaMailKey;
 import hitool.mail.authc.PropsAuthenticator;
-import jakarta.mail.Session;
+import javax.mail.Session;
 
 import java.util.Properties;
 

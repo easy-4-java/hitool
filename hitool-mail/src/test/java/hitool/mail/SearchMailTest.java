@@ -1,10 +1,10 @@
 package hitool.mail;
 
-import jakarta.mail.Flags.Flag;
-import jakarta.mail.*;
-import jakarta.mail.internet.MimeMessage;
-import jakarta.mail.internet.MimeUtility;
-import jakarta.mail.search.*;
+import javax.mail.Flags.Flag;
+import javax.mail.*;
+import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeUtility;
+import javax.mail.search.*;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

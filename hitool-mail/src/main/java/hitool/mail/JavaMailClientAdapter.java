@@ -17,8 +17,8 @@ package hitool.mail;
 
 import hitool.mail.conf.EmailBody;
 import hitool.mail.provider.EmailPropertiesProvider;
-import jakarta.mail.Message;
-import jakarta.mail.MessagingException;
+import javax.mail.Message;
+import javax.mail.MessagingException;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.InputStream;

@@ -1,8 +1,8 @@
 package hitool.mail.authc;
 
 import hitool.mail.JavaMailKey;
-import jakarta.mail.Authenticator;
-import jakarta.mail.PasswordAuthentication;
+import javax.mail.Authenticator;
+import javax.mail.PasswordAuthentication;
 
 import java.util.Properties;
 

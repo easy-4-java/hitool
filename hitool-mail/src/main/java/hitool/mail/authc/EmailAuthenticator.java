@@ -1,8 +1,8 @@
 package hitool.mail.authc;
 
 
-import jakarta.mail.Authenticator;
-import jakarta.mail.PasswordAuthentication;
+import javax.mail.Authenticator;
+import javax.mail.PasswordAuthentication;
 
 /*
  * 密码验证器

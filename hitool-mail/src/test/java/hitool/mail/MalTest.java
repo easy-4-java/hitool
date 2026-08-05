@@ -1,10 +1,10 @@
 package hitool.mail;
 
-import org.apache.commons.mail2.core.EmailException;
-import org.apache.commons.mail2.jakarta.EmailAttachment;
-import org.apache.commons.mail2.jakarta.HtmlEmail;
-import org.apache.commons.mail2.jakarta.MultiPartEmail;
-import org.apache.commons.mail2.jakarta.SimpleEmail;
+import org.apache.commons.mail.EmailException;
+import org.apache.commons.mail.EmailAttachment;
+import org.apache.commons.mail.HtmlEmail;
+import org.apache.commons.mail.MultiPartEmail;
+import org.apache.commons.mail.SimpleEmail;
 
 import java.net.MalformedURLException;
 import java.net.URL;

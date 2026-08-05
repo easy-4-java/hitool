@@ -1,12 +1,12 @@
  package hitool.mail;
 
  import com.sun.mail.imap.IMAPMessage;
- import jakarta.mail.Flags.Flag;
- import jakarta.mail.Folder;
- import jakarta.mail.Message;
- import jakarta.mail.Session;
- import jakarta.mail.Store;
- import jakarta.mail.internet.MimeUtility;
+ import javax.mail.Flags.Flag;
+ import javax.mail.Folder;
+ import javax.mail.Message;
+ import javax.mail.Session;
+ import javax.mail.Store;
+ import javax.mail.internet.MimeUtility;
 
  import java.io.BufferedReader;
  import java.io.InputStreamReader;

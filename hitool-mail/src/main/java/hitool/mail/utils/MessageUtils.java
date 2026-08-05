@@ -1,8 +1,8 @@
 package hitool.mail.utils;
 
-import jakarta.mail.Message;
-import jakarta.mail.MessagingException;
-import jakarta.mail.internet.MimeUtility;
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.internet.MimeUtility;
 
 import java.io.File;
 import java.io.FileNotFoundException;
