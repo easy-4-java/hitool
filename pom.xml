@@ -439,7 +439,7 @@
 		<pinyin4j.version>2.5.1</pinyin4j.version>
 		<proxool.version>0.9.1</proxool.version>
 		<png-encoder.version>1.5</png-encoder.version>
-		<slf4j.version>2.1.0</slf4j.version>
+		<slf4j.version>2.0.18</slf4j.version>
 		<simple-xml.version>2.7.1</simple-xml.version>
 		<spring.version>6.1.2</spring.version>
 		<xmlbeans.version>2.6.0</xmlbeans.version>
