@@ -343,7 +343,11 @@
                 <central-publishing-maven-plugin.version>0.11.0</central-publishing-maven-plugin.version>
                 <additionalparam>-Xdoclint:none</additionalparam>
                 <jacoco-maven-plugin.version>0.8.15</jacoco-maven-plugin.version>
-            </properties>
+            
+		<jakarta-mail.version>2.1.5</jakarta-mail.version>
+		<xml-resolver.version>1.2</xml-resolver.version>
+		<xalan-serializer.version>2.7.2</xalan-serializer.version>
+		<zip4j.version>2.11.6</zip4j.version></properties>
         </profile>
         <!-- 发布到 Maven Central Portal：mvn -Prelease deploy（GPG 签名 + 源码 + Javadoc + Central 发布插件） -->
 
@@ -659,7 +663,7 @@
             <dependency>
                 <groupId>com.sun.mail</groupId>
                 <artifactId>jakarta.mail</artifactId>
-                <version>2.0.1</version>
+                <version>${jakarta-mail.version}</version>
             </dependency>
             <!-- For Dom4j -->
             <dependency>
@@ -715,13 +719,13 @@
             <dependency>
                 <groupId>xml-resolver</groupId>
                 <artifactId>xml-resolver</artifactId>
-                <version>1.2</version>
+                <version>${xml-resolver.version}</version>
             </dependency>
             <!-- https://mvnrepository.com/artifact/xalan/serializer -->
             <dependency>
                 <groupId>xalan</groupId>
                 <artifactId>serializer</artifactId>
-                <version>2.7.2</version>
+                <version>${xalan-serializer.version}</version>
             </dependency>
             <!-- https://mvnrepository.com/artifact/xml-apis/xml-apis -->
             <dependency>
@@ -890,7 +894,7 @@
             <dependency>
                 <groupId>net.lingala.zip4j</groupId>
                 <artifactId>zip4j</artifactId>
-                <version>1.3.2</version>
+                <version>${zip4j.version}</version>
             </dependency>
             <!-- https://mvnrepository.com/artifact/com.keypoint/png-encoder -->
             <dependency>
