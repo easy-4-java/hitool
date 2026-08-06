@@ -2,6 +2,8 @@
 
 [English](./README.md) | [简体中文](./README.zh-CN.md)
 
+[![Java](https://img.shields.io/badge/Java-8-orange)](https://github.com/easy-4-java/hitool) [![License](https://img.shields.io/badge/license-Apache%202.0-green)](./LICENSE)
+
 通用工具组件（An Common Tools Component）— 多模块 Java 工具集，涵盖核心工具、加密、Web、邮件、FreeMarker 辅助与 LRC 歌词解析。
 
 ## 目录
