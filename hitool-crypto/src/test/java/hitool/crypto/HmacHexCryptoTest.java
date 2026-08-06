@@ -31,7 +31,7 @@ public class HmacHexCryptoTest {
 	 * **/
 	public static void main(String[] args) throws Exception {
 		
-		String base64Key1 = StringUtils.newStringUtf8(DESBase64Crypto.getInstance().initkey());
+		String base64Key1 = StringUtils.newStringUtf8(DESBase64Crypto.getInstance().initKey());
 		System.out.println("base64Key："+base64Key1);
 		
 		System.out.println("随机秘钥："+ HmacHexCrypto.getEncryptKey("011111454",base64Key1));

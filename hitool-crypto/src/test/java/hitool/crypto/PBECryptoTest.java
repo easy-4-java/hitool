@@ -36,7 +36,7 @@ public class PBECryptoTest {
 		System.out.println("密码：/t"+password);
 		
 		//初始化盐
-		byte[] salt = PBECrypto.getInstance().initkey();
+		byte[] salt = PBECrypto.getInstance().initKey();
 		System.out.println("盐：/t"+Base64.encodeBase64String(salt));
 		//加密数据
 		byte[] data=PBECrypto.getInstance().encode(str.getBytes(), password, salt);

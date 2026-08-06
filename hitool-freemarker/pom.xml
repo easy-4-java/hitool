@@ -4,15 +4,15 @@
 	<parent>
 		<groupId>io.github.easy4j</groupId>
 		<artifactId>hitool</artifactId>
-		<version>1.0.3-SNAPSHOT</version>
+		<version>2.0.x.20260630-SNAPSHOT</version>
 	</parent>
 	<artifactId>hitool-freemarker</artifactId> 
 	<packaging>jar</packaging>
 	
 	<dependencies>
 		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
+			<groupId>jakarta.servlet</groupId>
+			<artifactId>jakarta.servlet-api</artifactId>
 		</dependency>
 		<!-- FreeMarker是一个用Java语言编写的模板引擎，它基于模板来生成文本输出 -->
 		<dependency>

@@ -24,7 +24,7 @@ public static void main(String[] args) throws Exception {
 		
 		String str="DES";
 		
-		String encryptKey = StringUtils.newStringUtf8(DESBase64Crypto.getInstance().initkey());
+		String encryptKey = StringUtils.newStringUtf8(DESBase64Crypto.getInstance().initKey());
 		
 		System.out.println("原文："+str); 
 		System.out.println("密钥："+ encryptKey);
