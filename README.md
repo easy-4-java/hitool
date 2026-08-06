@@ -2,6 +2,8 @@
 
 [English](./README.md) | [简体中文](./README.zh-CN.md)
 
+[![Java](https://img.shields.io/badge/Java-21-orange)](https://github.com/easy-4-java/hitool) [![License](https://img.shields.io/badge/license-Apache%202.0-green)](./LICENSE)
+
 A common tools component (通用工具组件) — a multi-module Java utility toolkit covering core utilities, crypto, web, mail, FreeMarker helpers and LRC lyrics parsing.
 
 ## Table of Contents
