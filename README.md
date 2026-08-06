@@ -2,8 +2,6 @@
 
 [English](./README.md) | [简体中文](./README.zh-CN.md)
 
-![Java](https://img.shields.io/badge/Java-17-orange) ![License](https://img.shields.io/badge/License-Apache%202.0-blue)
-
 A common tools component (通用工具组件) — a multi-module Java utility toolkit covering core utilities, crypto, web, mail, FreeMarker helpers and LRC lyrics parsing.
 
 ## Table of Contents
