@@ -559,7 +559,7 @@
         <jmock.version>2.13.1</jmock.version>
         <junrar.version>7.5.5</junrar.version>
         <junit.version>4.13.2</junit.version>
-        <junit-jupiter.version>5.10.3</junit-jupiter.version>
+        <junit-jupiter.version>5.11.4</junit-jupiter.version>
         <lombok.version>1.18.46</lombok.version>
         <oro.version>2.0.8</oro.version>
         <ognl.version>3.4.3</ognl.version>
