@@ -242,7 +242,8 @@
 				<jdk>[1.8,)</jdk>
 			</activation>
 			<properties>
-				<additionalparam>-Xdoclint:none</additionalparam>
+				<central-publishing-maven-plugin.version>0.7.0</central-publishing-maven-plugin.version>
+		<additionalparam>-Xdoclint:none</additionalparam>
 			</properties>
 		</profile>
 		<profile>
