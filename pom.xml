@@ -344,7 +344,7 @@
                 <additionalparam>-Xdoclint:none</additionalparam>
                 <jacoco-maven-plugin.version>0.8.15</jacoco-maven-plugin.version>
             
-		<jakarta-mail.version>2.1.5</jakarta-mail.version>
+		<jakarta-mail-impl.version>2.0.2</jakarta-mail-impl.version>
 		<xml-resolver.version>1.2</xml-resolver.version>
 		<xalan-serializer.version>2.7.2</xalan-serializer.version>
 		<zip4j.version>2.11.6</zip4j.version></properties>
@@ -663,7 +663,7 @@
             <dependency>
                 <groupId>com.sun.mail</groupId>
                 <artifactId>jakarta.mail</artifactId>
-                <version>${jakarta-mail.version}</version>
+                <version>${jakarta-mail-impl.version}</version>
             </dependency>
             <!-- For Dom4j -->
             <dependency>
