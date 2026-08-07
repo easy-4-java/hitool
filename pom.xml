@@ -344,7 +344,6 @@
                 <additionalparam>-Xdoclint:none</additionalparam>
                 <jacoco-maven-plugin.version>0.8.15</jacoco-maven-plugin.version>
             
-		<jakarta-mail.version>2.1.5</jakarta-mail.version>
 		<xml-resolver.version>1.2</xml-resolver.version>
 		<xalan-serializer.version>2.7.2</xalan-serializer.version>
 		<zip4j.version>2.11.6</zip4j.version></properties>
@@ -617,10 +616,10 @@
                 <artifactId>jakarta.el-api</artifactId>
                 <version>${jakarta-el.version}</version>
             </dependency>
-            <!-- For Mail Api -->
+            <!-- For JavaMail API -->
             <dependency>
-                <groupId>jakarta.mail</groupId>
-                <artifactId>jakarta.mail-api</artifactId>
+                <groupId>javax.mail</groupId>
+                <artifactId>javax.mail-api</artifactId>
                 <version>${javax-mail.version}</version>
             </dependency>
             <!-- For Servlet Api -->
@@ -659,11 +658,11 @@
                 <artifactId>jakarta.websocket-client-api</artifactId>
                 <version>${jakarta-websocket.version}</version>
             </dependency>
-            <!-- https://mvnrepository.com/artifact/com.sun.mail/jakarta.mail -->
+            <!-- https://mvnrepository.com/artifact/com.sun.mail/javax.mail -->
             <dependency>
                 <groupId>com.sun.mail</groupId>
-                <artifactId>jakarta.mail</artifactId>
-                <version>${jakarta-mail.version}</version>
+                <artifactId>javax.mail</artifactId>
+                <version>${javax-mail.version}</version>
             </dependency>
             <!-- For Dom4j -->
             <dependency>
