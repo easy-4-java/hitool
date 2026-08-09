@@ -188,10 +188,10 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>${maven-surefire-plugin.version}</version>
                     <configuration>
-                        <skip>true</skip>
-                        <skipTests>true</skipTests>
-                        <argLine>-Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=256m
-							-Dfile.encoding=UTF-8</argLine>
+                        <skip>false</skip>
+                        <skipTests>false</skipTests>
+                        <argLine>-Xmx1024m
+								-Dfile.encoding=UTF-8</argLine>
                         <additionalClasspathElements>
                             <additionalClasspathElement>${basedir}/target/test-classes</additionalClasspathElement>
                         </additionalClasspathElements>
