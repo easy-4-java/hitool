@@ -24,7 +24,7 @@ import lombok.extern.slf4j.Slf4j;
 /*
  * http://blog.csdn.net/caoshuming_500/article/details/20952329
  * https://www.cnblogs.com/wang1001/p/9605761.html
- * @author <a href="https://github.com/hiwepy">hiwepy</a>
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @Slf4j
 public class RemoteAddrUtils {
