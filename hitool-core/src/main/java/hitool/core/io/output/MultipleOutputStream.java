@@ -3,6 +3,11 @@ package hitool.core.io.output;
 import java.io.IOException;
 import java.io.OutputStream;
 
+/**
+ * Class providing functionality for MultipleOutputStream.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class MultipleOutputStream extends OutputStream {
 
 	protected OutputStream[] outputs;

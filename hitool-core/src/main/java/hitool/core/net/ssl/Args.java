@@ -29,6 +29,11 @@ package hitool.core.net.ssl;
 
 import java.util.Collection;
 
+/**
+ * Class providing functionality for Args.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class Args {
 
     public static void check(final boolean expression, final String message) {

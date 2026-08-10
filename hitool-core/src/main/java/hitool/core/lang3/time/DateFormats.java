@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, vindell (https://github.com/vindell).
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -24,6 +24,11 @@ import java.util.TimeZone;
 
 import hitool.core.lang3.Assert;
 
+/**
+ * Class providing functionality for DateFormats.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class DateFormats {
  
 	private static final String ISO_8601_PATTERN = "yyyy-MM-dd'T'HH:mm:ss'Z'";
@@ -106,7 +111,7 @@ public class DateFormats {
         }
     };
     
-    /*
+    /**
 	 * 根据给出的字符串格式，获取相应的日期格式化对象
 	 * 
 	 * @param format

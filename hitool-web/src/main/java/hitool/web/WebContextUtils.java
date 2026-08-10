@@ -5,6 +5,11 @@ import jakarta.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * Class providing functionality for WebContextUtils.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class WebContextUtils {
 
 	private final static Logger LOG = LoggerFactory.getLogger(WebContextUtils.class);

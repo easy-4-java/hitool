@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -60,7 +60,7 @@ public class ScopesHashModel extends SimpleHash implements TemplateModel {
          this.request = request;
     }
 
-    /*
+    /**
      * Stores a model in the hash so that it doesn't show up in <tt>keys()</tt>
      * and <tt>values()</tt> methods. Used to put the Application, Session,
      * Request, RequestParameters and JspTaglibs objects.

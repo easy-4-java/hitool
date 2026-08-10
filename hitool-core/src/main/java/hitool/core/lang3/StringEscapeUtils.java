@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -9,6 +9,11 @@ import java.util.regex.Pattern;
 
 import org.apache.commons.lang3.StringUtils;
 
+/**
+ * Class providing functionality for StringEscapeUtils.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class StringEscapeUtils extends org.apache.commons.lang3.StringEscapeUtils {
 
 	
@@ -26,7 +31,7 @@ public class StringEscapeUtils extends org.apache.commons.lang3.StringEscapeUtil
 		return s;
 	}
 	
-	/*
+	/**
 	 * 替换为手机识别的HTML，去掉样式及属性，保留回车。
 	 * @param html
 	 * @return
@@ -38,7 +43,7 @@ public class StringEscapeUtils extends org.apache.commons.lang3.StringEscapeUtil
 		return html.replaceAll("<([a-z]+?)\\s+?.*?>", "<$1>");
 	}
 	
-	/*
+	/**
 	 * 替换为手机识别的HTML，去掉样式及属性，保留回车。
 	 * @param txt
 	 * @return

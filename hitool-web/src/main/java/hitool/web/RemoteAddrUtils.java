@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -21,12 +21,17 @@ import hitool.core.lang3.StringUtils;
 import hitool.core.lang3.network.InetAddressUtils;
 import lombok.extern.slf4j.Slf4j;
 
-/*
+/**
  * http://blog.csdn.net/caoshuming_500/article/details/20952329
  * https://www.cnblogs.com/wang1001/p/9605761.html
- * @author <a href="https://github.com/hiwepy">hiwepy</a>
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @Slf4j
+/**
+ * Class providing functionality for RemoteAddrUtils.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class RemoteAddrUtils {
 
 	private static String[] xheaders = new String[] { "X-Forwarded-For", "x-forwarded-for" };
@@ -91,7 +96,7 @@ public class RemoteAddrUtils {
 		return flag;
 	}
 	
-	/*
+	/**
 	 *  获得请求的客户端信息【ip,port,name】
 	 *  @param request {@link HttpServletRequest} 对象
 	 *  @return 客户端信息[ip,port,name]

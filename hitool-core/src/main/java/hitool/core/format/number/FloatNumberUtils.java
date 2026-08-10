@@ -1,5 +1,10 @@
 package hitool.core.format.number;
 
+/**
+ * Class providing functionality for FloatNumberUtils.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class FloatNumberUtils {
     
     public static float floatValue(Object obj, float dfl) {

@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -29,7 +29,7 @@ public abstract class BZip2Utils extends CompressUtils {
 
 	protected static final CharSequence EXT = ".bz2";
 
-	/*
+	/**
 	 * 压缩字符串
 	 * 
 	 * @param text
@@ -43,7 +43,7 @@ public abstract class BZip2Utils extends CompressUtils {
 		return CharsetUtils.newStringUtf8(BZip2Utils.compress(text.getBytes()));
 	}
 
-	/*
+	/**
 	 * 压缩字节码
 	 * 
 	 * @param databytes
@@ -62,7 +62,7 @@ public abstract class BZip2Utils extends CompressUtils {
 		return outBytes;
 	}
 
-	/*
+	/**
 	 * 文件压缩
 	 * 
 	 * @param file
@@ -74,7 +74,7 @@ public abstract class BZip2Utils extends CompressUtils {
 		BZip2Utils.compress(file, true);
 	}
 
-	/*
+	/**
 	 * 文件压缩
 	 * 
 	 * @param srcFile
@@ -107,7 +107,7 @@ public abstract class BZip2Utils extends CompressUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 文件压缩
 	 * 
 	 * @param filePath
@@ -117,7 +117,7 @@ public abstract class BZip2Utils extends CompressUtils {
 		BZip2Utils.compress(filePath, true);
 	}
 
-	/*
+	/**
 	 * 文件压缩
 	 * 
 	 * @param filePath
@@ -129,7 +129,7 @@ public abstract class BZip2Utils extends CompressUtils {
 		BZip2Utils.compress(new File(filePath), delete);
 	}
 
-	/*
+	/**
 	 * 字节解压缩
 	 * 
 	 * @param databytes
@@ -148,7 +148,7 @@ public abstract class BZip2Utils extends CompressUtils {
 		return outBytes;
 	}
 
-	/*
+	/**
 	 * 文件解压缩
 	 * 
 	 * @param file
@@ -158,7 +158,7 @@ public abstract class BZip2Utils extends CompressUtils {
 		BZip2Utils.decompress(file, true);
 	}
 
-	/*
+	/**
 	 * 文件解压缩
 	 * 
 	 * @param srcFile
@@ -182,7 +182,7 @@ public abstract class BZip2Utils extends CompressUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 数据流解压缩
 	 * 
 	 * @param in
@@ -197,7 +197,7 @@ public abstract class BZip2Utils extends CompressUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 文件解压缩
 	 * 
 	 * @param filePath
@@ -207,7 +207,7 @@ public abstract class BZip2Utils extends CompressUtils {
 		BZip2Utils.decompress(filePath, true);
 	}
 
-	/*
+	/**
 	 * 文件解压缩
 	 * 
 	 * @param filePath

@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -11,6 +11,11 @@ import org.slf4j.LoggerFactory;
 
 import hitool.core.lang3.wraper.ClassLoaderWrapper;
 
+/**
+ * Class providing functionality for ExceptionIgnoringAccessor.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public abstract class ExceptionIgnoringAccessor implements ClassLoaderAccessor {
 
 	/*

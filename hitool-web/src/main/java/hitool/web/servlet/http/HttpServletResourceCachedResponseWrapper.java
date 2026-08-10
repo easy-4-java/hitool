@@ -11,6 +11,11 @@ import jakarta.servlet.http.HttpServletResponseWrapper;
 
 import hitool.web.servlet.http.io.ServletByteArrayOutputStream;
 
+ /**
+  * Class providing functionality for HttpServletResourceCachedResponseWrapper.
+  *
+  * @author <a href="https://github.com/loong10k">Loong Wan</a>
+  */
 public class HttpServletResourceCachedResponseWrapper  extends HttpServletResponseWrapper{
     private ByteArrayOutputStream bout = new ByteArrayOutputStream();  //捕获输出的缓存
     private PrintWriter pw;

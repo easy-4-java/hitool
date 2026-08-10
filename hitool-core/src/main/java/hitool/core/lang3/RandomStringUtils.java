@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -6,6 +6,11 @@ package hitool.core.lang3;
 
 import java.util.Random;
 
+/**
+ * Class providing functionality for RandomStringUtils.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public abstract class RandomStringUtils extends org.apache.commons.lang3.RandomStringUtils {
 
 	public static final String ALLCHAR = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -37,7 +42,7 @@ public abstract class RandomStringUtils extends org.apache.commons.lang3.RandomS
 		return randomLower(length).toUpperCase();
 	}
 
-	/*
+	/**
 	 * 生成定长的随机字符串(可能包含大小写字母、数字)
 	 * 
 	 * @param pwd_len
@@ -60,7 +65,7 @@ public abstract class RandomStringUtils extends org.apache.commons.lang3.RandomS
 		return pwd.toString();
 	}
 
-	/*
+	/**
 	 * 这是典型的随机洗牌算法。 
 	 * 流程是从备选数组中选择一个放入目标数组中，将选取的数组从备选数组移除（放至最后，并缩小选择区域）算法时间复杂度O（n） 
 	 * @return 随机8位不重复数组
@@ -93,7 +98,7 @@ public abstract class RandomStringUtils extends org.apache.commons.lang3.RandomS
 		return no;
 	}
 
-	/*
+	/**
 	 * 交换方法
 	 * 
 	 * @param i 交换位置

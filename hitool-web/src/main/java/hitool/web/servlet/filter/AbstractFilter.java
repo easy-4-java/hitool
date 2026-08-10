@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -23,6 +23,11 @@ import jakarta.servlet.ServletException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * Class providing functionality for AbstractFilter.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public abstract class AbstractFilter implements Filter {
 	
 	protected final Logger LOG = LoggerFactory.getLogger(AbstractFilter.class);
@@ -57,7 +62,7 @@ public abstract class AbstractFilter implements Filter {
 		this.filterConfig = null;
 	}
 
-	/*
+	/**
 	 * Make the name of this filter available to subclasses.
 	 * Analogous to GenericServlet's <code>getServletName()</code>.
 	 * <p>Takes the FilterConfig's filter name by default.

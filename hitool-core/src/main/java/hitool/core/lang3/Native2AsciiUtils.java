@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -13,7 +13,7 @@ public class Native2AsciiUtils {
 	 */
 	private static String PREFIX = "\\u";
 
-	/*
+	/**
 	 * Native to ascii string. It's same as execut native2ascii.exe.
 	 * 
 	 * @param str native string
@@ -28,7 +28,7 @@ public class Native2AsciiUtils {
 		return sb.toString();
 	}
 
-	/*
+	/**
 	 * Native character to ascii string.
 	 * 
 	 * @param c
@@ -57,7 +57,7 @@ public class Native2AsciiUtils {
 		}
 	}
 
-	/*
+	/**
 	 * Ascii to native string. It's same as execut native2ascii.exe -reverse.
 	 * 
 	 * @param str
@@ -78,7 +78,7 @@ public class Native2AsciiUtils {
 		return sb.toString();
 	}
 
-	/*
+	/**
 	 * Ascii to native character.
 	 * 
 	 * @param str

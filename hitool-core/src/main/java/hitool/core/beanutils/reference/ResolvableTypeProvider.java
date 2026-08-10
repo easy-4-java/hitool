@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright 2002-2015 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,7 +16,7 @@
 
 package hitool.core.beanutils.reference;
 
-/*
+/**
  * Any object can implement this interface to provide its actual {@link ResolvableType}.
  *
  * <p>Such information is very useful when figuring out if the instance matches a generic

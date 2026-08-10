@@ -5,7 +5,7 @@ package hitool.crypto.algorithm;
 import java.math.BigInteger;
 import java.util.Random;
 
-/*
+/**
  * @author 陈明 E-mail:chenming@sansec.com.cn
  * @version 创建时间：2011-4-15 上午11:03:41
  * @		修改时间：2011-5-31 
@@ -22,7 +22,7 @@ public class SM3Digest {
 	public SM3Digest() {
 	}
 	
-	/*
+	/**
 	 * SM3结果输出
 	 * @param out 保存SM3结构的缓冲区
 	 * @param outOff 缓冲区偏移量
@@ -42,7 +42,7 @@ public class SM3Digest {
 		V = SM3.iv.clone();
 	}
 
-	/*
+	/**
 	 * 明文输入
 	 * @param in 明文输入缓冲区
 	 * @param inOff 缓冲区偏移量
@@ -132,7 +132,7 @@ public class SM3Digest {
 		return out;
 	}
 
-	/*
+	/**
 	 * @param affineX SM2公钥仿射坐标X
 	 * @param affineX SM2公钥仿射坐标Y
 	 * @param id 
@@ -394,7 +394,7 @@ class SM3 {
 		return t;
 	}
 	
-	/*
+	/**
 	 * 对最后一个分组字节数据padding
 	 * @param in
 	 * @param bLen 分组个数
@@ -424,7 +424,7 @@ class SM3 {
 		return out;
 	}
 	
-	/*
+	/**
 	 * 字节数组逆序
 	 * @param in
 	 * @return
@@ -506,7 +506,7 @@ class SM3 {
 	}
 	public static void print(int[] arr) {
 		for(int i=0; i<arr.length; i++) {
-			/*System.out.print(PrintUtil.toHexString(back(ConvertUtil.IntToByte(arr[i]))) + " ");
+			/**System.out.print(PrintUtil.toHexString(back(ConvertUtil.IntToByte(arr[i]))) + " ");
 			if((i+1) % 8 == 0) {
 				System.out.println();
 			}*/
@@ -558,7 +558,7 @@ class Util {
 		System.out.println("Gx len = " + Gx.toByteArray().length);
 		System.out.println("Gy len = " + Gy.toByteArray().length);
 	}*/
-	/*
+	/**
 	 * 整形转换成网络传输的字节流（字节数组）型数据
 	 * @param num 一个整型数据
 	 * @return 4个字节的自己数组
@@ -574,7 +574,7 @@ class Util {
 		return bytes;
 	}
 	
-	/*
+	/**
 	 * 四个字节的字节数据转换成一个整形数据
 	 * @param bytes 4个字节的字节数组
 	 * @return 一个整型数据

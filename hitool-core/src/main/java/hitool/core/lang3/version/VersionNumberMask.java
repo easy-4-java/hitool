@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -7,6 +7,11 @@ package hitool.core.lang3.version;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * Class providing functionality for VersionNumberMask.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class VersionNumberMask extends VersionNumber {
 	
 	private static final Pattern _regexp = Pattern.compile("(\\d+)(\\.\\d+)?(\\.\\d+)?([-\\.].+)?");

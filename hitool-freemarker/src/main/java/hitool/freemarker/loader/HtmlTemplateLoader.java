@@ -8,6 +8,11 @@ import org.apache.commons.io.IOUtils;
 
 import freemarker.cache.TemplateLoader;
 
+/**
+ * Class providing functionality for HtmlTemplateLoader.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class HtmlTemplateLoader implements TemplateLoader {
     
     private static final String HTML_ESCAPE_PREFIX= "<#escape x as x?html>";

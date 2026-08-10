@@ -12,6 +12,11 @@ import java.nio.channels.FileChannel;
 /*
  */
 @SuppressWarnings("resource")
+/**
+ * Class providing functionality for FileChannelUtils.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class FileChannelUtils {
 
 	public static FileChannel getInputChannel(File source) throws FileNotFoundException {
@@ -31,7 +36,7 @@ public class FileChannelUtils {
 		return output.getChannel();
 	}
 
-	/*
+	/**
 	 * 
 	 * 功能描述：nio文件拷贝
 	 * 
@@ -53,7 +58,7 @@ public class FileChannelUtils {
 		copy(fin, fout);
 	}
 
-	/*
+	/**
 	 * 
 	 * 功能描述：nio文件拷贝
 	 * 

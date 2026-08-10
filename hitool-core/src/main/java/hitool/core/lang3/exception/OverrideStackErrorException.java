@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -10,6 +10,11 @@ import java.text.MessageFormat;
  *  系统错误(Error),重写部分方法提高异常处理效率
  */
 @SuppressWarnings("serial")
+/**
+ * Class providing functionality for OverrideStackErrorException.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public abstract class OverrideStackErrorException extends Error {
 
 	public OverrideStackErrorException() {

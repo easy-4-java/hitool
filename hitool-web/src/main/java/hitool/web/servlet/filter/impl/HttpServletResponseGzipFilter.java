@@ -15,6 +15,11 @@ import org.slf4j.LoggerFactory;
 import hitool.web.servlet.filter.OncePerRequestFilter;
 import hitool.web.servlet.http.HttpServletGzipResponseWrapper;
 
+/**
+ * Class providing functionality for HttpServletResponseGzipFilter.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class HttpServletResponseGzipFilter extends OncePerRequestFilter {
 
 	protected transient Logger LOG = LoggerFactory.getLogger(HttpServletResponseGzipFilter.class);

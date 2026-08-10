@@ -9,12 +9,12 @@ import hitool.lrc4j.tar.id.Offset;
 import hitool.lrc4j.tar.id.Ti;
 import hitool.lrc4j.tar.time.TimeTar;
 
-/*
+/**
  * 
  * @className	： LRC
- * @description	： 歌词对象，基于标签，面相底层的
- * @author 		： <a href="mailto:hnxyhcwdl1003@163.com">wandalong</a>
- * @date		： Jan 25, 2016 2:41:49 PM
+ * 歌词对象，基于标签，面相底层的
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * 
  */
 public class LRC {
 	

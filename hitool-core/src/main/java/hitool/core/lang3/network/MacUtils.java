@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright &copy; 2015-2020 <a href="http://www.jeeplus.org/">JeePlus</a> All rights reserved.
  */
 package hitool.core.lang3.network;
@@ -7,7 +7,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-/*
+/**
  * MAC地址工具
  * 
  * @author jeeplus
@@ -22,7 +22,7 @@ public class MacUtils {
 		return System.getProperty("os.name").toLowerCase();
 	}
 
-	/*
+	/**
 	 * 获取Unix网卡的mac地址.
 	 * 
 	 * @return mac地址
@@ -73,7 +73,7 @@ public class MacUtils {
 		return mac;
 	}
 
-	/*
+	/**
 	 * 获取Linux网卡的mac地址.
 	 * 
 	 * @return mac地址
@@ -126,7 +126,7 @@ public class MacUtils {
 		return mac;
 	}
 
-	/*
+	/**
 	 * 获取widnows网卡的mac地址.
 	 * 
 	 * @return mac地址
@@ -201,7 +201,7 @@ public class MacUtils {
 		return mac == null ? "" : mac;
 	}
 	
-	/*
+	/**
 	 * 测试用的main方法.
 	 * 
 	 * @param argc 运行参数.

@@ -12,6 +12,11 @@ import org.apache.commons.codec.binary.Hex;
 import hitool.crypto.enums.Algorithm;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
+/**
+ * Class providing functionality for HmacUtils.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class HmacUtils {
 
 	static {
@@ -21,7 +26,7 @@ public class HmacUtils {
 		}
 	}
 	
-	/*
+	/**
 	 * 
 	 *  Hmac消息摘要
 	 * @param plainBytes 待做摘要处理的数据
@@ -54,7 +59,7 @@ public class HmacUtils {
 		return hmacMD5(plainText.getBytes(), key);
 	}
 	
-	/*
+	/**
 	 * 生成签名数据
 	 * 
 	 * @param plainBytes 待加密的数据
@@ -79,7 +84,7 @@ public class HmacUtils {
 		return hmacSHA1(plainText.getBytes(), key);
 	}
 	
-	/*
+	/**
 	 * 生成签名数据
 	 * 
 	 * @param plainBytes 待加密的数据
@@ -106,7 +111,7 @@ public class HmacUtils {
 		return hmacSHA224(plainText.getBytes(), key);
 	}
 	
-	/*
+	/**
 	 * 生成签名数据
 	 * 
 	 * @param plainBytes 待加密的数据
@@ -131,7 +136,7 @@ public class HmacUtils {
 		return hmacSHA256(plainText.getBytes(), key);
 	}
 	
-	/*
+	/**
 	 * 生成签名数据
 	 * 
 	 * @param plainBytes 待加密的数据
@@ -156,7 +161,7 @@ public class HmacUtils {
 		return hmacSHA384(plainText.getBytes(), key);
 	}
 	
-	/*
+	/**
 	 * 生成签名数据
 	 * 
 	 * @param plainBytes 待加密的数据
@@ -181,7 +186,7 @@ public class HmacUtils {
 		return hmacSHA512(plainText.getBytes(), key);
 	}
 	
-	/*
+	/**
 	 * 生成签名数据
 	 * 
 	 * @param plainBytes 待加密的数据

@@ -11,7 +11,7 @@ import org.apache.commons.codec.digest.DigestUtils;
 import hitool.crypto.InputStreamEncryptor;
 import hitool.crypto.StringVerifier;
 import hitool.crypto.utils.StringUtils;
-/*
+/**
  * 
  * 标准MD5加密方法，使用java类库的security包的MessageDigest类处理
  */
@@ -31,7 +31,7 @@ public class MD5Crypto implements StringEncoder,BinaryEncoder,InputStreamEncrypt
 		return encode(source).equals(encrypt);
 	}
 
-	/*
+	/**
 	 * 重载一个多次加密时的密码验证方法
 	 * @throws EncoderException 
 	 */

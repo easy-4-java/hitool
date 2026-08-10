@@ -5,6 +5,11 @@ package hitool.freemarker.exception;
  * ConfigurationException
  */
 @SuppressWarnings("serial")
+/**
+ * Class providing functionality for ConfigurationException.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class ConfigurationException extends RuntimeException {
 
     /*
@@ -13,7 +18,7 @@ public class ConfigurationException extends RuntimeException {
     public ConfigurationException() {
     }
 
-    /*
+    /**
      * Constructs a <code>ConfigurationException</code> with the specified
      * detail message.
      *
@@ -31,7 +36,7 @@ public class ConfigurationException extends RuntimeException {
         super(cause);
     }
     
-    /*
+    /**
      * Constructs a <code>ConfigurationException</code> with the specified
      * detail message.
      *

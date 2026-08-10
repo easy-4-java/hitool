@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright 2003 Jayson Falkner (jayson@jspinsider.com)
  * This code is from "Servlets and JavaServer pages; the J2EE Web Tier",
  * http://www.jspbook.com. You may freely use the code both commercially
@@ -15,6 +15,11 @@ import jakarta.servlet.ServletOutputStream;
 import jakarta.servlet.WriteListener;
 import jakarta.servlet.http.HttpServletResponse;
 
+/**
+ * Class providing functionality for ServletCachedResponseOutputStream.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class ServletCachedResponseOutputStream extends ServletOutputStream {
 	
 	protected boolean closed = false;

@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -10,6 +10,11 @@ import java.text.MessageFormat;
  *  属性获取异常
  */
 @SuppressWarnings("serial")
+/**
+ * Class providing functionality for PropertyGettingException.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class PropertyGettingException extends RuntimeException {
 	/*
 	 * 国际化信息key

@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -10,9 +10,14 @@ import java.io.IOException;
 import com.github.junrar.Junrar;
 import com.github.junrar.exception.RarException;
 
+/**
+ * Class providing functionality for RarUtils.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class RarUtils extends CompressUtils {
 
-	/*
+	/**
 	 * 根据原始rar路径，解压到指定文件夹下.
 	 * 
 	 * @param srcFile

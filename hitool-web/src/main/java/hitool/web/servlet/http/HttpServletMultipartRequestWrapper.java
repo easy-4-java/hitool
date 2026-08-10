@@ -6,6 +6,11 @@ import java.util.Map;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletRequestWrapper;
 
+/**
+ * Class providing functionality for HttpServletMultipartRequestWrapper.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class HttpServletMultipartRequestWrapper extends HttpServletRequestWrapper {
 
 	//当前目录

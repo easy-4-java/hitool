@@ -5,7 +5,7 @@ import java.text.Format;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/*
+/**
  *  数值的常用函数
  */
 public abstract class NumberUtils {

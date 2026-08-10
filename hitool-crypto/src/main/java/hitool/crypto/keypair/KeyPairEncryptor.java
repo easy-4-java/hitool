@@ -5,6 +5,11 @@ import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.security.interfaces.RSAPublicKey;
 
+/**
+ * Interface providing functionality for KeyPairEncryptor.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public interface KeyPairEncryptor<Pub extends PublicKey, Pri extends PrivateKey> {
 	 
 	 public byte[] encrypt(byte[] plainBytes, Pub pubKey) throws GeneralSecurityException;

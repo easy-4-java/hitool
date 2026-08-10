@@ -18,6 +18,11 @@ import org.apache.commons.lang3.time.DateFormatUtils;
 import hitool.core.lang3.Assert;
 import hitool.core.lang3.StringUtils;
 
+/**
+ * Class providing functionality for DateUtils.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 
 	private static String[] parsePatterns = { "yyyy-MM-dd", "yyyy-MM-dd HH:mm:ss", "yyyy-MM-dd HH:mm", "yyyy-MM",
@@ -53,7 +58,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 	 */
 	protected static final String DATE_DAY_PATTERN_TWO = "^\\d{2,4}\\/\\d{1,2}\\/\\d{1,2}$";
 
-	/*
+	/**
 	 * 根据给出的字符串格式，获取相应的日期格式化对象
 	 * 
 	 * @param format
@@ -74,7 +79,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		return getDateFormat(DateFormats.DATE_LONGFORMAT);
 	}
 
-	/*
+	/**
 	 * 将日期格式化成字符串：yyyy-MM-dd HH:mm:ss
 	 * 
 	 * @param date
@@ -85,7 +90,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		return getDateFormat(DateFormats.DATE_LONGFORMAT).format(date);
 	}
 
-	/*
+	/**
 	 * 根据传入的日期格式将日期化成相应格式的字符串，如：
 	 * <ul>
 	 * <li>yyyy-MM-dd HH:mm:ss
@@ -106,7 +111,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		return getDateFormat(pattern).format(date);
 	}
 
-	/*
+	/**
 	 * 将long类型的日期格式化成yyyy-MM-dd HH:mm:ss格式的日期字符串形式
 	 * 
 	 * @param date
@@ -117,7 +122,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		return getDateFormat(DateFormats.DATE_LONGFORMAT).format(date);
 	}
 
-	/*
+	/**
 	 * 根据传入的日期格式将系统当前日期对象进行格式后返回
 	 * 
 	 * @param format
@@ -129,7 +134,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		return getDateFormat(pattern).format(new Date());
 	}
 
-	/*
+	/**
 	 * 将日期格式化成字符串
 	 * 
 	 * @param date
@@ -151,7 +156,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 	 * date) { return formatDate(date, DATE_LONGFORMAT); }
 	 */
 
-	/*
+	/**
 	 * 将一个long型的数值转换为指定格式的日期字符串
 	 * 
 	 * @param time
@@ -162,7 +167,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		return getDateFormat(format).format(time);
 	}
 
-	/*
+	/**
 	 * 得到格式化后的日期，格式为:yyyy年MM月dd日，如2016年07月31日
 	 * 
 	 * @param currDate
@@ -193,7 +198,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 将日期类型转换成指定格式的日期字符串
 	 * 
 	 * @param date
@@ -206,7 +211,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		return getDateFormat(format).format(date);
 	}
 
-	/*
+	/**
 	 * 按照给定的格式style将指定的日期值转换成字符串。
 	 * 
 	 * @param date
@@ -234,7 +239,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		return newDate;
 	}
 
-	/*
+	/**
 	 * 按照给定的格式模板将指定的日期值转换成字符串。
 	 * 
 	 * @param date
@@ -256,7 +261,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		return new SimpleDateFormat(format, locale).format(date);
 	}
 
-	/*
+	/**
 	 * 将日期字符串解析成日期对象，支持一下格式<br/>
 	 * <p>
 	 * <ul>
@@ -346,7 +351,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		return parseDate(datestr, DateFormats.DATE_FORMAT_CN);
 	}
 
-	/*
+	/**
 	 * 根据指定的格式strFormat,将给定的字符串形式的日期转换成date类型
 	 * 
 	 * @param datestr
@@ -389,7 +394,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		return day;
 	}
 
-	/*
+	/**
 	 * 将2007-12-1变成2007-12-01。将2007-9-1变为2007-09-01。
 	 * 
 	 * @param date
@@ -415,7 +420,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 
 	}
 
-	/*
+	/**
 	 * 从时间串中获取小时数。
 	 * @param datestr  "2007-10-12 13:25:00"
 	 * @return
@@ -437,7 +442,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		return datestr + " 00:00:00";
 	}
 
-	/*
+	/**
 	 * 时间查询时,结束时间的 23:59:59
 	 * @throws ParseException
 	 */
@@ -448,7 +453,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		return datestr + " 23:59:59";
 	}
 
-	/*
+	/**
 	 * 得到格式化后的当前系统日期，格式为yyyy-MM-dd，如2006-02-15
 	 * 
 	 * @see #getFormatDate(Date)
@@ -458,7 +463,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		return formatDate(new Date(), DateFormats.DATE_FORMAT);
 	}
 
-	/*
+	/**
 	 * 取得当前日期，并将其转换成格式为"dateFormat"的字符串 例子：假如当前日期是 2003-09-24 9:19:10，则：
 	 * 
 	 * <pre>
@@ -474,7 +479,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		return formatDate(new Date(), format);
 	}
 
-	/*
+	/**
 	 * 得到格式化后的当前系统时间，格式为yyyy-MM-dd HH:mm:ss，如2006-02-15 15:23:45
 	 * 
 	 * @see #getFormatDateTime(Date)
@@ -484,7 +489,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		return formatDate(new Date(), DateFormats.DATE_LONGFORMAT);
 	}
 
-	/*
+	/**
 	 * 得到格式化后的当前系统日期，格式为yyyy年MM月dd日，如2006年02月15日
 	 * 
 	 * @see #getFormatDate(Date, String)
@@ -494,7 +499,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		return formatDate(new Date(), DateFormats.DATE_FORMAT_CN);
 	}
 
-	/*
+	/**
 	 * 得到格式化后的当前系统时间，格式为yyyy年MM月dd日 HH:mm:ss，如2006年02月15日 15:23:45
 	 * 
 	 * @see #getFormatDateTime(Date, String)
@@ -504,7 +509,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		return formatDate(new Date(), DateFormats.DATE_LONGFORMAT_DATE_CN);
 	}
 
-	/*
+	/**
 	 * 进行时段格式转换，对于输入的48位的01串，将进行如下操作：
 	 * <li>1.先将输入中每个0变成两个0，每个1变成2个1，形成一个96位的二进制串。</li>
 	 * <li>2.将上述的96位的二进制串分成3组，每组32位。</li>
@@ -546,7 +551,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		return ret;
 	}
 
-	/*
+	/**
 	 * 进行时段格式转换，将输入的26位的2进制串转换成48位的二进制串。
 	 * 
 	 * @param timespan 一个16进制串，每位间以","分割。如："3fffcfff,ffffffff,fffffffc"
@@ -578,7 +583,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		return ret;
 	}
 
-	/*
+	/**
 	 * 进行时段格式转换，将输入的32位的10进制串转换成48位的二进制串。
 	 * 
 	 * @param timespan
@@ -611,7 +616,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		return ret;
 	}
 
-	/*
+	/**
 	 * 进行时段格式转换，对于输入的48位的01串，将进行如下操作：
 	 * <li>1.先将输入中每个0变成两个0，每个1变成2个1，形成一个96位的二进制串。</li>
 	 * <li>2.将上述的96位的二进制串分成3组，每组32位。</li>
@@ -783,7 +788,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 获取过去的天数
 	 * 
 	 * @param date
@@ -794,7 +799,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		return t / (24 * 60 * 60 * 1000);
 	}
 
-	/*
+	/**
 	 * 获取过去的小时
 	 * 
 	 * @param date
@@ -805,7 +810,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		return t / (60 * 60 * 1000);
 	}
 
-	/*
+	/**
 	 * 获取过去的分钟
 	 * 
 	 * @param date
@@ -816,7 +821,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		return t / (60 * 1000);
 	}
 
-	/*
+	/**
 	 * 转换为时间（天,时:分:秒.毫秒）
 	 * 
 	 * @param timeMillis
@@ -831,7 +836,7 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 		return (day > 0 ? day + "," : StringUtils.EMPTY) + hour + ":" + min + ":" + s + "." + sss;
 	}
 
-	/*
+	/**
 	 * 获取两个日期之间的天数
 	 * 
 	 * @param before

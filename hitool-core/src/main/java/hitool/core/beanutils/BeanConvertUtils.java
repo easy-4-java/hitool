@@ -20,6 +20,11 @@ import hitool.core.beanutils.converters.date.DateStringConverter;
 import hitool.core.beanutils.converters.date.DateTimeStringConverter;
 import hitool.core.beanutils.converters.number.EnumIntConverter;
 
+/**
+ * Class providing functionality for BeanConvertUtils.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class BeanConvertUtils extends ConvertUtilsBean {
 	
 	/** Used to perform conversions between object types when setting properties */
@@ -46,7 +51,7 @@ public class BeanConvertUtils extends ConvertUtilsBean {
 	}
 	
 	
-	/*
+	/**
 	 * 
 	 * 使用指定类型的转换器将对象转换成目标类型对象并返回
 	 * @param <R>			转换器泛型

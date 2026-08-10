@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright 2002-2016 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,7 +33,7 @@ import java.lang.reflect.WildcardType;
 import hitool.core.beanutils.reflection.ReflectionUtils;
 import hitool.core.lang3.Assert;
 
-/*
+/**
  * Internal utility class that can be used to obtain wrapped {@link Serializable} variants
  * of {@link java.lang.reflect.Type}s.
  *
@@ -127,7 +127,7 @@ public abstract class SerializableTypeWrapper {
 		return result;
 	}
 
-	/*
+	/**
 	 * Unwrap the given type, effectively returning the original non-serializable type.
 	 * @param type the type to unwrap
 	 * @return the original non-serializable type
@@ -209,7 +209,7 @@ public abstract class SerializableTypeWrapper {
 	}
 
 
-	/*
+	/**
 	 * {@link Serializable} {@link InvocationHandler} used by the proxied {@link Type}.
 	 * Provides serialization support and enhances any methods that return {@code Type}
 	 * or {@code Type[]}.

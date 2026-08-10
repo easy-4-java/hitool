@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -11,6 +11,11 @@ import java.text.MessageFormat;
  * 属性拷贝异常
  */
 @SuppressWarnings("serial")
+/**
+ * Class providing functionality for PropertyCopyException.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class PropertyCopyException extends RuntimeException {
 	/*
 	 * 国际化信息key
@@ -33,7 +38,7 @@ public class PropertyCopyException extends RuntimeException {
 		super(constructErrMsg(message, replaceParas));
 	}
 
-	/*
+	/**
 	 * 构造异常信息字符串
 	 * @return
 	 */

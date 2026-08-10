@@ -5,6 +5,11 @@ import jakarta.servlet.ServletContextAttributeListener;
 import jakarta.servlet.ServletContextEvent;
 import jakarta.servlet.ServletContextListener;
 
+/**
+ * Class providing functionality for WebServletContextListener.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class WebServletContextListener implements ServletContextListener, ServletContextAttributeListener {
 
 	@Override

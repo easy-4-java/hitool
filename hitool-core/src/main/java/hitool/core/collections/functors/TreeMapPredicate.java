@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -9,6 +9,11 @@ import java.util.Map;
 import org.apache.commons.collections.Predicate;
 
 @SuppressWarnings("rawtypes")
+/**
+ * Class providing functionality for TreeMapPredicate.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class TreeMapPredicate implements Predicate {
 
 	protected String key;

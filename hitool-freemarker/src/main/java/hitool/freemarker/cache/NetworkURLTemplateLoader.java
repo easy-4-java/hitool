@@ -4,6 +4,11 @@ import java.net.URL;
 
 import freemarker.cache.URLTemplateLoader;
 
+/**
+ * Class providing functionality for NetworkURLTemplateLoader.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class NetworkURLTemplateLoader extends URLTemplateLoader {
 
 	@Override

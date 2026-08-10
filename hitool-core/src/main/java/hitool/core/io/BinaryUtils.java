@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -11,7 +11,7 @@ import java.io.UnsupportedEncodingException;
  */
 public class BinaryUtils {
 
-	/*
+	/**
 	 * 获取16进制字节数组的二级制数组
 	 * @param bytes
 	 * @return
@@ -28,7 +28,7 @@ public class BinaryUtils {
 		return result;
 	}
 
-	/*
+	/**
 	 *  获取字符串的ASCII数组
 	 * @param data
 	 * @return

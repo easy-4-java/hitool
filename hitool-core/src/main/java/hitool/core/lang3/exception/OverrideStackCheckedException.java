@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright 2002-2008 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,6 +19,11 @@ package hitool.core.lang3.exception;
 import java.text.MessageFormat;
 
 @SuppressWarnings("serial")
+/**
+ * Class providing functionality for OverrideStackCheckedException.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public abstract class OverrideStackCheckedException extends Exception {
 	
 	public OverrideStackCheckedException() {

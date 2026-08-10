@@ -1,5 +1,10 @@
 package hitool.crypto.enums;
 
+/**
+ * Class providing functionality for Algorithm.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public final class Algorithm {
 
 	/*

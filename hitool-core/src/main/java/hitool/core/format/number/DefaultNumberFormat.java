@@ -3,6 +3,11 @@ package hitool.core.format.number;
 
 import java.text.NumberFormat;
 
+/**
+ * Class providing functionality for DefaultNumberFormat.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class DefaultNumberFormat
 {
 	public static void defaultNumberFormat()

@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -24,7 +24,7 @@ public abstract class ArUtils extends CompressUtils {
 
 	protected static final CharSequence EXT = ".bz2";
 
-	/*
+	/**
 	 * 文件压缩
 	 * 
 	 * @param file
@@ -36,7 +36,7 @@ public abstract class ArUtils extends CompressUtils {
 		ArUtils.compress(file, true);
 	}
 
-	/*
+	/**
 	 * 文件压缩
 	 * 
 	 * @param srcFile
@@ -79,7 +79,7 @@ public abstract class ArUtils extends CompressUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 文件压缩
 	 * 
 	 * @param srcFile
@@ -98,7 +98,7 @@ public abstract class ArUtils extends CompressUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 目录 归档
 	 * 
 	 * @param dir
@@ -119,7 +119,7 @@ public abstract class ArUtils extends CompressUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 文件归档
 	 * 
 	 * @param file：待归档文件
@@ -136,7 +136,7 @@ public abstract class ArUtils extends CompressUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 文件压缩
 	 * 
 	 * @param filePath
@@ -146,7 +146,7 @@ public abstract class ArUtils extends CompressUtils {
 		ArUtils.compress(filePath, true);
 	}
 
-	/*
+	/**
 	 * 文件压缩
 	 * 
 	 * @param filePath
@@ -158,7 +158,7 @@ public abstract class ArUtils extends CompressUtils {
 		ArUtils.compress(new File(filePath), delete);
 	}
 
-	/*
+	/**
 	 * 文件解压缩
 	 * 
 	 * @param file
@@ -168,7 +168,7 @@ public abstract class ArUtils extends CompressUtils {
 		ArUtils.decompress(srcFile, true);
 	}
 
-	/*
+	/**
 	 * 文件解压缩
 	 * 
 	 * @param srcFile
@@ -225,7 +225,7 @@ public abstract class ArUtils extends CompressUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 文件解压缩
 	 * 
 	 * @param filePath
@@ -235,7 +235,7 @@ public abstract class ArUtils extends CompressUtils {
 		ArUtils.decompress(filePath, true);
 	}
 
-	/*
+	/**
 	 * 文件解压缩
 	 * 
 	 * @param filePath

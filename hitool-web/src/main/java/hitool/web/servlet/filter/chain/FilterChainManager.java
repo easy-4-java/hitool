@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -33,26 +33,26 @@ public interface FilterChainManager {
 	 */
     Map<String, Filter> getFilters();
 
-    /*
+    /**
      * 根据指定的chainName获取filter列表
      * @param chainName
      * @return
      */
     NamedFilterList getChain(String chainName);
 
-    /*
+    /**
      * 是否有fiterChain
      * @return
      */
     boolean hasChains();
 
-    /*
+    /**
      * 获取filterChain名称列表
      * @return
      */
     Set<String> getChainNames();
 
-    /*
+    /**
      * 生成代理FiterChain,先执行chainName指定的filerChian,最后执行servlet容器的original
      * @param original
      * @param chainName
@@ -60,14 +60,14 @@ public interface FilterChainManager {
      */
     FilterChain proxy(FilterChain original, String chainName);
 
-   /*
+   /**
     *  增加filter到filter列表中
     * @param name
     * @param filter
     */
     void addFilter(String name, Filter filter);
 
-    /*
+    /**
      *  增加filter到filter列表前，调用初始化方法
      * @param name
      * @param filter
@@ -76,7 +76,7 @@ public interface FilterChainManager {
     void addFilter(String name, Filter filter, boolean init);
 
     
-    /*
+    /**
      *  创建FilterChain
      * @param chainName
      * @param chainDefinition
@@ -84,7 +84,7 @@ public interface FilterChainManager {
      */
     void createChain(String chainName, String chainDefinition);
 
-    /*
+    /**
      *  追加filter到指定的filterChian中
      * @param chainName
      * @param filterName

@@ -6,6 +6,11 @@ import jakarta.mail.PasswordAuthentication;
 
 import java.util.Properties;
 
+/**
+ * Class providing functionality for PropsAuthenticator.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class PropsAuthenticator extends Authenticator {
 
 	protected Properties props = new Properties();

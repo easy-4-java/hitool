@@ -12,6 +12,11 @@ import jakarta.servlet.http.HttpServletResponse;
 import hitool.web.servlet.filter.OncePerRequestFilter;
 import hitool.web.servlet.http.HttpServletHtmlFilterRequestWrapper;
 
+ /**
+  * Class providing functionality for HttpServletRequestHtmlFilter.
+  *
+  * @author <a href="https://github.com/loong10k">Loong Wan</a>
+  */
 public class HttpServletRequestHtmlFilter extends OncePerRequestFilter {
 
 	@Override

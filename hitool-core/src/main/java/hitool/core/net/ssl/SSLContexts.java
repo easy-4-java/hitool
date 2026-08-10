@@ -39,14 +39,14 @@ import javax.net.ssl.KeyManager;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManager;
 
-/*
+/**
  * {@link javax.net.ssl.SSLContext} factory methods.
  *
  * @since 4.4
  */
 public class SSLContexts {
 
-    /*
+    /**
      * Creates default factory based on the standard JSSE trust material
      * ({@code cacerts} file in the security properties directory). System properties
      * are not taken into consideration.
@@ -65,7 +65,7 @@ public class SSLContexts {
         }
     }
 
-    /*
+    /**
      * Creates default SSL context based on system properties. This method obtains
      * default SSL context by calling {@code SSLContext.getInstance("Default")}.
      * Please note that {@code Default} algorithm is supported as of Java 6.
@@ -82,7 +82,7 @@ public class SSLContexts {
         }
     }
 
-	/*
+	/**
 	 * Create and initialise an SSLContext.
 	 * 
 	 * @param protocol 		the protocol used to instatiate the context
@@ -109,7 +109,7 @@ public class SSLContexts {
         }
     }
  
-	/*
+	/**
 	 * Create and initialise an SSLContext.
 	 * 
 	 * @param protocol 	the protocol used to instatiate the context
@@ -166,7 +166,7 @@ public class SSLContexts {
 		return ctx;
 	}
 	
-    /*
+    /**
      * Creates custom SSL context.
      *
      * @return default system SSL context

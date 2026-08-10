@@ -3,6 +3,11 @@ package hitool.web.servlet.listener;
 import jakarta.servlet.http.HttpSessionAttributeListener;
 import jakarta.servlet.http.HttpSessionBindingEvent;
 
+/**
+ * Class providing functionality for WebHttpSessionAttributeListener.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class WebHttpSessionAttributeListener implements HttpSessionAttributeListener {
 
 	@Override

@@ -8,6 +8,11 @@ package hitool.crypto;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ * Interface providing functionality for InputStreamEncryptor.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public interface InputStreamEncryptor {
 
 	public String encode(InputStream plantStream) throws IOException;

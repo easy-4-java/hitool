@@ -11,6 +11,11 @@ import hitool.crypto.StringVerifier;
 import hitool.crypto.digest.DigestUtils;
 import hitool.crypto.utils.StringUtils;
 
+/**
+ * Class providing functionality for SHAHexCrypto.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class SHAHexCrypto  implements StringEncoder,BinaryEncoder,StringVerifier  {
 	
 	private static SHAHexCrypto instance = null;
@@ -61,7 +66,7 @@ public class SHAHexCrypto  implements StringEncoder,BinaryEncoder,StringVerifier
 		return Hex.encodeHexString(binaryData);
 	}
 	
-	/*
+	/**
 	 * 
 	 *  SHA-256消息摘要
 	 * @param source
@@ -130,7 +135,7 @@ public class SHAHexCrypto  implements StringEncoder,BinaryEncoder,StringVerifier
 		return encode(source).equals(encrypt);
 	}
 
-	/*
+	/**
 	 * 重载一个多次加密时的密码验证方法
 	 * @throws EncoderException 
 	 */

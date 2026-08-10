@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright 2005 The Apache Software Foundation.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ package hitool.core.io.location;
  * have been created from).
  */
 public interface Locatable {
-    /*
+    /**
      * Get the location of this object
      * 
      * @return the location

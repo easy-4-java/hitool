@@ -4,7 +4,7 @@ package hitool.mail.authc;
 import jakarta.mail.Authenticator;
 import jakarta.mail.PasswordAuthentication;
 
-/*
+/**
  * 密码验证器
  */
 public class EmailAuthenticator extends Authenticator {
