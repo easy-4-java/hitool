@@ -16,6 +16,11 @@ import org.slf4j.LoggerFactory;
 
 import hitool.web.servlet.filter.OncePerRequestFilter;
 import hitool.web.servlet.http.HttpServletResourceCachedResponseWrapper;
+ /**
+  * Class providing functionality for HttpServletRequestWebResourceCacheFilter.
+  *
+  * @author <a href="https://github.com/loong10k">Loong Wan</a>
+  */
 public class HttpServletRequestWebResourceCacheFilter  extends OncePerRequestFilter {
 	
 	protected transient Logger LOG = LoggerFactory.getLogger(HttpServletRequestWebResourceCacheFilter.class);

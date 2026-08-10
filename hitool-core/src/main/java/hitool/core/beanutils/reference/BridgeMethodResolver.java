@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright 2002-2014 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,7 +25,7 @@ import java.util.List;
 import hitool.core.beanutils.reflection.ClassUtils;
 import hitool.core.beanutils.reflection.ReflectionUtils;
 
-/*
+/**
  * Helper for resolving synthetic {@link Method#isBridge bridge Methods} to the
  * {@link Method} being bridged.
  *
@@ -46,7 +46,7 @@ import hitool.core.beanutils.reflection.ReflectionUtils;
  */
 public abstract class BridgeMethodResolver {
 
-	/*
+	/**
 	 * Find the original method for the supplied {@link Method bridge Method}.
 	 * <p>It is safe to call this method passing in a non-bridge {@link Method} instance.
 	 * In such a case, the supplied {@link Method} instance is returned directly to the caller.
@@ -96,7 +96,7 @@ public abstract class BridgeMethodResolver {
 				candidateMethod.getParameterTypes().length == bridgeMethod.getParameterTypes().length);
 	}
 
-	/*
+	/**
 	 * Searches for the bridged method in the given candidates.
 	 * @param candidateMethods the List of candidate Methods
 	 * @param bridgeMethod the bridge method
@@ -133,7 +133,7 @@ public abstract class BridgeMethodResolver {
 		return (method != null && isResolvedTypeMatch(method, candidateMethod, declaringClass));
 	}
 
-	/*
+	/**
 	 * Searches for the generic {@link Method} declaration whose erased signature
 	 * matches that of the supplied bridge method.
 	 * @throws IllegalStateException if the generic declaration cannot be found
@@ -200,7 +200,7 @@ public abstract class BridgeMethodResolver {
 		return ReflectionUtils.getMethod(type, bridgeMethod.getName(), bridgeMethod.getParameterTypes());
 	}
 
-	/*
+	/**
 	 * Compare the signatures of the bridge method and the method which it bridges. If
 	 * the parameter and return types are the same, it is a 'visibility' bridge method
 	 * introduced in Java 6 to fix http://bugs.sun.com/view_bug.do?bug_id=6342411.

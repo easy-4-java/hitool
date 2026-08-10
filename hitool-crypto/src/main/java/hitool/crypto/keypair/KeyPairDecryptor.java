@@ -4,6 +4,11 @@ import java.security.GeneralSecurityException;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 
+/**
+ * Interface providing functionality for KeyPairDecryptor.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public interface KeyPairDecryptor<Pub extends PublicKey, Pri extends PrivateKey> {
 	 
 	 public byte[] decrypt(byte[] encryptedBytes, Pri priKey) throws GeneralSecurityException;

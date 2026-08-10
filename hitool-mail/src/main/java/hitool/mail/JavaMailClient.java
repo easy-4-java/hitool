@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, vindell (https://github.com/vindell).
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -20,6 +20,11 @@ import hitool.mail.provider.EmailPropertiesProvider;
 
 import java.io.InputStream;
 
+/**
+ * Interface providing functionality for JavaMailClient.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public interface JavaMailClient {
 
 	public static final String HEADER_PRIORITY = "X-Priority";

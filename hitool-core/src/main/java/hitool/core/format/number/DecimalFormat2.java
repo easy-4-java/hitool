@@ -2,6 +2,11 @@ package hitool.core.format.number;
 
 import java.text.DecimalFormat;
 import java.util.Locale;
+/**
+ * Class providing functionality for DecimalFormat2.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class DecimalFormat2 {   
     public static void main(String args[]) {   
         // 得到本地的缺省格式   

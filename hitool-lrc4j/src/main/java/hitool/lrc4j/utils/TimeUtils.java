@@ -4,9 +4,14 @@ import java.util.List;
 
 import hitool.lrc4j.tar.time.Lyric;
 
+/**
+ * Class providing functionality for TimeUtils.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class TimeUtils {
 
-	/*
+	/**
 	 * xx:xx xx:xx.xx格式的时间
 	 * 
 	 * @return

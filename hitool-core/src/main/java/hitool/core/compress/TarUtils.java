@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -26,7 +26,7 @@ public abstract class TarUtils extends CompressUtils {
 
 	protected static final String EXT = ".tar";
 
-	/*
+	/**
 	 * 归档
 	 * 
 	 * @param srcFile:要归档的文件或者目录
@@ -37,7 +37,7 @@ public abstract class TarUtils extends CompressUtils {
 		TarUtils.compress(srcFile, destFile);
 	}
 
-	/*
+	/**
 	 * 文件压缩
 	 * 
 	 * @param srcFile
@@ -53,7 +53,7 @@ public abstract class TarUtils extends CompressUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 归档
 	 * 
 	 * @param srcFile
@@ -66,7 +66,7 @@ public abstract class TarUtils extends CompressUtils {
 		TarUtils.compress(srcFile, destFile, BASE_DIR);
 	}
 
-	/*
+	/**
 	 * 归档
 	 * 
 	 * @param srcFile :要归档的文件或者目录
@@ -96,7 +96,7 @@ public abstract class TarUtils extends CompressUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 文件压缩
 	 * 
 	 * @param filePath
@@ -106,7 +106,7 @@ public abstract class TarUtils extends CompressUtils {
 		TarUtils.compress(filePath, true);
 	}
 
-	/*
+	/**
 	 * 文件压缩
 	 * 
 	 * @param filePath
@@ -118,7 +118,7 @@ public abstract class TarUtils extends CompressUtils {
 		TarUtils.compress(new File(filePath), delete);
 	}
 
-	/*
+	/**
 	 * 文件压缩
 	 * 
 	 * @param srcFile
@@ -137,7 +137,7 @@ public abstract class TarUtils extends CompressUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 目录 归档
 	 * 
 	 * @param dir
@@ -158,7 +158,7 @@ public abstract class TarUtils extends CompressUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 文件归档
 	 * 
 	 * @param file：待归档文件
@@ -181,7 +181,7 @@ public abstract class TarUtils extends CompressUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 解归档
 	 * 
 	 * @param srcFile
@@ -191,7 +191,7 @@ public abstract class TarUtils extends CompressUtils {
 		TarUtils.decompress(srcFile, true);
 	}
 
-	/*
+	/**
 	 * 解归档
 	 * 
 	 * @param srcFile
@@ -207,7 +207,7 @@ public abstract class TarUtils extends CompressUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 解归档
 	 * 
 	 * @param srcFile 文件路径
@@ -220,7 +220,7 @@ public abstract class TarUtils extends CompressUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 文件解压缩
 	 * 
 	 * @param filePath 文件路径
@@ -230,7 +230,7 @@ public abstract class TarUtils extends CompressUtils {
 		TarUtils.decompress(filePath, true);
 	}
 
-	/*
+	/**
 	 * 文件解压缩
 	 * 
 	 * @param filePath
@@ -242,7 +242,7 @@ public abstract class TarUtils extends CompressUtils {
 		TarUtils.decompress(new File(filePath), delete);
 	}
 
-	/*
+	/**
 	 * 文件 解归档
 	 * 
 	 * @param destFile
@@ -265,7 +265,7 @@ public abstract class TarUtils extends CompressUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 文件解归档
 	 * 
 	 * @param destFile ： 目标文件

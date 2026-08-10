@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -8,6 +8,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.Reader;
 
+/**
+ * Class providing functionality for StringBufferReader.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class StringBufferReader extends BufferedReader {
 
 	protected StringBuffer buffer = new StringBuffer();

@@ -1,13 +1,18 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
 package hitool.core.lang3.exception;
 
-/*
+/**
  * 被检查的业务异常(Checked Exception)
  */
 @SuppressWarnings("serial")
+/**
+ * Class providing functionality for BusinessCheckException.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class BusinessCheckException extends OverrideStackCheckedException {
 	
 	public BusinessCheckException() {

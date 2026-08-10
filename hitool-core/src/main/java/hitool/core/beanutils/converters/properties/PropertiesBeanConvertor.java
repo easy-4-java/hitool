@@ -12,6 +12,11 @@ import org.apache.commons.beanutils.Converter;
 import hitool.core.beanutils.reflection.ClassUtils;
 
 @SuppressWarnings({ "unchecked", "rawtypes" })
+/**
+ * Class providing functionality for PropertiesBeanConvertor.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class PropertiesBeanConvertor implements Converter {
 
 	public Object convert(Class type, Object value) {

@@ -13,6 +13,11 @@ import freemarker.template.TemplateExceptionHandler;
 import freemarker.template.utility.HtmlEscape;
 import freemarker.template.utility.XmlEscape;
 
+/**
+ * Class providing functionality for ConfigurationUtils.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public abstract class ConfigurationUtils {
 	
 	private static String charset = "UTF-8";
@@ -41,7 +46,7 @@ public abstract class ConfigurationUtils {
 		DEFAULT_CONFIGURATION.setEncoding(Locale.getDefault(), charset);  
 		DEFAULT_CONFIGURATION.setOutputEncoding(charset);
 		
-		/*configuration.setAPIBuiltinEnabled(value);
+		/**configuration.setAPIBuiltinEnabled(value);
 		configuration.setAutoFlush(autoFlush);
 		configuration.setAutoIncludes(templateNames);
 		configuration.setBooleanFormat(booleanFormat);
@@ -91,7 +96,7 @@ public abstract class ConfigurationUtils {
 		return (Configuration) DEFAULT_CONFIGURATION.clone();
 	}
 	
-	/*
+	/**
 	 * 创建基于【classpath根目录】 的配置实例Cofiguration
 	 * @param clazz
 	 * @return
@@ -100,7 +105,7 @@ public abstract class ConfigurationUtils {
 		return ConfigurationUtils.getConfiguration( clazz, "/");
 	}
 	
-	/*
+	/**
 	 * 创建基于【指定class所在目录】 的配置实例Cofiguration
 	 * @param clazz
 	 * @return
@@ -110,7 +115,7 @@ public abstract class ConfigurationUtils {
 		return ConfigurationUtils.getConfiguration( clazz, "/" + clazzPath.substring(0, clazzPath.lastIndexOf("/")));
 	}
 	
-	/*
+	/**
 	 * 创建基于【指定classpath目录】 的配置实例Cofiguration
 	 * @param clazz
 	 * @param pathPrefix
@@ -127,7 +132,7 @@ public abstract class ConfigurationUtils {
 		return configuration;
 	}
 	
-	/*
+	/**
 	 * 创建基于Servlet上下文的配置实例Cofiguration
 	 * @param sctxt
 	 * @return
@@ -136,7 +141,7 @@ public abstract class ConfigurationUtils {
 		return ConfigurationUtils.getConfiguration( sctxt, sctxt.getRealPath(""));
 	}
 	
-	/*
+	/**
 	 * 创建基于Servlet上下文的配置实例Cofiguration
 	 * @param sctxt
 	 * @param pathPrefix
@@ -153,7 +158,7 @@ public abstract class ConfigurationUtils {
 		return configuration;
 	}
 
-	 /*
+	 /**
 	  * 
 	  * 创建基于文件系统的配置实例Cofiguration
 	  * <pre>

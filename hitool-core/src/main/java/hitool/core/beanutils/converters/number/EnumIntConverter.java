@@ -5,6 +5,11 @@ import org.apache.commons.beanutils.Converter;
  *  枚举类型与Integer的相互转换
  */
 @SuppressWarnings("rawtypes")
+/**
+ * Class providing functionality for EnumIntConverter.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class EnumIntConverter implements Converter {
 
 	public Object convert(Class type, Object value) {

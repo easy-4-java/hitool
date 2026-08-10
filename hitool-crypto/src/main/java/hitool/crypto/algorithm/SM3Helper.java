@@ -4,6 +4,11 @@ import java.io.ByteArrayOutputStream;
 import java.math.BigInteger;
 import java.util.Arrays;
 
+/**
+ * Class providing functionality for SM3Helper.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class SM3Helper {
 	public static char[] chars = { '0', '1', '2', '3', '4', '5', '6', '7', '8',
 			'9', 'A', 'B', 'C', 'D', 'E', 'F' };

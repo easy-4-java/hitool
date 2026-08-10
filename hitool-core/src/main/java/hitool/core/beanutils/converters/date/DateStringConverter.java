@@ -7,6 +7,11 @@ import org.apache.commons.beanutils.ConversionException;
 import org.apache.commons.beanutils.Converter;
 import org.apache.commons.beanutils.converters.DateConverter;
 @SuppressWarnings({"unchecked","rawtypes"})
+/**
+ * Class providing functionality for DateStringConverter.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class DateStringConverter implements Converter {
 	
 	private SimpleDateFormat sdf = new SimpleDateFormat();

@@ -7,7 +7,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
  
 
-/*
+/**
  * Value Stack's Context related Utilities.
  *
  */
@@ -36,7 +36,7 @@ public class ContextUtils {
         return map;
     }
 
-    /*
+    /**
      * Returns a String for overriding the default templateSuffix if templateSuffix is on the stack
      * @param context stack's context
      * @return String

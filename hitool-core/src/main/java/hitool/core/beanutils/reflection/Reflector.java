@@ -1,4 +1,4 @@
-/*
+/**
  *    Copyright 2009-2016 the original author or authors.
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
@@ -39,7 +39,7 @@ import hitool.core.beanutils.reflection.invoker.Invoker;
 import hitool.core.beanutils.reflection.invoker.MethodInvoker;
 import hitool.core.beanutils.reflection.invoker.SetFieldInvoker;
 
-/*
+/**
  * This class represents a cached set of class definition information that
  * allows for easy mapping between property names and getter/setter methods.
  *
@@ -305,7 +305,7 @@ public class Reflector {
     return !(name.startsWith("$") || "serialVersionUID".equals(name) || "class".equals(name));
   }
 
-  /*
+  /**
    * This method returns an array containing all methods
    * declared in this class and any superclass.
    * We use this method, instead of the simpler Class.getMethods(),
@@ -388,7 +388,7 @@ public class Reflector {
     return true;
   }
 
-  /*
+  /**
    * Gets the name of the class the instance provides information for
    *
    * @return The class name
@@ -425,7 +425,7 @@ public class Reflector {
     return method;
   }
 
-  /*
+  /**
    * Gets the type for a property setter
    *
    * @param propertyName - the name of the property
@@ -439,7 +439,7 @@ public class Reflector {
     return clazz;
   }
 
-  /*
+  /**
    * Gets the type for a property getter
    *
    * @param propertyName - the name of the property
@@ -453,7 +453,7 @@ public class Reflector {
     return clazz;
   }
 
-  /*
+  /**
    * Gets an array of the readable properties for an object
    *
    * @return The array
@@ -462,7 +462,7 @@ public class Reflector {
     return readablePropertyNames;
   }
 
-  /*
+  /**
    * Gets an array of the writeable properties for an object
    *
    * @return The array
@@ -471,7 +471,7 @@ public class Reflector {
     return writeablePropertyNames;
   }
 
-  /*
+  /**
    * Check to see if a class has a writeable property by name
    *
    * @param propertyName - the name of the property to check
@@ -481,7 +481,7 @@ public class Reflector {
     return setMethods.keySet().contains(propertyName);
   }
 
-  /*
+  /**
    * Check to see if a class has a readable property by name
    *
    * @param propertyName - the name of the property to check

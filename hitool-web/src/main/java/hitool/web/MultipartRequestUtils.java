@@ -4,6 +4,11 @@ import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
+/**
+ * Class providing functionality for MultipartRequestUtils.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public final class MultipartRequestUtils {
 	
 	/*

@@ -10,6 +10,11 @@ import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
 
+/**
+ * Class providing functionality for FileReadUtils.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class FileReadUtils {
 
 	// ---------------------------------------------------------------------

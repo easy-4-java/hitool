@@ -1,11 +1,11 @@
 package hitool.lrc4j.tar.time;
 
-/*
+/**
  * 
  * @className	： Lyric
- * @description	： 单句歌词，包含该句歌词显示的时间点，距下一句歌词的时间
- * @author 		： <a href="mailto:hnxyhcwdl1003@163.com">wandalong</a>
- * @date		： Jan 25, 2016 2:37:20 PM
+ * 单句歌词，包含该句歌词显示的时间点，距下一句歌词的时间
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * 
  */
 public class Lyric implements Comparable<Lyric> {
 	/*

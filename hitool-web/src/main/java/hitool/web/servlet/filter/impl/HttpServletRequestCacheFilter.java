@@ -22,6 +22,11 @@ import jakarta.servlet.http.HttpServletResponse;
 import hitool.web.servlet.filter.OncePerRequestFilter;
 import hitool.web.servlet.http.HttpServletCacheResponseWrapper;
 
+/**
+ * Class providing functionality for HttpServletRequestCacheFilter.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class HttpServletRequestCacheFilter extends OncePerRequestFilter {
 
 	long cacheTimeout = Long.MAX_VALUE;

@@ -146,7 +146,7 @@ public class OrderedProperties extends Properties {
 		}
 	}
 
-	/*
+	/**
 	 * Converts encoded &#92;uxxxx to unicode chars and changes special saved
 	 * chars to their original forms
 	 */
@@ -250,7 +250,7 @@ public class OrderedProperties extends Properties {
 		return (slashCount % 2 == 1);
 	}
 
-	/*
+	/**
 	 * Converts unicodes to encoded &#92;uxxxx and writes out any of the
 	 * characters in specialSaveChars with a preceding slash
 	 */

@@ -2,7 +2,7 @@ package hitool.crypto.utils;
 
 import java.util.Random;
 
- /*
+ /**
  * @package com.jeekit.encrypt.utils
  * @className: StringUtils
  *  TODO
@@ -115,7 +115,7 @@ public class StringUtils extends org.apache.commons.codec.binary.StringUtils{
         return b2;
     }
     
-	/*
+	/**
 	  * 生成随即密码
 	  * @author 来自网上
 	  * @param pwd_len 生成的密码的总长度

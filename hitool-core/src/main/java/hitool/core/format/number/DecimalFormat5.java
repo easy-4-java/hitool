@@ -3,6 +3,11 @@ package hitool.core.format.number;
 import java.text.NumberFormat;
 import java.text.ParseException;
 import java.util.Locale;
+/**
+ * Class providing functionality for DecimalFormat5.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class DecimalFormat5 {   
     public static void main(String args[]) {   
         // 本地格式   

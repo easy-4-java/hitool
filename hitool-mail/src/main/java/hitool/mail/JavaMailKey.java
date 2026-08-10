@@ -1,6 +1,6 @@
 package hitool.mail;
 
-/*
+/**
  * @see http://www.websina.com/bugzero/kb/javamail-properties.html
  * @see http://blog.csdn.net/fygwfygyiq/article/details/51718311
  */

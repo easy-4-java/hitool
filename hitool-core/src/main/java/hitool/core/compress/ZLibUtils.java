@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -18,7 +18,7 @@ import java.util.zip.InflaterInputStream;
  */
 public abstract class ZLibUtils {
 
-	/*
+	/**
 	 * 压缩
 	 * 
 	 * @param data
@@ -56,7 +56,7 @@ public abstract class ZLibUtils {
 		return output;
 	}
 
-	/*
+	/**
 	 * 压缩
 	 * 
 	 * @param data
@@ -78,7 +78,7 @@ public abstract class ZLibUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 解压缩
 	 * 
 	 * @param data
@@ -115,7 +115,7 @@ public abstract class ZLibUtils {
 		return output;
 	}
 
-	/*
+	/**
 	 * 解压缩
 	 * 
 	 * @param is

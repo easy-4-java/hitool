@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-/*
+/**
  * 身份证工具类
  * 
  * @author June
@@ -108,7 +108,7 @@ public class IdcardUtils2 {
 		hkFirstCode.put("N", 14);
 	}
 
-	/*
+	/**
 	 * 将15位身份证号码转换为18位
 	 * 
 	 * @param idCard
@@ -174,7 +174,7 @@ public class IdcardUtils2 {
 		return false;
 	}
 
-	/*
+	/**
 	 * 验证18位身份编码是否合法
 	 * 
 	 * @param idCard
@@ -206,7 +206,7 @@ public class IdcardUtils2 {
 		return bTrue;
 	}
 
-	/*
+	/**
 	 * 验证15位身份编码是否合法
 	 * 
 	 * @param idCard
@@ -244,7 +244,7 @@ public class IdcardUtils2 {
 		return true;
 	}
 
-	/*
+	/**
 	 * 验证10位身份编码是否合法
 	 * 
 	 * @param idCard
@@ -291,7 +291,7 @@ public class IdcardUtils2 {
 		return info;
 	}
 
-	/*
+	/**
 	 * 验证台湾身份证号码
 	 * 
 	 * @param idCard
@@ -314,7 +314,7 @@ public class IdcardUtils2 {
 				: false;
 	}
 
-	/*
+	/**
 	 * 验证香港身份证号码(存在Bug，部份特殊身份证无法检查)
 	 * <p>
 	 * 身份证前2位为英文字符，如果只出现一个英文字符则表示第一位是空格，对应数字58 前2位英文字符A-Z分别对应数字10-35
@@ -358,7 +358,7 @@ public class IdcardUtils2 {
 		return (sum % 11 == 0) ? true : false;
 	}
 
-	/*
+	/**
 	 * 将字符数组转换成数字数组
 	 * 
 	 * @param ca
@@ -378,7 +378,7 @@ public class IdcardUtils2 {
 		return iArr;
 	}
 
-	/*
+	/**
 	 * 将身份证的每位和对应位的加权因子相乘之后，再得到和值
 	 * 
 	 * @param iArr
@@ -398,7 +398,7 @@ public class IdcardUtils2 {
 		return iSum;
 	}
 
-	/*
+	/**
 	 * 将power和值与11取模获得余数进行校验码判断
 	 * 
 	 * @param iSum
@@ -444,7 +444,7 @@ public class IdcardUtils2 {
 		return sCode;
 	}
 
-	/*
+	/**
 	 * 根据身份编号获取年龄
 	 * 
 	 * @param idCard
@@ -463,7 +463,7 @@ public class IdcardUtils2 {
 		return iAge;
 	}
 
-	/*
+	/**
 	 * 根据身份编号获取生日
 	 * 
 	 * @param idCard
@@ -480,7 +480,7 @@ public class IdcardUtils2 {
 		return idCard.substring(6, 14);
 	}
 
-	/*
+	/**
 	 * 根据身份编号获取生日年
 	 * 
 	 * @param idCard
@@ -497,7 +497,7 @@ public class IdcardUtils2 {
 		return Short.valueOf(idCard.substring(6, 10));
 	}
 
-	/*
+	/**
 	 * 根据身份编号获取生日月
 	 * 
 	 * @param idCard
@@ -514,7 +514,7 @@ public class IdcardUtils2 {
 		return Short.valueOf(idCard.substring(10, 12));
 	}
 
-	/*
+	/**
 	 * 根据身份编号获取生日天
 	 * 
 	 * @param idCard
@@ -531,7 +531,7 @@ public class IdcardUtils2 {
 		return Short.valueOf(idCard.substring(12, 14));
 	}
 
-	/*
+	/**
 	 * 根据身份编号获取性别
 	 * 
 	 * @param idCard
@@ -552,7 +552,7 @@ public class IdcardUtils2 {
 		return sGender;
 	}
 
-	/*
+	/**
 	 * 根据身份编号获取户籍省份
 	 * 
 	 * @param idCard
@@ -570,7 +570,7 @@ public class IdcardUtils2 {
 		return sProvince;
 	}
 
-	/*
+	/**
 	 * 数字验证
 	 * 
 	 * @param val
@@ -580,7 +580,7 @@ public class IdcardUtils2 {
 		return val == null || "".equals(val) ? false : val.matches("^[0-9]*$");
 	}
 
-	/*
+	/**
 	 * 验证小于当前日期 是否有效
 	 * 
 	 * @param iYear

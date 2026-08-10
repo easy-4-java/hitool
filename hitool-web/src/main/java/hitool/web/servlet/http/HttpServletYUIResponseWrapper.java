@@ -12,6 +12,11 @@ import jakarta.servlet.http.HttpServletResponseWrapper;
 import hitool.web.servlet.http.io.ServletYUIResponseOutputStream;
 
 
+/**
+ * Class providing functionality for HttpServletYUIResponseWrapper.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class HttpServletYUIResponseWrapper extends HttpServletResponseWrapper {
 	protected HttpServletResponse origResponse = null;
 	protected HttpServletRequest origRequest = null;

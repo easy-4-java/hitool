@@ -16,7 +16,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.locks.ReentrantLock;
 
 
-/*
+/**
  * A <code><em>Soft</em>HashMap</code> is a memory-constrained map that stores its <em>values</em> in
  * {@link SoftReference SoftReference}s.  (Contrast this with the JDK's
  * {@link WeakHashMap WeakHashMap}, which uses weak references for its <em>keys</em>, which is of little value if you
@@ -63,7 +63,7 @@ public class SoftHashMap<K, V> implements Map<K, V> {
      */
     private final ReferenceQueue<? super V> queue;
 
-    /*
+    /**
      * Creates a new SoftHashMap with a default retention size size of
      * {@link #DEFAULT_RETENTION_SIZE DEFAULT_RETENTION_SIZE} (100 entries).
      *
@@ -73,7 +73,7 @@ public class SoftHashMap<K, V> implements Map<K, V> {
         this(DEFAULT_RETENTION_SIZE);
     }
 
-    /*
+    /**
      * Creates a new SoftHashMap with the specified retention size.
      * <p/>
      * The retention size (n) is the total number of most recent entries in the map that will be strongly referenced
@@ -98,7 +98,7 @@ public class SoftHashMap<K, V> implements Map<K, V> {
         strongReferences = new ConcurrentLinkedQueue<V>();
     }
 
-    /*
+    /**
      * Creates a {@code SoftHashMap} backed by the specified {@code source}, with a default retention
      * size of {@link #DEFAULT_RETENTION_SIZE DEFAULT_RETENTION_SIZE} (100 entries).
      *
@@ -110,7 +110,7 @@ public class SoftHashMap<K, V> implements Map<K, V> {
         putAll(source);
     }
 
-    /*
+    /**
      * Creates a {@code SoftHashMap} backed by the specified {@code source}, with the specified retention size.
      * <p/>
      * The retention size (n) is the total number of most recent entries in the map that will be strongly referenced
@@ -232,7 +232,7 @@ public class SoftHashMap<K, V> implements Map<K, V> {
         return values;
     }
 
-    /*
+    /**
      * Creates a new entry, but wraps the value in a SoftValue instance to enable auto garbage collection.
      */
     public V put(K key, V value) {
@@ -292,7 +292,7 @@ public class SoftHashMap<K, V> implements Map<K, V> {
 
         private final K key;
 
-        /*
+        /**
          * Constructs a new instance, wrapping the value, key, and queue, as
          * required by the superclass.
          *

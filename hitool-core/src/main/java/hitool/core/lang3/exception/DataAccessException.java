@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -8,6 +8,11 @@ package hitool.core.lang3.exception;
  * 数据库访问异常(RuntimeException)
  */
 @SuppressWarnings("serial")
+/**
+ * Class providing functionality for DataAccessException.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class DataAccessException extends NestedRuntimeException {
 	
 	public DataAccessException(String message) {

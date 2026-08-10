@@ -6,6 +6,11 @@ import jakarta.mail.Session;
 
 import java.util.Properties;
 
+/**
+ * Class providing functionality for JavaMailUtils.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public abstract class JavaMailUtils {
 
 	/*

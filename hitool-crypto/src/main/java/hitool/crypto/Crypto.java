@@ -3,16 +3,21 @@ package hitool.crypto;
 import java.security.GeneralSecurityException;
 import java.security.Key;
 
+/**
+ * Interface providing functionality for Crypto.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public interface Crypto {
 	
-	/*
+	/**
 	 * 初始化key
 	 * @return
 	 * @throws Exception
 	 */
 	 byte[] initKey() throws GeneralSecurityException;
 	 
-	 /*
+	 /**
 	  * 
 	  *  还原key
 	  * @param key

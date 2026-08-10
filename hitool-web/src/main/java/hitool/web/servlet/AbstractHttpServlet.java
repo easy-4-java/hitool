@@ -12,6 +12,11 @@ import jakarta.servlet.http.HttpServletResponse;
  * 基础HttpServlet
  */
 @SuppressWarnings("serial")
+/**
+ * Class providing functionality for AbstractHttpServlet.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public abstract class AbstractHttpServlet extends HttpServlet {
 
 	@Override

@@ -9,6 +9,11 @@ import hitool.core.beanutils.BeanPropertyUtils;
 import hitool.core.beanutils.BeanUtils;
 
 @SuppressWarnings({"unchecked","rawtypes"})
+/**
+ * Class providing functionality for BeanMapConverter.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class BeanMapConverter implements Converter {
 	
 	public Object convert(Class type, Object source) {

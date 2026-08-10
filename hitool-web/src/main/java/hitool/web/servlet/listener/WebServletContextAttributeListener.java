@@ -3,6 +3,11 @@ package hitool.web.servlet.listener;
 import jakarta.servlet.ServletContextAttributeEvent;
 import jakarta.servlet.ServletContextAttributeListener;
 
+/**
+ * Class providing functionality for WebServletContextAttributeListener.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class WebServletContextAttributeListener implements ServletContextAttributeListener {
 
 	@Override

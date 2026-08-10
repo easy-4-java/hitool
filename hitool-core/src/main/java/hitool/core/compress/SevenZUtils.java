@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -19,11 +19,16 @@ import org.apache.commons.compress.compressors.gzip.GzipCompressorOutputStream;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
 
+/**
+ * Class providing functionality for SevenZUtils.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class SevenZUtils extends CompressUtils {
 
 	protected static final CharSequence EXT = ".7z";
 
-	/*
+	/**
 	 * 文件压缩
 	 * 
 	 * @param file
@@ -33,7 +38,7 @@ public class SevenZUtils extends CompressUtils {
 		SevenZUtils.compress(file, true);
 	}
 
-	/*
+	/**
 	 * 文件压缩
 	 * 
 	 * @param srcFile
@@ -57,7 +62,7 @@ public class SevenZUtils extends CompressUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 文件压缩
 	 * 
 	 * @param srcFile
@@ -76,7 +81,7 @@ public class SevenZUtils extends CompressUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 目录 归档
 	 * 
 	 * @param dir
@@ -92,7 +97,7 @@ public class SevenZUtils extends CompressUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 文件归档
 	 * 
 	 * @param file：待归档文件
@@ -113,7 +118,7 @@ public class SevenZUtils extends CompressUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 数据流压缩
 	 * 
 	 * @param input

@@ -13,7 +13,7 @@ import hitool.core.lang3.Assert;
 import hitool.core.lang3.StringUtils;
 import hitool.core.regexp.PathMatcher;
 
-/*
+/**
  * {@link PathMatcher} implementation for Ant-style path patterns.
  *
  * <p>Part of this mapping code has been kindly borrowed from <a href="https://ant.apache.org">Apache Ant</a>.
@@ -84,7 +84,7 @@ public class AntPathMatcher implements PathMatcher {
 	final Map<String, AntPathStringMatcher> stringMatcherCache = new ConcurrentHashMap<>(256);
 
 
-	/*
+	/**
 	 * Create a new instance with the {@link #DEFAULT_PATH_SEPARATOR}.
 	 */
 	public AntPathMatcher() {
@@ -92,7 +92,7 @@ public class AntPathMatcher implements PathMatcher {
 		this.pathSeparatorPatternCache = new PathSeparatorPatternCache(DEFAULT_PATH_SEPARATOR);
 	}
 
-	/*
+	/**
 	 * A convenient, alternative constructor to use with a custom path separator.
 	 * @param pathSeparator the path separator to use, must not be {@code null}.
 	 * @since 4.1
@@ -104,7 +104,7 @@ public class AntPathMatcher implements PathMatcher {
 	}
 
 
-	/*
+	/**
 	 * Set the path separator to use for pattern parsing.
 	 * <p>Default is "/", as in Ant.
 	 */
@@ -130,7 +130,7 @@ public class AntPathMatcher implements PathMatcher {
 		this.trimTokens = trimTokens;
 	}
 
-	/*
+	/**
 	 * Specify whether to cache parsed pattern metadata for patterns passed
 	 * into this matcher's {@link #match} method. A value of {@code true}
 	 * activates an unlimited pattern cache; a value of {@code false} turns
@@ -185,7 +185,7 @@ public class AntPathMatcher implements PathMatcher {
 		return doMatch(pattern, path, false, null);
 	}
 
-	/*
+	/**
 	 * Actually match the given {@code path} against the given {@code pattern}.
 	 * @param pattern the pattern to match against
 	 * @param path the path to test
@@ -373,7 +373,7 @@ public class AntPathMatcher implements PathMatcher {
 		return false;
 	}
 
-	/*
+	/**
 	 * Tokenize the given path pattern into parts, based on this matcher's settings.
 	 * <p>Performs caching based on {@link #setCachePatterns}, delegating to
 	 * {@link #tokenizePath(String)} for the actual tokenization algorithm.
@@ -402,7 +402,7 @@ public class AntPathMatcher implements PathMatcher {
 		return tokenized;
 	}
 
-	/*
+	/**
 	 * Tokenize the given path into parts, based on this matcher's settings.
 	 * @param path the path to tokenize
 	 * @return the tokenized path parts
@@ -411,7 +411,7 @@ public class AntPathMatcher implements PathMatcher {
 		return StringUtils.tokenizeToStringArray(path, this.pathSeparator, this.trimTokens, true);
 	}
 
-	/*
+	/**
 	 * Test whether or not a string matches against a pattern.
 	 * @param pattern the pattern to match against (never {@code null})
 	 * @param str the String which must be matched against the pattern (never {@code null})
@@ -423,7 +423,7 @@ public class AntPathMatcher implements PathMatcher {
 		return getStringMatcher(pattern).matchStrings(str, uriTemplateVariables);
 	}
 
-	/*
+	/**
 	 * Build or retrieve an {@link AntPathStringMatcher} for the given pattern.
 	 * <p>The default implementation checks this AntPathMatcher's internal cache
 	 * (see {@link #setCachePatterns}), creating a new AntPathStringMatcher instance
@@ -504,7 +504,7 @@ public class AntPathMatcher implements PathMatcher {
 		return variables;
 	}
 
-	/*
+	/**
 	 * Combine two patterns into a new pattern.
 	 * <p>This implementation simply concatenates the two patterns, unless
 	 * the first pattern contains a file extension match (e.g., {@code *.html}).
@@ -597,7 +597,7 @@ public class AntPathMatcher implements PathMatcher {
 		}
 	}
 
-	/*
+	/**
 	 * Given a full path, returns a {@link Comparator} suitable for sorting patterns in order of
 	 * explicitness.
 	 * <p>This {@code Comparator} will {@linkplain java.util.List#sort(Comparator) sort}
@@ -681,7 +681,7 @@ public class AntPathMatcher implements PathMatcher {
 			return Pattern.quote(s.substring(start, end));
 		}
 
-		/*
+		/**
 		 * Main entry point.
 		 * @return {@code true} if the string matches against the pattern, or {@code false} otherwise.
 		 */
@@ -732,7 +732,7 @@ public class AntPathMatcher implements PathMatcher {
 			this.path = path;
 		}
 
-		/*
+		/**
 		 * Compare two patterns to determine which should match first, i.e. which
 		 * is the most specific regarding the current path.
 		 * @return a negative integer, zero, or a positive integer as pattern1 is

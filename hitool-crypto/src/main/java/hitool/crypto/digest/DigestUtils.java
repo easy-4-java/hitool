@@ -15,6 +15,11 @@ import org.bouncycastle.pqc.jcajce.provider.BouncyCastlePQCProvider;
  * 
  */
 @SuppressWarnings("deprecation")
+/**
+ * Class providing functionality for DigestUtils.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class DigestUtils extends org.apache.commons.codec.digest.DigestUtils {
 
 	static {
@@ -82,7 +87,7 @@ public class DigestUtils extends org.apache.commons.codec.digest.DigestUtils {
 
 		for (Provider p : Security.getProviders()) {
 			System.out.println(p);
-			/*for (Map.Entry<Object, Object> entry : p.entrySet()) {
+			/**for (Map.Entry<Object, Object> entry : p.entrySet()) {
 				System.out.println("\t" + entry.getKey());
 			}*/
 		}

@@ -1,9 +1,14 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
 package hitool.core.lang3.exception.handler;
 
+/**
+ * Class providing functionality for StdoutExceptionHandler.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class StdoutExceptionHandler implements ExceptionHandler {
 	
 	public void handle(Exception e) {

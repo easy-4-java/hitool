@@ -7,6 +7,11 @@ import freemarker.cache.StringTemplateLoader;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 
+/**
+ * Class providing functionality for TemplateUtils.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public abstract class TemplateUtils {
 
 	/*
@@ -14,7 +19,7 @@ public abstract class TemplateUtils {
 	 */
 	private static StringTemplateLoader sTmpLoader = new StringTemplateLoader();
 
-	/*
+	/**
 	 * 获取以string文本为模板的FreeMarker模板对象
 	 * @param templateName	：模板名称
 	 * @param templateSource：模板内容
@@ -28,7 +33,7 @@ public abstract class TemplateUtils {
 		return TemplateUtils.getStringTemplate(configuration,templateName,templateSource);
 	}
 	
-	/*
+	/**
 	 * 获取以string文本为模板的FreeMarker模板对象
 	 * @param configuration	： Configuration对象
 	 * @param templateName	：模板名称
@@ -45,7 +50,7 @@ public abstract class TemplateUtils {
 		return configuration.getTemplate(templateName);
 	}
 	
-	/*
+	/**
 	 * 以文件路径模板装载方式获取【指定文件目录】下的FreeMarker模板对象
 	 * @param templateDir
 	 * @param templateName
@@ -59,7 +64,7 @@ public abstract class TemplateUtils {
 		return configuration.getTemplate(templateName);
 	}
 	
-	/*
+	/**
 	 * 以classpath 模板装载方式获取【classpath根目录】下的FreeMarker模板对象
 	 * @param clazz			： class对象
 	 * @param pathPrefix	：模板文件所在目录
@@ -74,7 +79,7 @@ public abstract class TemplateUtils {
 		return configuration.getTemplate(templateName);
 	}
 	
-	/*
+	/**
 	 * 以classpath 模板装载方式获取【指定class所在目录】下的FreeMarker模板对象
 	 * @param clazz			： class对象
 	 * @param templateName	：模板名称
@@ -88,7 +93,7 @@ public abstract class TemplateUtils {
 		return configuration.getTemplate(templateName);
 	}
 	
-	/*
+	/**
 	 *  以classpath 模板装载方式获取【指定classpath目录】下的FreeMarker模板对象
 	 * @param clazz			： class对象
 	 * @param pathPrefix	：模板文件所在目录

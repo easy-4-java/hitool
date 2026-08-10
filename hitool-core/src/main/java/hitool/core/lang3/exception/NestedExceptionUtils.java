@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright 2002-2008 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@
 package hitool.core.lang3.exception;
 
 
-/*
+/**
  * Helper class for implementing exception classes which are capable of
  * holding nested exceptions. Necessary because we can't share a base
  * class among different exception types.
@@ -33,7 +33,7 @@ package hitool.core.lang3.exception;
  */
 public abstract class NestedExceptionUtils {
 
-	/*
+	/**
 	 * Build a message for the given base message and root cause.
 	 * @param message the base message
 	 * @param cause the root cause

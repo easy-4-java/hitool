@@ -5,7 +5,7 @@ import java.util.List;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletRequestWrapper;
 
-/*
+/**
  * 使用Decorator模式包装request对象，实现敏感字符过滤功能
  */
 public class HttpServletDirtyWordFilterRequestWrapper extends HttpServletRequestWrapper {
@@ -19,7 +19,7 @@ public class HttpServletDirtyWordFilterRequestWrapper extends HttpServletRequest
 		this.dirtyWords = dirtyWords;
 	}
 
-	/*
+	/**
 	 * 重写getParameter方法，实现对敏感字符的过滤
 	 * 
 	 * @see jakarta.servlet.ServletRequestWrapper#getParameter(java.lang.String)

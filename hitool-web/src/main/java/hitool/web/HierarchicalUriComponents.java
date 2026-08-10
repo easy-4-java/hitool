@@ -20,7 +20,7 @@ import hitool.core.lang3.Assert;
 import hitool.core.lang3.ObjectUtils;
 import hitool.core.lang3.StringUtils;
 
-/*
+/**
  * Extension of {@link URIComponents} for hierarchical URIs.
  *
  * @author Arjen Poutsma
@@ -30,6 +30,11 @@ import hitool.core.lang3.StringUtils;
  * @see <a href="http://tools.ietf.org/html/rfc3986#section-1.2.3">Hierarchical URIs</a>
  */
 @SuppressWarnings("serial")
+/**
+ * Class providing functionality for HierarchicalUriComponents.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public final class HierarchicalUriComponents extends URIComponents {
 
 	private static final char PATH_DELIMITER = '/';
@@ -46,7 +51,7 @@ public final class HierarchicalUriComponents extends URIComponents {
 
 	private final boolean encoded;
 
-	/*
+	/**
 	 * Package-private constructor. All arguments are optional, and can be {@code null}.
 	 * @param scheme the scheme
 	 * @param userInfo the user info
@@ -159,7 +164,7 @@ public final class HierarchicalUriComponents extends URIComponents {
 
 	// encoding
 
-	/*
+	/**
 	 * Encode all URI components using their specific encoding rules and return
 	 * the result as a new {@code UriComponents} instance.
 	 * @param encoding the encoding of the values contained in this map
@@ -196,7 +201,7 @@ public final class HierarchicalUriComponents extends URIComponents {
 		return result;
 	}
 
-	/*
+	/**
 	 * Encode the given source into an encoded String using the rules specified
 	 * by the given component and with the given options.
 	 * @param source the source string
@@ -245,7 +250,7 @@ public final class HierarchicalUriComponents extends URIComponents {
 
 	// verifying
 
-	/*
+	/**
 	 * Verifies all URI components to determine whether they contain any illegal
 	 * characters, throwing an {@code IllegalArgumentException} if so.
 	 * @throws IllegalArgumentException if any component has illegal characters
@@ -331,7 +336,7 @@ public final class HierarchicalUriComponents extends URIComponents {
 		return result;
 	}
 
-	/*
+	/**
 	 * Normalize the path removing sequences like "path/..".
 	 * @see StringUtils#cleanPath(String)
 	 */
@@ -461,7 +466,7 @@ public final class HierarchicalUriComponents extends URIComponents {
 
 	// inner types
 
-	/*
+	/**
 	 * Enumeration used to identify the allowed characters per URI component.
 	 * <p>Contains methods to indicate whether a given character is valid in a specific URI component.
 	 * @see <a href="http://www.ietf.org/rfc/rfc3986.txt">RFC 3986</a>
@@ -546,13 +551,13 @@ public final class HierarchicalUriComponents extends URIComponents {
 			}
 		};
 
-		/*
+		/**
 		 * Indicates whether the given character is allowed in this URI component.
 		 * @return {@code true} if the character is allowed; {@code false} otherwise
 		 */
 		public abstract boolean isAllowed(int c);
 
-		/*
+		/**
 		 * Indicates whether the given character is in the {@code ALPHA} set.
 		 * @see <a href="http://www.ietf.org/rfc/rfc3986.txt">RFC 3986, appendix A</a>
 		 */
@@ -560,7 +565,7 @@ public final class HierarchicalUriComponents extends URIComponents {
 			return c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z';
 		}
 
-		/*
+		/**
 		 * Indicates whether the given character is in the {@code DIGIT} set.
 		 * @see <a href="http://www.ietf.org/rfc/rfc3986.txt">RFC 3986, appendix A</a>
 		 */
@@ -568,7 +573,7 @@ public final class HierarchicalUriComponents extends URIComponents {
 			return c >= '0' && c <= '9';
 		}
 
-		/*
+		/**
 		 * Indicates whether the given character is in the {@code gen-delims} set.
 		 * @see <a href="http://www.ietf.org/rfc/rfc3986.txt">RFC 3986, appendix A</a>
 		 */
@@ -576,7 +581,7 @@ public final class HierarchicalUriComponents extends URIComponents {
 			return ':' == c || '/' == c || '?' == c || '#' == c || '[' == c || ']' == c || '@' == c;
 		}
 
-		/*
+		/**
 		 * Indicates whether the given character is in the {@code sub-delims} set.
 		 * @see <a href="http://www.ietf.org/rfc/rfc3986.txt">RFC 3986, appendix A</a>
 		 */
@@ -585,7 +590,7 @@ public final class HierarchicalUriComponents extends URIComponents {
 					',' == c || ';' == c || '=' == c;
 		}
 
-		/*
+		/**
 		 * Indicates whether the given character is in the {@code reserved} set.
 		 * @see <a href="http://www.ietf.org/rfc/rfc3986.txt">RFC 3986, appendix A</a>
 		 */
@@ -593,7 +598,7 @@ public final class HierarchicalUriComponents extends URIComponents {
 			return isGenericDelimiter(c) || isSubDelimiter(c);
 		}
 
-		/*
+		/**
 		 * Indicates whether the given character is in the {@code unreserved} set.
 		 * @see <a href="http://www.ietf.org/rfc/rfc3986.txt">RFC 3986, appendix A</a>
 		 */
@@ -601,7 +606,7 @@ public final class HierarchicalUriComponents extends URIComponents {
 			return isAlpha(c) || isDigit(c) || '-' == c || '.' == c || '_' == c || '~' == c;
 		}
 
-		/*
+		/**
 		 * Indicates whether the given character is in the {@code pchar} set.
 		 * @see <a href="http://www.ietf.org/rfc/rfc3986.txt">RFC 3986, appendix A</a>
 		 */

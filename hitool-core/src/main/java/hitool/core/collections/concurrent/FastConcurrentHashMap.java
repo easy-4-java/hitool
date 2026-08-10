@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -12,6 +12,11 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
 @SuppressWarnings("unchecked")
+/**
+ * Class providing functionality for FastConcurrentHashMap.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public abstract class FastConcurrentHashMap<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> {
 
     /*

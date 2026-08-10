@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -8,6 +8,11 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.Writer;
 
+/**
+ * Class providing functionality for StringBufferedWriter.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class StringBufferedWriter extends BufferedWriter {
 
 	protected StringBuffer buffer = new StringBuffer();

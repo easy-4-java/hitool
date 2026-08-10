@@ -3,6 +3,11 @@ package hitool.core.format.number;
 
 import java.text.DecimalFormat;
 
+/**
+ * Class providing functionality for CustomNumberFormat.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class CustomNumberFormat
 {
 

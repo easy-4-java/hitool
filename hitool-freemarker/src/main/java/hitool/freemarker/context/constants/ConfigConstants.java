@@ -1,5 +1,10 @@
 package hitool.freemarker.context.constants;
 
+/**
+ * Class providing functionality for ConfigConstants.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class ConfigConstants {
 	
 	//---------Freemarker 初始化参数Key ---------------------------------------

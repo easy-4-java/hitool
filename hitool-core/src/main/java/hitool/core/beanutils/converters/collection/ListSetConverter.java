@@ -11,6 +11,11 @@ import org.apache.commons.beanutils.ConversionException;
 import org.apache.commons.beanutils.Converter;
 
 @SuppressWarnings({ "unchecked", "rawtypes" })
+/**
+ * Class providing functionality for ListSetConverter.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class ListSetConverter implements Converter {
 
 	public Object convert(Class type, Object value) {

@@ -2,12 +2,12 @@ package hitool.lrc4j.tar.id;
 
 import hitool.lrc4j.tar.AbstractTar;
 
-/*
+/**
  * 
  * @className	： Ti
- * @description	： 曲名
- * @author 		： <a href="mailto:hnxyhcwdl1003@163.com">wandalong</a>
- * @date		： Jan 25, 2016 2:41:11 PM
+ * 曲名
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * 
  */
 public class Ti extends AbstractTar {
 	

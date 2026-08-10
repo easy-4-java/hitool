@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -64,7 +64,7 @@ public class ExceptionUtils extends org.apache.commons.lang3.exception.Exception
 		return new RuntimeException("Unexpected Checked Exception.", e);
 	}
 	
-	/*
+	/**
 	 * 将CheckedException转换为UncheckedException.
 	 */
 	public static RuntimeException unchecked(Exception e) {

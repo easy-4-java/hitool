@@ -4,12 +4,12 @@ import java.util.List;
 
 import hitool.lrc4j.tar.time.Lyric;
 
-/*
+/**
  * 
  * @className	： Lyrics
- * @description	： 基于播放，面相播放的【对LRC做进一步处理，便于播放显示】
- * @author 		： <a href="mailto:hnxyhcwdl1003@163.com">wandalong</a>
- * @date		： Jan 25, 2016 2:42:07 PM
+ * 基于播放，面相播放的【对LRC做进一步处理，便于播放显示】
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * 
  */
 public class Lyrics {
 	private String al;

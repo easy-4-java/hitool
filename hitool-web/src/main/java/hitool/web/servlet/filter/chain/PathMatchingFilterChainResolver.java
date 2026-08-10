@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -28,6 +28,11 @@ import hitool.core.regexp.matcher.AntPathMatcher;
 import hitool.web.WebUtils;
 import hitool.web.servlet.filter.chain.impl.DefaultFilterChainManager;
 
+/**
+ * Class providing functionality for PathMatchingFilterChainResolver.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class PathMatchingFilterChainResolver implements FilterChainResolver {
 
 	private static final Logger LOG = LoggerFactory.getLogger(PathMatchingFilterChainResolver.class);

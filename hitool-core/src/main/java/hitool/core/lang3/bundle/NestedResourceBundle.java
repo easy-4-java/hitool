@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -10,6 +10,11 @@ import java.util.ResourceBundle;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * Class providing functionality for NestedResourceBundle.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class NestedResourceBundle extends ResourceBundle {
 
 	protected ResourceBundle[] bundles;

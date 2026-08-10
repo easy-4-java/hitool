@@ -3,6 +3,11 @@ package hitool.mail.authc;
 import java.net.Authenticator;
 import java.net.PasswordAuthentication;
 
+/**
+ * Class providing functionality for ProxyAuthenticator.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class ProxyAuthenticator extends Authenticator {
 	
 	private String user = "";

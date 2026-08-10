@@ -9,6 +9,11 @@ import org.apache.commons.beanutils.ConversionException;
 import org.apache.commons.beanutils.Converter;
 
 @SuppressWarnings({ "unchecked", "rawtypes" })
+/**
+ * Class providing functionality for RequestAttributesPropertiesConverter.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class RequestAttributesPropertiesConverter implements Converter {
 
 	public Object convert(Class type, Object value) {

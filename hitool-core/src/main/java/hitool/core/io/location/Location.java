@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright 2005 The Apache Software Foundation.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,35 +31,35 @@ public interface Location {
      */
     public static final Location UNKNOWN = LocationImpl.UNKNOWN;
     
-    /*
+    /**
      * Get the description of this location
      * 
      * @return the description (can be <code>null</code>)
      */
     String getDescription();
     
-    /*
+    /**
      * Get the URI of this location
      * 
      * @return the URI (<code>null</code> if unknown).
      */
     String getURI();
 
-    /*
+    /**
      * Get the line number of this location
      * 
      * @return the line number (<code>-1</code> if unknown)
      */
     int getLineNumber();
     
-    /*
+    /**
      * Get the column number of this location
      * 
      * @return the column number (<code>-1</code> if unknown)
      */
     int getColumnNumber();
     
-    /*
+    /**
      * Gets a source code snippet with the default padding
      *
      * @param padding The amount of lines before and after the error to include

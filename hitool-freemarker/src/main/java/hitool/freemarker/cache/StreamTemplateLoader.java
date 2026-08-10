@@ -12,6 +12,11 @@ import org.slf4j.LoggerFactory;
 
 import freemarker.cache.TemplateLoader;
 
+/**
+ * Class providing functionality for StreamTemplateLoader.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class StreamTemplateLoader implements TemplateLoader {
 
 	protected static Logger LOG = LoggerFactory.getLogger(StreamTemplateLoader.class);
