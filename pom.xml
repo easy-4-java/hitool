@@ -485,12 +485,75 @@
 
     <!-- 版本属性定义：Java 版本、依赖版本与 Maven 插件版本统一管理 -->
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>17</java.version>
-        <maven.version>3.0</maven.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
+        <maven.version>3.0</maven.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <!-- Dependency versions -->
+        <bcmail.version>${bcprov.version}</bcmail.version>
+        <bcpkix.version>${bcprov.version}</bcpkix.version>
+        <bcpg.version>${bcprov.version}</bcpg.version>
+        <bcprov.version>1.78.1</bcprov.version>
+        <bctls.version>${bcprov.version}</bctls.version>
+        <cglib.version>3.3.0</cglib.version>
+        <commons-beanutils.version>1.11.0</commons-beanutils.version>
+        <commons-codec.version>1.22.0</commons-codec.version>
+        <commons-collections4.version>4.5.0-M2</commons-collections4.version>
+        <commons-collections.version>3.2.2</commons-collections.version>
+        <commons-compress.version>1.27.1</commons-compress.version>
+        <commons-email2.version>2.0.0-M1</commons-email2.version>
+        <commons-email.version>1.6.0</commons-email.version>
+        <commons-fileupload2.version>2.0.0-M1</commons-fileupload2.version>
+        <commons-fileupload.version>1.5</commons-fileupload.version>
+        <commons-io.version>2.22.0</commons-io.version>
+        <commons-lang3.version>3.20.0</commons-lang3.version>
+        <commons-lang.version>2.6</commons-lang.version>
+        <commons-logging.version>1.3.4</commons-logging.version>
+        <commons-net.version>3.11.1</commons-net.version>
+        <commons-pool2.version>2.12.0</commons-pool2.version>
+        <commons-text.version>1.15.0</commons-text.version>
+        <dom4j.version>2.1.4</dom4j.version>
+        <fastjson2.version>2.0.53</fastjson2.version>
+        <freemarker.version>2.3.31</freemarker.version>
+        <guava.version>30.0-jre</guava.version>
+        <jakarta-activation.version>2.1.3</jakarta-activation.version>
+        <jakarta-annotation.version>3.0.0</jakarta-annotation.version>
+        <jakarta-el.version>6.0.1</jakarta-el.version>
+        <jakarta-mail.version>2.1.3</jakarta-mail.version>
+        <jakarta-management.version>1.1.4</jakarta-management.version>
+        <jakarta-persistence.version>3.2.0</jakarta-persistence.version>
+        <jakarta-regexp.version>1.4</jakarta-regexp.version>
+        <jakarta-servlet-jsp-jstl.version>3.0.1</jakarta-servlet-jsp-jstl.version>
+        <jakarta-servlet-jsp.version>4.0.0</jakarta-servlet-jsp.version>
+        <jakarta-servlet.version>6.0.0</jakarta-servlet.version>
+        <jakarta-transaction.version>2.0.1</jakarta-transaction.version>
+        <jakarta-validation.version>3.0.2</jakarta-validation.version>
+        <jakarta-websocket.version>2.2.0</jakarta-websocket.version>
+        <janino.version>3.1.12</janino.version>
+        <javassist.version>3.27.0-GA</javassist.version>
+        <jaxen.version>1.1.1</jaxen.version>
+        <jdom2.version>2.0.6.1</jdom2.version>
+        <jmock.version>2.13.1</jmock.version>
+        <junit-jupiter.version>6.1.0</junit-jupiter.version>
+        <junit.version>4.13.2</junit.version>
+        <junrar.version>7.5.5</junrar.version>
+        <lombok.version>1.18.46</lombok.version>
+        <ognl.version>3.4.3</ognl.version>
+        <oro.version>2.0.8</oro.version>
+        <pinyin4j.version>2.5.1</pinyin4j.version>
+        <png-encoder.version>1.5</png-encoder.version>
+        <proxool.version>0.9.1</proxool.version>
+        <simple-xml.version>2.7.1</simple-xml.version>
+        <slf4j.version>2.0.18</slf4j.version>
+        <spring.version>6.1.2</spring.version>
+        <xerces.version>2.12.1</xerces.version>
+        <xml-apis.version>1.3.04</xml-apis.version>
+        <xmlbeans.version>5.3.0</xmlbeans.version>
+        <xmlschema-core.version>2.2.5</xmlschema-core.version>
+        <xstream.version>1.4.20</xstream.version>
+        <zip64file.version>1.02</zip64file.version>
         <!-- Maven Plugin versions -->
         <maven-antrun-plugin.version>3.1.0</maven-antrun-plugin.version>
         <maven-clean-plugin.version>3.5.0</maven-clean-plugin.version>
@@ -498,8 +561,8 @@
         <maven-dependency-plugin.version>3.8.1</maven-dependency-plugin.version>
         <maven-deploy-plugin.version>3.1.4</maven-deploy-plugin.version>
         <maven-enforcer-plugin.version>3.6.3</maven-enforcer-plugin.version>
-        <maven-gpg-plugin.version>3.2.8</maven-gpg-plugin.version>
         <maven-failsafe-plugin.version>3.0.0</maven-failsafe-plugin.version>
+        <maven-gpg-plugin.version>3.2.8</maven-gpg-plugin.version>
         <maven-help-plugin.version>3.5.0</maven-help-plugin.version>
         <maven-install-plugin.version>3.1.4</maven-install-plugin.version>
         <maven-invoker-plugin.version>3.8.0</maven-invoker-plugin.version>
@@ -512,69 +575,6 @@
         <maven-source-plugin.version>3.4.0</maven-source-plugin.version>
         <maven-surefire-plugin.version>3.5.2</maven-surefire-plugin.version>
         <maven-war-plugin.version>3.4.0</maven-war-plugin.version>
-        <bcprov.version>1.78.1</bcprov.version>
-        <bcpkix.version>${bcprov.version}</bcpkix.version>
-        <bcmail.version>${bcprov.version}</bcmail.version>
-        <bcpg.version>${bcprov.version}</bcpg.version>
-        <bctls.version>${bcprov.version}</bctls.version>
-        <cglib.version>3.3.0</cglib.version>
-        <commons-beanutils.version>1.11.0</commons-beanutils.version>
-        <commons-codec.version>1.22.0</commons-codec.version>
-        <commons-collections.version>3.2.2</commons-collections.version>
-        <commons-collections4.version>4.5.0-M2</commons-collections4.version>
-        <commons-compress.version>1.27.1</commons-compress.version>
-        <commons-email.version>1.6.0</commons-email.version>
-        <commons-email2.version>2.0.0-M1</commons-email2.version>
-        <commons-fileupload.version>1.5</commons-fileupload.version>
-        <commons-fileupload2.version>2.0.0-M1</commons-fileupload2.version>
-        <commons-io.version>2.22.0</commons-io.version>
-        <commons-lang.version>2.6</commons-lang.version>
-        <commons-lang3.version>3.20.0</commons-lang3.version>
-        <commons-logging.version>1.3.4</commons-logging.version>
-        <commons-net.version>3.11.1</commons-net.version>
-        <commons-pool2.version>2.12.0</commons-pool2.version>
-        <commons-text.version>1.15.0</commons-text.version>
-        <dom4j.version>2.1.4</dom4j.version>
-        <fastjson2.version>2.0.53</fastjson2.version>
-        <freemarker.version>2.3.31</freemarker.version>
-        <!-- Dependency versions -->
-        <guava.version>30.0-jre</guava.version>
-        <jakarta-regexp.version>1.4</jakarta-regexp.version>
-        <jaxen.version>1.1.1</jaxen.version>
-        <janino.version>3.1.12</janino.version>
-        <javassist.version>3.27.0-GA</javassist.version>
-        <jakarta-activation.version>2.1.3</jakarta-activation.version>
-        <jakarta-annotation.version>3.0.0</jakarta-annotation.version>
-        <jakarta-el.version>6.0.1</jakarta-el.version>
-        <jakarta-mail.version>2.1.3</jakarta-mail.version>
-        <jakarta-management.version>1.1.4</jakarta-management.version>
-        <jakarta-persistence.version>3.2.0</jakarta-persistence.version>
-        <jakarta-servlet.version>6.0.0</jakarta-servlet.version>
-        <jakarta-servlet-jsp.version>4.0.0</jakarta-servlet-jsp.version>
-        <jakarta-servlet-jsp-jstl.version>3.0.1</jakarta-servlet-jsp-jstl.version>
-        <jakarta-transaction.version>2.0.1</jakarta-transaction.version>
-        <jakarta-validation.version>3.0.2</jakarta-validation.version>
-        <jakarta-websocket.version>2.2.0</jakarta-websocket.version>
-        <jdom2.version>2.0.6.1</jdom2.version>
-        <jmock.version>2.13.1</jmock.version>
-        <junrar.version>7.5.5</junrar.version>
-        <junit.version>4.13.2</junit.version>
-        <junit-jupiter.version>6.1.0</junit-jupiter.version>
-        <lombok.version>1.18.46</lombok.version>
-        <oro.version>2.0.8</oro.version>
-        <ognl.version>3.4.3</ognl.version>
-        <pinyin4j.version>2.5.1</pinyin4j.version>
-        <proxool.version>0.9.1</proxool.version>
-        <png-encoder.version>1.5</png-encoder.version>
-        <slf4j.version>2.0.18</slf4j.version>
-        <simple-xml.version>2.7.1</simple-xml.version>
-        <spring.version>6.1.2</spring.version>
-        <xmlbeans.version>5.3.0</xmlbeans.version>
-        <xerces.version>2.12.1</xerces.version>
-        <xmlschema-core.version>2.2.5</xmlschema-core.version>
-        <xstream.version>1.4.20</xstream.version>
-        <xml-apis.version>1.3.04</xml-apis.version>
-        <zip64file.version>1.02</zip64file.version>
     </properties>
 
     <!-- 依赖版本统一管理（dependencyManagement） -->
