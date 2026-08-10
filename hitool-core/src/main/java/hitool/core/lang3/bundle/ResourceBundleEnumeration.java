@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -10,6 +10,11 @@ import java.util.Iterator;
 import java.util.ResourceBundle;
 import java.util.Set;
 
+/**
+ * Implementation of resource bundle enumeration functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class ResourceBundleEnumeration implements Enumeration<String> {
 
 	private Iterator<String> ite;

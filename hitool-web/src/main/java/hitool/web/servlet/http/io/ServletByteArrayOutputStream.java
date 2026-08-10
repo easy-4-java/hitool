@@ -6,6 +6,11 @@ import java.io.IOException;
 import jakarta.servlet.ServletOutputStream;
 import jakarta.servlet.WriteListener;
 
+/**
+ * Implementation of servlet byte array output stream extending ServletOutputStream.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class ServletByteArrayOutputStream extends ServletOutputStream {
 	
 	private ByteArrayOutputStream bout;

@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -16,7 +16,7 @@ import java.util.Map;
  */
 public class ContainUtils {
 
-    /*
+    /**
      * Determine if <code>obj2</code> exists in <code>obj1</code>.
      *
      * <table borer="1">

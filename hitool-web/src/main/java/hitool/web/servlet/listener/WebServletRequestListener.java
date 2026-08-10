@@ -6,6 +6,11 @@ import jakarta.servlet.annotation.WebListener;
 import jakarta.servlet.http.HttpServletRequest;
 
 @WebListener("bindRequest")
+/**
+ * Implementation of web servlet request listener functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class WebServletRequestListener implements ServletRequestListener {
 
 	@Override

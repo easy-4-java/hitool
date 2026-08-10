@@ -1,9 +1,14 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
 package hitool.core.collections.stack;
 
+/**
+ * Contract interface for Stack operations.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public interface Stack {
 	//返回堆栈的大小
 	public int getSize();

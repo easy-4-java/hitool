@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -29,6 +29,11 @@ import hitool.core.regexp.PathMatcher;
 import hitool.core.regexp.matcher.AntPathMatcher;
 import hitool.web.WebUtils;
 
+/**
+ * Implementation of abstract path match filter extending AbstractAdviceFilter.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public abstract class AbstractPathMatchFilter extends AbstractAdviceFilter implements PathProcessor {
 
 	private static final Logger LOG = LoggerFactory.getLogger(AbstractPathMatchFilter.class);

@@ -26,6 +26,11 @@
  */
 package hitool.core.net.ssl;
 
+/**
+ * Implementation of s s l initialization exception extending IllegalStateException.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class SSLInitializationException extends IllegalStateException {
 
     private static final long serialVersionUID = -8243587425648536702L;

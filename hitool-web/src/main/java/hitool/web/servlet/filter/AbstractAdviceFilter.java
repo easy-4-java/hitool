@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -25,6 +25,11 @@ import jakarta.servlet.ServletResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * Implementation of abstract advice filter extending OncePerRequestFilter.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public abstract class AbstractAdviceFilter extends OncePerRequestFilter {
 
     private static final Logger LOG = LoggerFactory.getLogger(AbstractAdviceFilter.class);

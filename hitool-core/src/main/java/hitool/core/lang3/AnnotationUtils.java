@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -10,6 +10,11 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
 import java.util.Map;
 
+/**
+ * Implementation of annotation utils functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class AnnotationUtils {
 
 	/*Annotation[] annotations = extension.getClass().getAnnotations();

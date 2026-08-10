@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright 2002-2014 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +17,7 @@ package hitool.core.lang3.exception;
 
 import java.io.IOException;
 
-/*
+/**
  * Subclass of {@link IOException} that properly handles a root cause,
  * exposing the root cause just like NestedChecked/RuntimeException does.
  *
@@ -35,6 +35,11 @@ import java.io.IOException;
  * @see org.springframework.core.NestedRuntimeException
  */
 @SuppressWarnings("serial")
+/**
+ * Implementation of nested i o exception extending IOException.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class NestedIOException extends IOException {
 
 	static {
@@ -44,7 +49,7 @@ public class NestedIOException extends IOException {
 	}
 
 
-	/*
+	/**
 	 * Construct a {@code NestedIOException} with the specified detail message.
 	 * @param msg the detail message
 	 */
@@ -52,7 +57,7 @@ public class NestedIOException extends IOException {
 		super(msg);
 	}
 
-	/*
+	/**
 	 * Construct a {@code NestedIOException} with the specified detail message
 	 * and nested exception.
 	 * @param msg the detail message

@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright 2005 The Apache Software Foundation.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +22,7 @@ public abstract class Located implements Locatable {
     
     protected Location location;
     
-    /*
+    /**
      * Get the location of this object
      * 
      * @return the location
@@ -31,7 +31,7 @@ public abstract class Located implements Locatable {
         return location;
     }
     
-    /*
+    /**
      * Set the location of this object
      * 
      * @param loc the location

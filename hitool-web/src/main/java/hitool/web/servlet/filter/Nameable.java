@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -15,6 +15,11 @@
  */
 package hitool.web.servlet.filter;
 
+/**
+ * Contract interface for Nameable operations.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public interface Nameable {
 
     void setName(String name);

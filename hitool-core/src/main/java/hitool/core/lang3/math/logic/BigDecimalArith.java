@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -6,9 +6,14 @@ package hitool.core.lang3.math.logic;
 
 import java.math.BigDecimal;
 
+/**
+ * Implementation of big decimal arith functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class BigDecimalArith {
 
-	/*
+	/**
 	 * 
 	 * 功能描述：四舍五入的加法运算
 	 * @param plus1 被加数
@@ -23,7 +28,7 @@ public class BigDecimalArith {
 		return setScale(plus1.add(plus2), newScale);
 	}
 
-	/*
+	/**
 	 *  
 	 * 功能描述：四舍五入的减法运算
 	 * @param sub1 被减数
@@ -38,7 +43,7 @@ public class BigDecimalArith {
 		return setScale(sub1.subtract(sub2), newScale);
 	}
 
-	/*
+	/**
 	 * 
 	 * 
 	 * 功能描述：四舍五入的乘法运算
@@ -54,7 +59,7 @@ public class BigDecimalArith {
 		return setScale(mul1.multiply(mul2), newScale);
 	}
 
-	/*
+	/**
 	 * 
 	 * 功能描述：四舍五入的除法运算
 	 * @param div1 被除数

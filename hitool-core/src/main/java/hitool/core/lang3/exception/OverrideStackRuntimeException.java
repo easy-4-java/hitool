@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -7,6 +7,11 @@ package hitool.core.lang3.exception;
 import java.text.MessageFormat;
 
 @SuppressWarnings("serial")
+/**
+ * Implementation of override stack runtime exception extending RuntimeException.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public abstract class OverrideStackRuntimeException extends RuntimeException {
 
 	public OverrideStackRuntimeException() {

@@ -10,6 +10,11 @@ import jakarta.servlet.http.HttpServletResponseWrapper;
 
 import hitool.web.servlet.http.io.FilterServletOutputStream;
 
+/**
+ * Implementation of generic response wrapper extending HttpServletResponseWrapper.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class GenericResponseWrapper extends HttpServletResponseWrapper {
 	
 	protected ByteArrayOutputStream output;

@@ -4,6 +4,11 @@ import java.io.FilterOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
+/**
+ * Implementation of non closing output stream extending FilterOutputStream.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class NonClosingOutputStream extends FilterOutputStream {
 
 	public NonClosingOutputStream(OutputStream out) {

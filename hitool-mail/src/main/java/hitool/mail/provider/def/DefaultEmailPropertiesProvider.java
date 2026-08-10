@@ -4,6 +4,11 @@ import hitool.mail.provider.EmailPropertiesProvider;
 
 import java.util.Properties;
 
+/**
+ * Implementation of default email properties provider functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class DefaultEmailPropertiesProvider implements EmailPropertiesProvider {
 
 	/*

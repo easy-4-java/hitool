@@ -9,9 +9,14 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+/**
+ * Implementation of message utils functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class MessageUtils {
 
-	/*
+	/**
 	 * 将邮件内容生成eml文件
 	 * @param message 邮件内容
 	 */

@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -6,6 +6,11 @@ package hitool.core.beanutils.reflection;
 
 import java.lang.reflect.InvocationTargetException;
 
+/**
+ * Implementation of reflection exception utils functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public abstract class ReflectionExceptionUtils {
 	
 	public static void handleConstructorException(Exception ex) {

@@ -9,6 +9,11 @@ import org.springframework.core.io.support.ResourcePatternResolver;
 
 import freemarker.cache.URLTemplateLoader;
 
+/**
+ * Implementation of classpath template loader extending URLTemplateLoader.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class ClasspathTemplateLoader extends URLTemplateLoader {
    
 	//spring 资源路径匹配解析器

@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -9,6 +9,11 @@ import java.lang.reflect.Method;
 import java.util.Arrays;
 
 @SuppressWarnings({ "unchecked", "rawtypes" })
+/**
+ * Implementation of object utils extending org.apache.commons.lang3.ObjectUtils.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 
 	private static final int INITIAL_HASH = 7;
@@ -22,7 +27,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 	private static final String ARRAY_ELEMENT_SEPARATOR = ", ";
 
 
-	/*
+	/**
 	 * Return whether the given throwable is a checked exception:
 	 * that is, neither a RuntimeException nor an Error.
 	 * @param ex the throwable to check
@@ -35,7 +40,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 		return !(ex instanceof RuntimeException || ex instanceof Error);
 	}
 
-	/*
+	/**
 	 * Check whether the given exception is compatible with the exceptions
 	 * declared in a throws clause.
 	 * @param ex the exception to checked
@@ -58,7 +63,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 		return false;
 	}
 
-	/*
+	/**
 	 * Determine whether the given object is an array:
 	 * either an Object array or a primitive array.
 	 * @param obj the object to check
@@ -67,7 +72,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 		return (obj != null && obj.getClass().isArray());
 	}
 
-	/*
+	/**
 	 * Determine whether the given array is empty:
 	 * i.e. <code>null</code> or of zero length.
 	 * @param array the array to check
@@ -76,7 +81,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 		return (array == null || array.length == 0);
 	}
 
-	/*
+	/**
 	 * Check whether the given array contains the given element.
 	 * @param array the array to check (may be <code>null</code>,
 	 * in which case the return value will always be <code>false</code>)
@@ -95,7 +100,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 		return false;
 	}
 
-	/*
+	/**
 	 * Append the given Object to the given array, returning a new array
 	 * consisting of the input array contents plus the given Object.
 	 * @param array the array to append to (can be <code>null</code>)
@@ -119,7 +124,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 		return newArr;
 	}
 
-	/*
+	/**
 	 * Convert the given array (which may be a primitive array) to an
 	 * object array (if necessary of primitive wrapper objects).
 	 * <p>A <code>null</code> source value will be converted to an
@@ -155,7 +160,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 	// Convenience methods for content-based equality/hash-code handling
 	//---------------------------------------------------------------------
 
-	/*
+	/**
 	 * Determine if the given objects are equal, returning <code>true</code>
 	 * if both are <code>null</code> or <code>false</code> if only one is
 	 * <code>null</code>.
@@ -208,7 +213,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 		return false;
 	}
 
-	/*
+	/**
 	 * Return as hash code for the given object; typically the value of
 	 * <code>{@link Object#hashCode()}</code>. If the object is an array,
 	 * this method will delegate to any of the <code>nullSafeHashCode</code>
@@ -404,7 +409,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 		return hash;
 	}
 
-	/*
+	/**
 	 * Return the same value as <code>{@link Boolean#hashCode()}</code>.
 	 * @see Boolean#hashCode()
 	 */
@@ -412,7 +417,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 		return bool ? 1231 : 1237;
 	}
 
-	/*
+	/**
 	 * Return the same value as <code>{@link Double#hashCode()}</code>.
 	 * @see Double#hashCode()
 	 */
@@ -421,7 +426,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 		return hashCode(bits);
 	}
 
-	/*
+	/**
 	 * Return the same value as <code>{@link Float#hashCode()}</code>.
 	 * @see Float#hashCode()
 	 */
@@ -429,7 +434,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 		return Float.floatToIntBits(flt);
 	}
 
-	/*
+	/**
 	 * Return the same value as <code>{@link Long#hashCode()}</code>.
 	 * @see Long#hashCode()
 	 */
@@ -442,7 +447,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 	// Convenience methods for toString output
 	//---------------------------------------------------------------------
 
-	/*
+	/**
 	 * Return a String representation of an object's overall identity.
 	 * @param obj the object (may be <code>null</code>)
 	 * @return the object's identity as String representation,
@@ -455,7 +460,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 		return obj.getClass().getName() + "@" + getIdentityHexString(obj);
 	}
 
-	/*
+	/**
 	 * Return a hex String form of an object's identity hash code.
 	 * @param obj the object
 	 * @return the object's identity code in hex notation
@@ -464,7 +469,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 		return Integer.toHexString(System.identityHashCode(obj));
 	}
 
-	/*
+	/**
 	 * Return a content-based String representation if <code>obj</code> is
 	 * not <code>null</code>; otherwise returns an empty String.
 	 * <p>Differs from {@link #nullSafeToString(Object)} in that it returns
@@ -480,7 +485,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 		return nullSafeToString(obj);
 	}
 
-	/*
+	/**
 	 * Determine the class name for the given object.
 	 * <p>Returns <code>"null"</code> if <code>obj</code> is <code>null</code>.
 	 * @param obj the object to introspect (may be <code>null</code>)
@@ -490,7 +495,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 		return (obj != null ? obj.getClass().getName() : NULL_STRING);
 	}
 
-	/*
+	/**
 	 * Return a String representation of the specified Object.
 	 * <p>Builds a String representation of the contents in case of an array.
 	 * Returns <code>"null"</code> if <code>obj</code> is <code>null</code>.
@@ -535,7 +540,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 		return (str != null ? str : EMPTY_STRING);
 	}
 
-	/*
+	/**
 	 * Return a String representation of the contents of the specified array.
 	 * <p>The String representation consists of a list of the array's elements,
 	 * enclosed in curly braces (<code>"{}"</code>). Adjacent elements are separated
@@ -566,7 +571,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 		return sb.toString();
 	}
 
-	/*
+	/**
 	 * Return a String representation of the contents of the specified array.
 	 * <p>The String representation consists of a list of the array's elements,
 	 * enclosed in curly braces (<code>"{}"</code>). Adjacent elements are separated
@@ -598,7 +603,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 		return sb.toString();
 	}
 
-	/*
+	/**
 	 * Return a String representation of the contents of the specified array.
 	 * <p>The String representation consists of a list of the array's elements,
 	 * enclosed in curly braces (<code>"{}"</code>). Adjacent elements are separated
@@ -629,7 +634,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 		return sb.toString();
 	}
 
-	/*
+	/**
 	 * Return a String representation of the contents of the specified array.
 	 * <p>The String representation consists of a list of the array's elements,
 	 * enclosed in curly braces (<code>"{}"</code>). Adjacent elements are separated
@@ -660,7 +665,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 		return sb.toString();
 	}
 
-	/*
+	/**
 	 * Return a String representation of the contents of the specified array.
 	 * <p>The String representation consists of a list of the array's elements,
 	 * enclosed in curly braces (<code>"{}"</code>). Adjacent elements are separated
@@ -692,7 +697,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 		return sb.toString();
 	}
 
-	/*
+	/**
 	 * Return a String representation of the contents of the specified array.
 	 * <p>The String representation consists of a list of the array's elements,
 	 * enclosed in curly braces (<code>"{}"</code>). Adjacent elements are separated
@@ -724,7 +729,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 		return sb.toString();
 	}
 
-	/*
+	/**
 	 * Return a String representation of the contents of the specified array.
 	 * <p>The String representation consists of a list of the array's elements,
 	 * enclosed in curly braces (<code>"{}"</code>). Adjacent elements are separated
@@ -755,7 +760,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 		return sb.toString();
 	}
 
-	/*
+	/**
 	 * Return a String representation of the contents of the specified array.
 	 * <p>The String representation consists of a list of the array's elements,
 	 * enclosed in curly braces (<code>"{}"</code>). Adjacent elements are separated
@@ -786,7 +791,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 		return sb.toString();
 	}
 
-	/*
+	/**
 	 * Return a String representation of the contents of the specified array.
 	 * <p>The String representation consists of a list of the array's elements,
 	 * enclosed in curly braces (<code>"{}"</code>). Adjacent elements are separated
@@ -817,7 +822,7 @@ public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {
 		return sb.toString();
 	}
 
-	/*
+	/**
 	 * 注解到对象复制，只复制能匹配上的方法。
 	 * @param annotation
 	 * @param object

@@ -6,6 +6,11 @@ import javax.mail.Session;
 
 import java.util.Properties;
 
+/**
+ * Implementation of java mail utils functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public abstract class JavaMailUtils {
 
 	/*

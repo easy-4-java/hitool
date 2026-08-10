@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -39,6 +39,11 @@ import org.slf4j.LoggerFactory;
 import hitool.core.io.FileUtils;
 import hitool.core.lang3.CharsetUtils;
 
+/**
+ * Implementation of zip utils extending CompressUtils.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public abstract class ZipUtils extends CompressUtils {
 
 	protected static final CharSequence EXT = ".zip";
@@ -104,7 +109,7 @@ public abstract class ZipUtils extends CompressUtils {
 		return null;
 	}
 
-	/*
+	/**
 	 * 压缩字符串
 	 * 
 	 * @param text
@@ -118,7 +123,7 @@ public abstract class ZipUtils extends CompressUtils {
 		return CharsetUtils.newStringUtf8(ZipUtils.compress(text.getBytes()));
 	}
 
-	/*
+	/**
 	 * 字节压缩
 	 * 
 	 * @param databytes
@@ -158,7 +163,7 @@ public abstract class ZipUtils extends CompressUtils {
 		ZipUtils.compressDir(directory, extensions, true, outzip);
 	}
 
-	/*
+	/**
 	 * 压缩目录下指定文件后缀的文件
 	 * 
 	 * @param directory：目录
@@ -182,7 +187,7 @@ public abstract class ZipUtils extends CompressUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 处理多文档模式的xls文件打包
 	 * 
 	 * @param tmpDir
@@ -230,7 +235,7 @@ public abstract class ZipUtils extends CompressUtils {
 		ouputStream.finish();
 	}
 
-	/*
+	/**
 	 * 根据输入的文件与输出流对文件进行ZIP打包
 	 * 
 	 * @param inputFile
@@ -350,7 +355,7 @@ public abstract class ZipUtils extends CompressUtils {
 		zaos.close();
 	}
 
-	/*
+	/**
 	 * 解压缩字符串
 	 * 
 	 * @param text

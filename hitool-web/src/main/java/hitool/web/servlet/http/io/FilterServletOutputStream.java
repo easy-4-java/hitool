@@ -7,6 +7,11 @@ import java.io.OutputStream;
 import jakarta.servlet.ServletOutputStream;
 import jakarta.servlet.WriteListener;
 
+/**
+ * Implementation of filter servlet output stream extending ServletOutputStream.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class FilterServletOutputStream extends ServletOutputStream {
 
 	private DataOutputStream stream;

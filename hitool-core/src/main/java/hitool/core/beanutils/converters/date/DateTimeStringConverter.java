@@ -8,6 +8,11 @@ import org.apache.commons.beanutils.ConversionException;
 import org.apache.commons.beanutils.Converter;
 
 @SuppressWarnings({ "unchecked", "rawtypes" })
+/**
+ * Implementation of date time string converter functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class DateTimeStringConverter implements Converter {
 
 	private SimpleDateFormat sdf = new SimpleDateFormat();

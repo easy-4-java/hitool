@@ -4,7 +4,7 @@ import java.text.ParseException;
 import java.util.Calendar;
 import java.util.Hashtable;
 
-/*
+/**
  * <pre>
  * 身份证验证的工具（支持5位或18位省份证）
  * 身份证号码结构：
@@ -198,7 +198,7 @@ public abstract class IDCardUtils {
 		return false;
 	}
 	
-	/*
+	/**
 	 * 
 	 * 计算身份证校验码
 	 * <pre>
@@ -290,7 +290,7 @@ public abstract class IDCardUtils {
 		return _codeError;
 	}
 
-	/*
+	/**
 	 * @param args
 	 * @throws ParseException
 	 */

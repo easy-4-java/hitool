@@ -10,6 +10,11 @@ import hitool.core.beanutils.proxy.plugin.Interceptor;
 import hitool.core.beanutils.proxy.plugin.InterceptorChain;
 
 @SuppressWarnings("unchecked")
+/**
+ * Implementation of plugin factory functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class PluginFactory {
 
 	protected static final InterceptorChain interceptorChain = new InterceptorChain();

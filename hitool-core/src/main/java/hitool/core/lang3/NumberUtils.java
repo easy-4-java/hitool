@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -7,6 +7,11 @@ package hitool.core.lang3;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Implementation of number utils extending org.apache.commons.lang3.math.NumberUtils.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public abstract class NumberUtils extends org.apache.commons.lang3.math.NumberUtils {
 	
 	public static boolean isDigit(String str) {

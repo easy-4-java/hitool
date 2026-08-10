@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -17,6 +17,11 @@ import hitool.core.beanutils.annotation.Signature;
 import hitool.core.beanutils.exception.PluginException;
 import hitool.core.lang3.exception.ExceptionUtils;
 
+/**
+ * Implementation of plugin functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class Plugin implements InvocationHandler {
 
 	private Object target;

@@ -1,7 +1,9 @@
 package hitool.web.servlet.http;
 
 /**
- *  标准Http状态码+自定义Http状态码
+ * Contract interface for HttpStatus operations.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 public interface HttpStatus {
 

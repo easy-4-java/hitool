@@ -5,6 +5,11 @@ import org.apache.commons.beanutils.Converter;
 
 import hitool.core.lang3.RmbString;
 
+/**
+ * Implementation of rmb string converter functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class RmbStringConverter implements Converter {
 	
 	@SuppressWarnings("rawtypes")

@@ -1,4 +1,4 @@
-/*
+/**
  *    Copyright 2009-2015 the original author or authors.
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,6 +18,11 @@ package hitool.core.beanutils.reflection;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
+/**
+ * Implementation of default reflector factory functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class DefaultReflectorFactory implements ReflectorFactory {
 	
 	private boolean classCacheEnabled = true;

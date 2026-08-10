@@ -14,7 +14,7 @@ import java.util.regex.Pattern;
 import hitool.core.collections.map.MultiValueMap;
 import hitool.core.lang3.Assert;
 
-/*
+/**
  * Represents an immutable collection of URI components, mapping component type to
  * String values. Contains convenience getters for all components. Effectively similar
  * to {@link java.net.URI}, but with more powerful encoding options and support for
@@ -25,6 +25,11 @@ import hitool.core.lang3.Assert;
  * @see URIComponentsBuilder
  */
 @SuppressWarnings("serial")
+/**
+ * Implementation of u r i components functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public abstract class URIComponents implements Serializable {
 
 	private static final String DEFAULT_ENCODING = "UTF-8";
@@ -99,7 +104,7 @@ public abstract class URIComponents implements Serializable {
 	}
 
 
-	/*
+	/**
 	 * Encode all URI components using their specific encoding rules, and returns the
 	 * result as a new {@code UriComponents} instance. This method uses UTF-8 to encode.
 	 * @return the encoded URI components
@@ -114,7 +119,7 @@ public abstract class URIComponents implements Serializable {
 		}
 	}
 
-	/*
+	/**
 	 * Encode all URI components using their specific encoding rules, and
 	 * returns the result as a new {@code UriComponents} instance.
 	 * @param encoding the encoding of the values contained in this map
@@ -123,7 +128,7 @@ public abstract class URIComponents implements Serializable {
 	 */
 	public abstract URIComponents encode(String encoding) throws UnsupportedEncodingException;
 
-	/*
+	/**
 	 * Replace all URI template variables with the values from a given map.
 	 * <p>The given map keys represent variable names; the corresponding values
 	 * represent variable values. The order of variables is not significant.
@@ -135,7 +140,7 @@ public abstract class URIComponents implements Serializable {
 		return expandInternal(new MapTemplateVariables(uriVariables));
 	}
 
-	/*
+	/**
 	 * Replace all URI template variables with the values from a given array.
 	 * <p>The given array represents variable values. The order of variables is significant.
 	 * @param uriVariableValues the URI variable values
@@ -146,7 +151,7 @@ public abstract class URIComponents implements Serializable {
 		return expandInternal(new VarArgsTemplateVariables(uriVariableValues));
 	}
 
-	/*
+	/**
 	 * Replace all URI template variables with the values from the given
 	 * {@link UriTemplateVariables}.
 	 * @param uriVariables the URI template values
@@ -157,7 +162,7 @@ public abstract class URIComponents implements Serializable {
 		return expandInternal(uriVariables);
 	}
 
-	/*
+	/**
 	 * Replace all URI template variables with the values from the given {@link
 	 * UriTemplateVariables}
 	 * @param uriVariables URI template values
@@ -165,7 +170,7 @@ public abstract class URIComponents implements Serializable {
 	 */
 	abstract URIComponents expandInternal(UriTemplateVariables uriVariables);
 
-	/*
+	/**
 	 * Normalize the path removing sequences like "path/..".
 	 * @see org.springframework.util.StringUtils#cleanPath(String)
 	 */
@@ -186,7 +191,7 @@ public abstract class URIComponents implements Serializable {
 		return toUriString();
 	}
 
-	/*
+	/**
 	 * Set all components of the given UriComponentsBuilder.
 	 * @since 4.2
 	 */
@@ -253,7 +258,7 @@ public abstract class URIComponents implements Serializable {
 	}
 
 
-	/*
+	/**
 	 * Defines the contract for URI Template variables
 	 * @see HierarchicalUriComponents#expand
 	 */
@@ -261,7 +266,7 @@ public abstract class URIComponents implements Serializable {
 
 		Object SKIP_VALUE = UriTemplateVariables.class;
 
-		/*
+		/**
 		 * Get the value for the given URI variable name.
 		 * If the value is {@code null}, an empty String is expanded.
 		 * If the value is {@link #SKIP_VALUE}, the URI variable is not expanded.

@@ -1,5 +1,10 @@
 package hitool.core.regexp.annotation;
 
+/**
+ * Enumeration defining RegexpType constants.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public enum RegexpType {
 
 	DATE{

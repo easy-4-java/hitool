@@ -5,6 +5,11 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAdjusters;
 
+/**
+ * Implementation of local date times functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class LocalDateTimes {
 
 	private LocalDateTimes() {
@@ -36,42 +41,42 @@ public class LocalDateTimes {
 		return LocalDateTime.parse(date, format);
 	}
 	
-	/*
+	/**
 	 * @return 当天开始时间 00:00
 	 */
 	public static LocalDateTime firstTimeOfDay() {
 		return LocalDate.now().atStartOfDay();
 	}
 
-	/*
+	/**
 	 * @return 当天最后时间 23:59:59
 	 */
 	public static LocalDateTime lastTimeOfDay() {
 		return LocalDate.now().atTime(23, 59, 59);
 	}
 
-	/*
+	/**
 	 * @return 明天日期
 	 */
 	public static LocalDate getTomorrow() {
 		return LocalDate.now().plusDays(1);
 	}
 
-	/*
+	/**
 	 * @return 本月第一天
 	 */
 	public static LocalDate firstDayOfThisMonth() {
 		return LocalDate.now().with(TemporalAdjusters.firstDayOfMonth());
 	}
 
-	/*
+	/**
 	 * @return 本月最后一天
 	 */
 	public static LocalDate lastDayOfMonth() {
 		return LocalDate.now().with(TemporalAdjusters.lastDayOfMonth());
 	}
 
-	/*
+	/**
      * 判断当前日期是否在两个日期期间内
      * @param before
      * @param after

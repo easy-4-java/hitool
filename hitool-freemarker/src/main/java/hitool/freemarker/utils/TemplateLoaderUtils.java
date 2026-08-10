@@ -3,6 +3,11 @@ package hitool.freemarker.utils;
 import freemarker.cache.TemplateLoader;
 import freemarker.template.Configuration;
 
+/**
+ * Implementation of template loader utils functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class TemplateLoaderUtils {
 
 	 public static String getClassNameForToString(TemplateLoader templateLoader) {

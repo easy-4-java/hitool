@@ -1,5 +1,10 @@
 package hitool.core.format.number;
 
+/**
+ * Implementation of double number utils functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class DoubleNumberUtils {
     
     public static double doubleValue(Object obj, double dfl) {

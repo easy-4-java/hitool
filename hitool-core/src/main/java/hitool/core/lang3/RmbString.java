@@ -1,5 +1,10 @@
 package hitool.core.lang3;
 
+/**
+ * Implementation of rmb string functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class RmbString {
 
 	static char[] s1 = {'零', '壹', '贰', '叁', '肆', '伍', '陆', '柒', '捌', '玖'};

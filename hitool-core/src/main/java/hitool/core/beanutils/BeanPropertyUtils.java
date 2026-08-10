@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -32,6 +32,11 @@ import hitool.core.beanutils.reflection.ClassUtils;
 /*
  */
 @SuppressWarnings({  "unchecked", "unused" })
+/**
+ * Implementation of bean property utils functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public abstract class BeanPropertyUtils{
 
 	/*
@@ -287,7 +292,7 @@ public abstract class BeanPropertyUtils{
 	}
 	
 
-	/*
+	/**
 	 * Gets the <code>ConvertUtilsBean</code> instance used to perform the
 	 * conversions.
 	 */
@@ -295,7 +300,7 @@ public abstract class BeanPropertyUtils{
 		return BeanUtilsBean.getInstance().getConvertUtils();
 	}
 
-	/*
+	/**
 	 * Gets the <code>PropertyUtilsBean</code> instance used to access
 	 * properties.
 	 */

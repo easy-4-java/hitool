@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -29,7 +29,7 @@ public abstract class GZipUtils extends CompressUtils {
 
 	protected static final CharSequence EXT = ".gz";
 
-	/*
+	/**
 	 * 压缩字符串
 	 * 
 	 * @param text
@@ -43,7 +43,7 @@ public abstract class GZipUtils extends CompressUtils {
 		return CharsetUtils.newStringUtf8(GZipUtils.compress(text.getBytes()));
 	}
 
-	/*
+	/**
 	 * 字节压缩
 	 * 
 	 * @param databytes
@@ -62,7 +62,7 @@ public abstract class GZipUtils extends CompressUtils {
 		return outBytes;
 	}
 
-	/*
+	/**
 	 * 文件压缩
 	 * 
 	 * @param file
@@ -72,7 +72,7 @@ public abstract class GZipUtils extends CompressUtils {
 		GZipUtils.compress(file, true);
 	}
 
-	/*
+	/**
 	 * 文件压缩
 	 * 
 	 * @param srcFile
@@ -96,7 +96,7 @@ public abstract class GZipUtils extends CompressUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 数据流压缩
 	 * 
 	 * @param input
@@ -112,7 +112,7 @@ public abstract class GZipUtils extends CompressUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 文件压缩
 	 * 
 	 * @param filePath
@@ -122,7 +122,7 @@ public abstract class GZipUtils extends CompressUtils {
 		GZipUtils.compress(filePath, true);
 	}
 
-	/*
+	/**
 	 * 文件压缩
 	 * 
 	 * @param filePath
@@ -134,7 +134,7 @@ public abstract class GZipUtils extends CompressUtils {
 		GZipUtils.compress(new File(filePath), delete);
 	}
 
-	/*
+	/**
 	 * 解压缩字符串
 	 * 
 	 * @param text
@@ -148,7 +148,7 @@ public abstract class GZipUtils extends CompressUtils {
 		return CharsetUtils.newStringUtf8(GZipUtils.decompress(text.getBytes()));
 	}
 
-	/*
+	/**
 	 * 字节解压缩
 	 * 
 	 * @param databytes
@@ -167,7 +167,7 @@ public abstract class GZipUtils extends CompressUtils {
 		return outBytes;
 	}
 
-	/*
+	/**
 	 * 文件解压缩
 	 * 
 	 * @param file
@@ -177,7 +177,7 @@ public abstract class GZipUtils extends CompressUtils {
 		GZipUtils.decompress(file, true);
 	}
 
-	/*
+	/**
 	 * 文件解压缩
 	 * 
 	 * @param srcFile
@@ -200,7 +200,7 @@ public abstract class GZipUtils extends CompressUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 数据流解压缩
 	 * 
 	 * @param in
@@ -215,7 +215,7 @@ public abstract class GZipUtils extends CompressUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 文件解压缩
 	 * 
 	 * @param filePath
@@ -225,7 +225,7 @@ public abstract class GZipUtils extends CompressUtils {
 		GZipUtils.decompress(filePath, true);
 	}
 
-	/*
+	/**
 	 * 文件解压缩
 	 * 
 	 * @param filePath

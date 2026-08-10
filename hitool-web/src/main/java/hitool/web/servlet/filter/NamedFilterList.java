@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -21,6 +21,11 @@ import java.util.List;
 import jakarta.servlet.Filter;
 import jakarta.servlet.FilterChain;
 
+/**
+ * Contract interface for NamedFilterList operations.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public interface NamedFilterList extends List<Filter> {
 	 
   /*

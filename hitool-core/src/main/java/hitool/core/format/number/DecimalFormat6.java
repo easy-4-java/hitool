@@ -3,6 +3,11 @@ package hitool.core.format.number;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.Locale;
+/**
+ * Implementation of decimal format6 functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class DecimalFormat6 {   
     public static void main(String args[]) {   
         DecimalFormat df = null;   

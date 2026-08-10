@@ -10,7 +10,7 @@ import hitool.core.collections.map.LinkedMultiValueMap;
 import hitool.core.collections.map.MultiValueMap;
 import hitool.core.lang3.ObjectUtils;
 
-/*
+/**
  * Extension of {@link URIComponents} for opaque URIs.
  *
  * @author Arjen Poutsma
@@ -19,6 +19,11 @@ import hitool.core.lang3.ObjectUtils;
  * @see <a href="http://tools.ietf.org/html/rfc3986#section-1.2.3">Hierarchical vs Opaque URIs</a>
  */
 @SuppressWarnings("serial")
+/**
+ * Class providing functionality for OpaqueUriComponents.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 final class OpaqueUriComponents extends URIComponents {
 
 	private static final MultiValueMap<String, String> QUERY_PARAMS_NONE = new LinkedMultiValueMap<String, String>(0);

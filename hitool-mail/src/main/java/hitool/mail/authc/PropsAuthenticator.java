@@ -6,6 +6,11 @@ import javax.mail.PasswordAuthentication;
 
 import java.util.Properties;
 
+/**
+ * Implementation of props authenticator extending Authenticator.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class PropsAuthenticator extends Authenticator {
 
 	protected Properties props = new Properties();

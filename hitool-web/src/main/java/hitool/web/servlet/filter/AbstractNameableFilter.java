@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -16,6 +16,11 @@
 package hitool.web.servlet.filter;
 
 
+/**
+ * Implementation of abstract nameable filter extending AbstractFilter.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public abstract class AbstractNameableFilter extends AbstractFilter implements Nameable{
 
 	/*

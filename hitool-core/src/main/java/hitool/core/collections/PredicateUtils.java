@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -8,6 +8,11 @@ import org.apache.commons.collections.Predicate;
 
 import hitool.core.collections.functors.TreeMapPredicate;
 
+/**
+ * Implementation of predicate utils extending org.apache.commons.collections.PredicateUtils.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class PredicateUtils extends org.apache.commons.collections.PredicateUtils {
 	
 	public static Predicate treeMapPredicate(String key,String parent) {

@@ -22,14 +22,14 @@ import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 
-/*
+/**
  * Java邮件发送-内置对象实现
  */
 public class JavaMailClientImpl extends JavaMailClientAdapter {
 	
 	protected Logger LOG = LoggerFactory.getLogger(JavaMailClientImpl.class);
 	
-	/*
+	/**
 	 * 以文本格式发送邮件
 	 * @param email 待发送的邮件的信息
 	 */
@@ -44,7 +44,7 @@ public class JavaMailClientImpl extends JavaMailClientAdapter {
 		return false;
 	}
 	
-	/*
+	/**
 	  * 以HTML格式发送邮件  
 	  * @param email 待发送的邮件信息  
 	  */ 

@@ -12,6 +12,11 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.io.StringReader;
 
+/**
+ * Implementation of reader utils functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public abstract class ReaderUtils {
 
 	public static BufferedReader makeBuffered(Reader in) {
@@ -78,7 +83,7 @@ public abstract class ReaderUtils {
 		}
 	}
 
-	/*
+	/**
 	 * 从一个String对象中读取数据
 	 * 
 	 * @param str
@@ -97,7 +102,7 @@ public abstract class ReaderUtils {
 		return r;
 	}
 
-	/*
+	/**
 	 * 从内存取出格式化输入
 	 * 
 	 * @param str
@@ -130,7 +135,7 @@ public abstract class ReaderUtils {
 		return ret;
 	}
 
-	/*
+	/**
 	 * 接收键盘的输入
 	 * 
 	 * @return

@@ -1,18 +1,27 @@
 package hitool.freemarker.context.constants;
 
+/**
+ * Class providing functionality for ConfigConstants.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class ConfigConstants {
 	
 	//---------Freemarker 初始化参数Key ---------------------------------------
 	/**
-	 * Key[template_dir] : pdf 临时文件存储路径 ，默认 ：template_dir
-	 */
+ * Implementation of config constants functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 	public static final String TEMPLATE_DIR_KEY = "template_dir";
 	
 	public static final String TEMPLATE_CLASSPATH_KEY = "template_dir";
 	
 	/**
-	 * Key[out_dir] : Freemarker 生成的html文件存储路径 ，默认 ：out_dir
-	 */
+ * Implementation of config constants functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 	public static final String OUT_DIR_KEY = "out_dir";
 	/**
 	 * Key[freemarker.config.path] : FreemarkerContext 初始化properties文件路径 .  默认 ： freemarker-config.properties

@@ -2,9 +2,14 @@ package hitool.web;
 
 import java.io.UnsupportedEncodingException;
 
+/**
+ * Implementation of multipart content utils functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class MultipartContentUtils {
 	
-	/*
+	/**
 	 * 方法用途和描述: 获取内容描述
 	 * @param name
 	 * @return

@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -29,6 +29,11 @@ import hitool.core.lang3.ObjectUtils;
  * 扩展Apache基础工具对象CollectionUtils
  */
 @SuppressWarnings({"unchecked", "rawtypes"})
+/**
+ * Implementation of collection utils extending org.apache.commons.collections.CollectionUtils.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public abstract class CollectionUtils extends org.apache.commons.collections.CollectionUtils {
 
 	public static boolean isArray(Class<?> aClass) {
@@ -87,7 +92,7 @@ public abstract class CollectionUtils extends org.apache.commons.collections.Col
         return collection;
     }
 	
-	/*
+	/**
 	 * 将数组转换成List。
 	 * @param objs
 	 * @return
@@ -117,7 +122,7 @@ public abstract class CollectionUtils extends org.apache.commons.collections.Col
 		return ret;
 	}
 
-	/*
+	/**
 	 * 把一个<code>elmLst</code>从<code>orgLst</code>中除去
 	 * @param elmLst the List 要被除去的部分
 	 * @param orgLst the List 原始list
@@ -139,7 +144,7 @@ public abstract class CollectionUtils extends org.apache.commons.collections.Col
 		return rst;
 	}
 
-	/*
+	/**
 	 * 将Set转换为List
 	 * @param set
 	 * @return
@@ -150,7 +155,7 @@ public abstract class CollectionUtils extends org.apache.commons.collections.Col
 		return list;
 	}
 	
-	/*
+	/**
 	 * Return {@code true} if the supplied Map is {@code null} or empty.
 	 * Otherwise, return {@code false}.
 	 * @param map the Map to check
@@ -160,7 +165,7 @@ public abstract class CollectionUtils extends org.apache.commons.collections.Col
 		return (map == null || map.isEmpty());
 	}
 
-	/*
+	/**
 	 * Convert the supplied array into a List. A primitive array gets converted
 	 * into a List of the appropriate wrapper type.
 	 * <p><b>NOTE:</b> Generally prefer the standard {@link Arrays#asList} method.
@@ -176,7 +181,7 @@ public abstract class CollectionUtils extends org.apache.commons.collections.Col
 		return Arrays.asList(ObjectUtils.toObjectArray(source));
 	}
 
-	/*
+	/**
 	 * Merge the given array into the given Collection.
 	 * @param array the array to merge (may be {@code null})
 	 * @param collection the target Collection to merge the array into
@@ -191,7 +196,7 @@ public abstract class CollectionUtils extends org.apache.commons.collections.Col
 		}
 	}
 
-	/*
+	/**
 	 * Merge the given Properties instance into the given Map,
 	 * copying all properties (key-value pairs) over.
 	 * <p>Uses {@code Properties.propertyNames()} to even catch
@@ -217,7 +222,7 @@ public abstract class CollectionUtils extends org.apache.commons.collections.Col
 	}
 
 
-	/*
+	/**
 	 * Check whether the given Iterator contains the given element.
 	 * @param iterator the Iterator to check
 	 * @param element the element to look for
@@ -235,7 +240,7 @@ public abstract class CollectionUtils extends org.apache.commons.collections.Col
 		return false;
 	}
 
-	/*
+	/**
 	 * Check whether the given Enumeration contains the given element.
 	 * @param enumeration the Enumeration to check
 	 * @param element the element to look for
@@ -253,7 +258,7 @@ public abstract class CollectionUtils extends org.apache.commons.collections.Col
 		return false;
 	}
 
-	/*
+	/**
 	 * Check whether the given Collection contains the given element instance.
 	 * <p>Enforces the given instance to be present, rather than returning
 	 * {@code true} for an equal element as well.
@@ -308,7 +313,7 @@ public abstract class CollectionUtils extends org.apache.commons.collections.Col
 		return false;
 	}
 	
-	/*
+	/**
 	 * Return {@code true} if any element in '{@code candidates}' is
 	 * contained in '{@code source}'; otherwise returns {@code false}.
 	 * @param source the source Collection
@@ -327,7 +332,7 @@ public abstract class CollectionUtils extends org.apache.commons.collections.Col
 		return false;
 	}*/
 	
-	/*
+	/**
 	 * Return the first element in '{@code candidates}' that is contained in
 	 * '{@code source}'. If no element in '{@code candidates}' is present in
 	 * '{@code source}' returns {@code null}. Iteration order is
@@ -348,7 +353,7 @@ public abstract class CollectionUtils extends org.apache.commons.collections.Col
 		return null;
 	}
 
-	/*
+	/**
 	 * Find a single value of the given type in the given Collection.
 	 * @param collection the Collection to search
 	 * @param type the type to look for
@@ -372,7 +377,7 @@ public abstract class CollectionUtils extends org.apache.commons.collections.Col
 		return value;
 	}
 
-	/*
+	/**
 	 * Find a single value of one of the given types in the given Collection:
 	 * searching the Collection for a value of the first type, then
 	 * searching for a value of the second type, etc.
@@ -394,7 +399,7 @@ public abstract class CollectionUtils extends org.apache.commons.collections.Col
 		return null;
 	}
 
-	/*
+	/**
 	 * Determine whether the given Collection only contains a single unique object.
 	 * @param collection the Collection to check
 	 * @return {@code true} if the collection contains a single reference or
@@ -418,7 +423,7 @@ public abstract class CollectionUtils extends org.apache.commons.collections.Col
 		return true;
 	}
 
-	/*
+	/**
 	 * Find the common element type of the given Collection, if any.
 	 * @param collection the Collection to check
 	 * @return the common element type, or {@code null} if no clear
@@ -455,7 +460,7 @@ public abstract class CollectionUtils extends org.apache.commons.collections.Col
 		return elements.toArray(array);
 	}
 
-	/*
+	/**
 	 * Adapt an enumeration to an iterator.
 	 * @param enumeration the enumeration
 	 * @return the iterator
@@ -464,7 +469,7 @@ public abstract class CollectionUtils extends org.apache.commons.collections.Col
 		return new EnumerationIterator<E>(enumeration);
 	}
 
-	/*
+	/**
 	 * Adapt a {@code Map<K, List<V>>} to an {@code MultiValueMap<K, V>}.
 	 * @param map the original map
 	 * @return the multi-value map
@@ -474,7 +479,7 @@ public abstract class CollectionUtils extends org.apache.commons.collections.Col
 		return new MultiValueMapAdapter<K, V>(map);
 	}
 
-	/*
+	/**
 	 * Return an unmodifiable view of the specified multi-value map.
 	 * @param  map the map for which an unmodifiable view is to be returned.
 	 * @return an unmodifiable view of the specified multi-value map.

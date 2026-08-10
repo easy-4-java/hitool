@@ -14,6 +14,11 @@ import java.util.Locale;
 import org.apache.commons.beanutils.Converter;
 
 @SuppressWarnings({"unchecked","rawtypes"})
+/**
+ * Implementation of date converter functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class DateConverter implements Converter{
 	
 	public static final int LONG = DateFormat.LONG;// 长日期型
@@ -43,7 +48,7 @@ public class DateConverter implements Converter{
 	protected SimpleDateFormat sdf = new SimpleDateFormat(DEFAULT_LONG_DATE_FORMAT);
 	
 
-	/*
+	/**
 	 * 将指定的字符串转换成日期
 	 * 
 	 * @param dateStr
@@ -61,7 +66,7 @@ public class DateConverter implements Converter{
 	}
 	
 
-	/*
+	/**
 	 * 按照不同的格式模板将指定的字符串转换成日期。
 	 * 
 	 * @param date
@@ -82,7 +87,7 @@ public class DateConverter implements Converter{
 	}
 	
 
-	/*
+	/**
 	 * 将字符串转成时间Date
 	 * 
 	 * @throws ParseException
@@ -93,7 +98,7 @@ public class DateConverter implements Converter{
 		return sdf.parse(dateStr);
 	}
 	
-	/*
+	/**
 	 * 从ResultSet中的到查询结果的列
 	 * @param rs
 	 * @return
@@ -109,7 +114,7 @@ public class DateConverter implements Converter{
 		return colNames;
 	}
 
-	/*
+	/**
 	 * 将短时间格式字符串转换为时间 yyyy-MM-dd
 	 * 
 	 * @param strDate
@@ -122,7 +127,7 @@ public class DateConverter implements Converter{
 		return strtodate;
 	}
 	
-	/*
+	/**
 	 * 将指定格式的字符串转换成日期类型
 	 * 
 	 * @param date

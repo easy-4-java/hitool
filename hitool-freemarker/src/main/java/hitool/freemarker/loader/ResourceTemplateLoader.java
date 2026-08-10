@@ -8,6 +8,11 @@ import freemarker.template.utility.StringUtil;
 import hitool.core.lang3.wraper.ClassLoaderWrapper;
 import hitool.freemarker.utils.TemplateLoaderUtils;
 
+/**
+ * Implementation of resource template loader extending URLTemplateLoader.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class ResourceTemplateLoader extends URLTemplateLoader {
 	
 	private final ClassLoaderWrapper classLoaderWrapper = new ClassLoaderWrapper();
@@ -15,7 +20,7 @@ public class ResourceTemplateLoader extends URLTemplateLoader {
     private final ClassLoader classLoader;
     private final String basePackagePath;
 
-    /*
+    /**
      * Creates a template loader that will use the {@link Class#getResource(String)} method of the specified class to
      * load the resources, and the specified base package path (absolute or relative).
      *

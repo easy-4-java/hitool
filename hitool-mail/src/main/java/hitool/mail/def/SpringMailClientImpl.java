@@ -20,7 +20,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 
-/*
+/**
  * Java邮件发送-Spring实现
  */
 public class SpringMailClientImpl extends JavaMailClientAdapter {
@@ -28,7 +28,7 @@ public class SpringMailClientImpl extends JavaMailClientAdapter {
 	protected JavaMailSenderImpl mailSender;
 	protected Logger LOG = LoggerFactory.getLogger(SpringMailClientImpl.class);
 	
-	/*
+	/**
 	 * 以文本格式发送邮件
 	 * @param email 待发送的邮件的信息
 	 */
@@ -43,7 +43,7 @@ public class SpringMailClientImpl extends JavaMailClientAdapter {
 		return false;
 	}
 	
-	/*
+	/**
 	  * 以HTML格式发送邮件  
 	  * @param email 待发送的邮件信息  
 	  */ 

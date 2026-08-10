@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -24,7 +24,7 @@ import jakarta.servlet.ServletResponse;
  */
 public interface FilterChainResolver {
 
-	/*
+	/**
 	 * 获取FilterChian
 	 * @param request
 	 * @param response

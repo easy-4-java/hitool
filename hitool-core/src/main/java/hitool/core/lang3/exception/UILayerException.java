@@ -1,10 +1,15 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
 package hitool.core.lang3.exception;
 
 @SuppressWarnings("serial")
+/**
+ * Implementation of u i layer exception extending NestedRuntimeException.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class UILayerException extends NestedRuntimeException {
 	
 	public UILayerException(String message) {

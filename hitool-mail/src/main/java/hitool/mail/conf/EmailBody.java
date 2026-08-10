@@ -7,6 +7,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 @SuppressWarnings("serial")
+/**
+ * Implementation of email body functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class EmailBody implements Serializable {
 
 	/*
@@ -63,7 +68,7 @@ public class EmailBody implements Serializable {
 		this.mailBcc = new HashMap<String, String>();
 	}
 
-	/*
+	/**
 	 * @param priority	: 邮件优先级(1:紧急 3:普通 5:低)
 	 * @param subject 	: 邮件主题
 	 * @param content	: 邮件内容,普通文本或者html
@@ -78,7 +83,7 @@ public class EmailBody implements Serializable {
 		this.mailto 	= mailto;
 	}
 
-	/*
+	/**
 	 * @param priority	: 邮件优先级(1:紧急 3:普通 5:低)
 	 * @param subject 	: 邮件主题
 	 * @param content	: 邮件内容,普通文本或者html
@@ -96,7 +101,7 @@ public class EmailBody implements Serializable {
 		this.mailcc = mailcc;
 	}
 	
-	/*
+	/**
 	 * @param priority	: 邮件优先级(1:紧急 3:普通 5:低)
 	 * @param from		: 发件人名称和邮箱
 	 * @param mailto	: 收件人名称和邮箱

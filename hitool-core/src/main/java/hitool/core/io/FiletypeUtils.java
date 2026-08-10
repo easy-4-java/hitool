@@ -14,6 +14,11 @@ import hitool.core.lang3.Assert;
 /*
  */
 @SuppressWarnings("rawtypes")
+/**
+ * Implementation of filetype utils functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public abstract class FiletypeUtils {
 
 	protected static final String MIMETYPES_PROPERTIES = "fileTypes.properties";

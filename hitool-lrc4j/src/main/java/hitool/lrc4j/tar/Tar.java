@@ -1,36 +1,36 @@
 package hitool.lrc4j.tar;
 
-/*
+/**
  * 
  * @className ： Tar
- * @description ：标签
- * @author ： <a href="mailto:hnxyhcwdl1003@163.com">wandalong</a>
- * @date ： Jan 25, 2016 2:35:28 PM
+ * 标签
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * 
  */
 public interface Tar {
-	/*
+	/**
 	 * 
-	 * @description ： 得标签值
-	 * @author ： <a href="mailto:hnxyhcwdl1003@163.com">wandalong</a>
-	 * @date ：Jan 25, 2016 2:35:33 PM
+	 * 得标签值
+	 * @author <a href="https://github.com/loong10k">Loong Wan</a>
+	 * 
 	 * @return
 	 */
 	public String getValue();
 
-	/*
+	/**
 	 * 
-	 * @description ： 设置标签值
-	 * @author ： <a href="mailto:hnxyhcwdl1003@163.com">wandalong</a>
-	 * @date ：Jan 25, 2016 2:35:40 PM
+	 * 设置标签值
+	 * @author <a href="https://github.com/loong10k">Loong Wan</a>
+	 * 
 	 * @param value
 	 */
 	public void setValue(String value);
 
-	/*
+	/**
 	 * 
-	 * @description ： 得标签名
-	 * @author ： <a href="mailto:hnxyhcwdl1003@163.com">wandalong</a>
-	 * @date ：Jan 25, 2016 2:35:47 PM
+	 * 得标签名
+	 * @author <a href="https://github.com/loong10k">Loong Wan</a>
+	 * 
 	 * @return
 	 */
 	public abstract String getName();

@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -21,12 +21,17 @@ import hitool.core.lang3.StringUtils;
 import hitool.core.lang3.network.InetAddressUtils;
 import lombok.extern.slf4j.Slf4j;
 
-/*
+/**
  * http://blog.csdn.net/caoshuming_500/article/details/20952329
  * https://www.cnblogs.com/wang1001/p/9605761.html
- * @author <a href="https://github.com/hiwepy">hiwepy</a>
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @Slf4j
+/**
+ * Implementation of remote addr utils functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class RemoteAddrUtils {
 
 	private static String[] xheaders = new String[] { "X-Forwarded-For", "x-forwarded-for" };
@@ -39,11 +44,10 @@ public class RemoteAddrUtils {
 	private static String UNKNOWN = "unknown";
 	
 	/**
-	 * 获取请求客户端IP地址，支持代理服务器
-	 * 
-	 * @param request {@link HttpServletRequest} 对象
-	 * @return IP地址
-	 */
+ * Implementation of remote addr utils functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 	public static String getRemoteAddr(HttpServletRequest request) {
 
 		// 1、获取客户端IP地址，支持代理服务器
@@ -91,7 +95,7 @@ public class RemoteAddrUtils {
 		return flag;
 	}
 	
-	/*
+	/**
 	 *  获得请求的客户端信息【ip,port,name】
 	 *  @param request {@link HttpServletRequest} 对象
 	 *  @return 客户端信息[ip,port,name]

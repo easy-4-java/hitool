@@ -1,5 +1,10 @@
 package hitool.web.cookie;
 
+/**
+ * Implementation of cookie model functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class CookieModel {
 	
 	private String cookieName;
@@ -16,7 +21,7 @@ public class CookieModel {
 	
 	private String cookieValue;
 
-	/*
+	/**
 	 * Use the given name for cookies created by this generator.
 	 * @see jakarta.servlet.http.Cookie#getName()
 	 */
@@ -31,7 +36,7 @@ public class CookieModel {
 		return this.cookieName;
 	}
 
-	/*
+	/**
 	 * Use the given domain for cookies created by this generator.
 	 * The cookie is only visible to servers in this domain.
 	 * @see jakarta.servlet.http.Cookie#setDomain
@@ -47,7 +52,7 @@ public class CookieModel {
 		return this.cookieDomain;
 	}
 
-	/*
+	/**
 	 * Use the given path for cookies created by this generator.
 	 * The cookie is only visible to URLs in this path and below.
 	 * @see jakarta.servlet.http.Cookie#setPath
@@ -63,7 +68,7 @@ public class CookieModel {
 		return this.cookiePath;
 	}
 
-	/*
+	/**
 	 * Use the given maximum age (in seconds) for cookies created by this generator.
 	 * Useful special value: -1 ... not persistent, deleted when client shuts down
 	 * @see jakarta.servlet.http.Cookie#setMaxAge
@@ -79,7 +84,7 @@ public class CookieModel {
 		return this.cookieMaxAge;
 	}
 
-	/*
+	/**
 	 * Set whether the cookie should only be sent using a secure protocol,
 	 * such as HTTPS (SSL). This is an indication to the receiving browser,
 	 * not processed by the HTTP server itself. Default is "false".
@@ -97,7 +102,7 @@ public class CookieModel {
 		return this.cookieSecure;
 	}
 
-	/*
+	/**
 	 * Set whether the cookie is supposed to be marked with the "HttpOnly" attribute.
 	 * <p>Note that this feature is only available on Servlet 3.0 and higher.
 	 * @see jakarta.servlet.http.Cookie#setHttpOnly

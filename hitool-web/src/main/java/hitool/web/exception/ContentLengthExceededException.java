@@ -10,6 +10,11 @@ import java.io.IOException;
  *             class will be removed after Struts 1.2.
  */
 @SuppressWarnings("serial")
+/**
+ * Implementation of content length exceeded exception extending IOException.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class ContentLengthExceededException extends IOException {
     
     protected String message;

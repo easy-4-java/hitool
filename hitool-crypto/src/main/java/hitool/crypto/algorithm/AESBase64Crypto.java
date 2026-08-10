@@ -21,7 +21,7 @@ import hitool.crypto.utils.EncryptUtils;
 import hitool.crypto.utils.SecretKeyUtils;
 import hitool.crypto.utils.StringUtils;
 
-/*
+/**
  * AES加密解密工具包 AES对称加密算法 java6实现，bouncycastle也支持AES对称加密算法我们可以以AES算法实现为参考，完成RC2，RC4和Blowfish算法的实现
  */
 public class AESBase64Crypto implements Crypto, SecretKeyEncryptor,SecretKeyDecryptor,FileEncryptor,FileDecryptor {
@@ -53,7 +53,7 @@ public class AESBase64Crypto implements Crypto, SecretKeyEncryptor,SecretKeyDecr
 		return encode(plainBytes, base64Key.getBytes());
 	}
 	
-	/*
+	/**
 	 * 加密数据
 	 * @param plainBytes 待加密数据
 	 * @param base64Key  密钥
@@ -104,7 +104,7 @@ public class AESBase64Crypto implements Crypto, SecretKeyEncryptor,SecretKeyDecr
 		return decode(encryptedBytes, base64Key.getBytes());
 	}
 	
-	/*
+	/**
 	 * 解密数据
 	 * @param data 待解密数据
 	 * @param base64Key  密钥

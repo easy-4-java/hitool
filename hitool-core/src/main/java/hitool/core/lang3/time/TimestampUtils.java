@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -76,7 +76,7 @@ public abstract class TimestampUtils extends TimeUtils {
 		return getTimestamp(TimeUtils.getTimeFormat(format).parse(time).getTime());
 	}
 	
-	/*
+	/**
 	 * https://blog.csdn.net/bsr1983/article/details/84411990
 	 * @param amount
 	 * @return

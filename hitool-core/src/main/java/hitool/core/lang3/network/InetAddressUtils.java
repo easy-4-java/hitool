@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -321,7 +321,7 @@ public abstract class InetAddressUtils {
 		return null;
 	}
 
-	/*
+	/**
 	 * Split a string in the form of
 	 * "host1:port1,host2:port2 host3:port3,host4:port4" into a Map of
 	 * InetSocketAddress instances suitable for instantiating a
@@ -468,11 +468,10 @@ public abstract class InetAddressUtils {
 	}
 
 	/**
-	 * 将IPv4地址转换成字节
-	 * 
-	 * @param text IPv4地址
-	 * @return byte 字节
-	 */
+ * Implementation of inet address utils functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 	public static byte[] textToNumericFormatV4(String text) {
 		if (text.length() == 0) {
 			return null;

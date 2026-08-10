@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright 2003 Jayson Falkner (jayson@jspinsider.com)
  * This code is from "Servlets and JavaServer pages; the J2EE Web Tier",
  * http://www.jspbook.com. You may freely use the code both commercially
@@ -19,6 +19,11 @@ import jakarta.servlet.http.HttpServletResponseWrapper;
 
 import hitool.web.servlet.http.io.ServletCachedResponseOutputStream;
 
+/**
+ * Implementation of http servlet cache response wrapper extending HttpServletResponseWrapper.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class HttpServletCacheResponseWrapper extends HttpServletResponseWrapper {
 	
 	protected HttpServletResponse origResponse = null;

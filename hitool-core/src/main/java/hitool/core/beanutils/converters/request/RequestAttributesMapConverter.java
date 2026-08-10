@@ -10,6 +10,11 @@ import org.apache.commons.beanutils.ConversionException;
 import org.apache.commons.beanutils.Converter;
 
 @SuppressWarnings({ "unchecked", "rawtypes" })
+/**
+ * Implementation of request attributes map converter functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class RequestAttributesMapConverter implements Converter {
 
 	public Object convert(Class type, Object value) {

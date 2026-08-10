@@ -3,6 +3,11 @@ package hitool.core.io;
 import java.io.File;
 import java.util.Locale;
 
+/**
+ * Implementation of filename utils extending org.apache.commons.io.FilenameUtils.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public abstract class FilenameUtils extends org.apache.commons.io.FilenameUtils {
 
 	public static String getExtension(File file) {
@@ -13,7 +18,7 @@ public abstract class FilenameUtils extends org.apache.commons.io.FilenameUtils 
 		return "." + FilenameUtils.getExtension(file);
 	}
 
-	/*
+	/**
 	 * 根据无国际化标识的文件名称获取国际化文件名称
 	 * 
 	 * @param filename
@@ -38,7 +43,7 @@ public abstract class FilenameUtils extends org.apache.commons.io.FilenameUtils 
 
 	}
 
-	/*
+	/**
 	 * 根据国际化文件名称解析无国际化标识的文件名称
 	 * 
 	 * @param filename
@@ -61,7 +66,7 @@ public abstract class FilenameUtils extends org.apache.commons.io.FilenameUtils 
 		return baseName + "." + extension;
 	}
 
-	/*
+	/**
 	 * 根据国际化文件名称解析Locale对象
 	 * 
 	 * @param filename
@@ -86,7 +91,7 @@ public abstract class FilenameUtils extends org.apache.commons.io.FilenameUtils 
 		return null;
 	}
 
-	/*
+	/**
 	 * 判断资源文件名称是否符合国际化资源表达式规范
 	 * 
 	 * @param filename

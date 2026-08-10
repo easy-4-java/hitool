@@ -1,20 +1,25 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
 package hitool.core.beanutils.exception;
 
 @SuppressWarnings("serial")
+/**
+ * Implementation of class instantiation exception extending RuntimeException.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class ClassInstantiationException extends RuntimeException {
 
-	 /*
+	 /**
     * Creates a new InstantiationException.
     */
    public ClassInstantiationException() {
        super();
    }
 
-   /*
+   /**
     * Constructs a new InstantiationException.
     *
     * @param message the reason for the exception
@@ -23,7 +28,7 @@ public class ClassInstantiationException extends RuntimeException {
        super(message);
    }
 
-   /*
+   /**
     * Constructs a new InstantiationException.
     *
     * @param cause the underlying Throwable that caused this exception to be thrown.
@@ -32,7 +37,7 @@ public class ClassInstantiationException extends RuntimeException {
        super(cause);
    }
 
-   /*
+   /**
     * Constructs a new InstantiationException.
     *
     * @param message the reason for the exception

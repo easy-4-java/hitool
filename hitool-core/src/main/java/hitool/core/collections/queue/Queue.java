@@ -1,9 +1,14 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
 package hitool.core.collections.queue;
 
+/**
+ * Contract interface for Queue operations.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public interface Queue {
 	//返回队列的大小
 	public int getSize();

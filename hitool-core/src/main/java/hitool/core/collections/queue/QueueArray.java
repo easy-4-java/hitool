@@ -1,9 +1,14 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
 package hitool.core.collections.queue;
 
+/**
+ * Implementation of queue array functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class QueueArray implements Queue{
 	
 	private final static int CAP = 8;//队列默认大小

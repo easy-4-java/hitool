@@ -1,5 +1,10 @@
 package hitool.core.format.number;
 
+/**
+ * Implementation of integer number utils functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class IntegerNumberUtils {
     
     public static int intValue(Object obj, int dfl) {

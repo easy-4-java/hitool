@@ -5,6 +5,11 @@ import org.apache.commons.beanutils.ConversionException;
 import org.apache.commons.beanutils.Converter;
 
 @SuppressWarnings("rawtypes")
+/**
+ * Implementation of bean bean converter functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class BeanBeanConverter implements Converter {
 	
 	@SuppressWarnings("unchecked")

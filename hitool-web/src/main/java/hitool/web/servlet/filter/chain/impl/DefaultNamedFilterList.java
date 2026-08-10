@@ -13,6 +13,11 @@ import hitool.core.lang3.StringUtils;
 import hitool.web.servlet.filter.NamedFilterList;
 import hitool.web.servlet.filter.chain.ProxiedFilterChain;
 
+/**
+ * Implementation of default named filter list functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class DefaultNamedFilterList implements NamedFilterList {
 
 	private String name;

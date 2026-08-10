@@ -2,6 +2,11 @@ package hitool.crypto.algorithm;
 
 import java.util.Arrays;
 
+/**
+ * Implementation of s m s4 functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class SMS4 {
 	
 	private static final int ENCRYPT=1;

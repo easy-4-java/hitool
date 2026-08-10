@@ -1,5 +1,5 @@
 package hitool.lrc4j.tar;
-/*
+/**
  * 包含所有标签名的常量
  * @author asus
  *

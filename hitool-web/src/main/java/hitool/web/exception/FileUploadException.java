@@ -3,6 +3,11 @@ package hitool.web.exception;
 import java.io.PrintStream;
 import java.io.PrintWriter;
 
+/**
+ * Implementation of file upload exception extending Exception.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class FileUploadException extends Exception {
     /*
      * Serial version UID, being used, if the exception
@@ -22,7 +27,7 @@ public class FileUploadException extends Exception {
         this(null, null);
     }
 
-    /*
+    /**
      * Constructs a new <code>FileUploadException</code> with specified detail
      * message.
      *
@@ -32,7 +37,7 @@ public class FileUploadException extends Exception {
         this(msg, null);
     }
 
-    /*
+    /**
      * Creates a new <code>FileUploadException</code> with the given
      * detail message and cause.
      * @param msg The exceptions detail message.
@@ -43,7 +48,7 @@ public class FileUploadException extends Exception {
         this.cause = cause;
     }
 
-    /*
+    /**
      * Prints this throwable and its backtrace to the specified print stream.
      *
      * @param stream <code>PrintStream</code> to use for output
@@ -56,7 +61,7 @@ public class FileUploadException extends Exception {
         }
     }
 
-    /*
+    /**
      * Prints this throwable and its backtrace to the specified
      * print writer.
      *

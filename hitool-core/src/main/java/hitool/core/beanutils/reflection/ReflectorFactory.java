@@ -1,4 +1,4 @@
-/*
+/**
  *    Copyright 2009-2015 the original author or authors.
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,6 +15,11 @@
  */
 package hitool.core.beanutils.reflection;
 
+/**
+ * Contract interface for ReflectorFactory operations.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public interface ReflectorFactory {
 
   boolean isClassCacheEnabled();

@@ -10,6 +10,11 @@ import org.apache.commons.beanutils.Converter;
 import hitool.core.beanutils.BeanPropertyUtils;
 
 @SuppressWarnings({ "unchecked", "rawtypes" })
+/**
+ * Implementation of request parameters bean converter functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class RequestParametersBeanConverter implements Converter {
 
 	public Object convert(Class type, Object value) {

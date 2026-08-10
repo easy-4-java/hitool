@@ -9,6 +9,11 @@ import hitool.lrc4j.lrc.Lyrics;
 import hitool.lrc4j.tar.time.Lyric;
 import hitool.lrc4j.tar.time.TimeTar;
 
+/**
+ * Implementation of l r c parse utils functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class LRCParseUtils {
 	
 	public static Lyrics parseLRC(LRC lrc) {

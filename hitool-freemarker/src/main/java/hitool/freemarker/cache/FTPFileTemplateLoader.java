@@ -12,6 +12,11 @@ import java.security.PrivilegedExceptionAction;
 
 import freemarker.cache.FileTemplateLoader;
 
+/**
+ * Implementation of f t p file template loader extending FileTemplateLoader.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class FTPFileTemplateLoader extends FileTemplateLoader {
 	
     private static final boolean SEP_IS_SLASH = File.separatorChar == '/';

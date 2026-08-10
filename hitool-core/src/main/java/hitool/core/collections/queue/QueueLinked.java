@@ -1,9 +1,14 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
 package hitool.core.collections.queue;
 
+/**
+ * Implementation of queue linked functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class QueueLinked implements Queue{
 
 	private class SLNode{

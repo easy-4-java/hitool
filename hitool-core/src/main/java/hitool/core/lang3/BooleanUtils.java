@@ -1,9 +1,14 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
 package hitool.core.lang3;
 
+/**
+ * Implementation of boolean utils extending org.apache.commons.lang3.BooleanUtils.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class BooleanUtils extends org.apache.commons.lang3.BooleanUtils{
 
 	public static boolean parse(String str){

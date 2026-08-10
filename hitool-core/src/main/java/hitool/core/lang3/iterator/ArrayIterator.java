@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
@@ -9,6 +9,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.NoSuchElementException;
 @SuppressWarnings("unchecked")
+/**
+ * Implementation of array iterator functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class ArrayIterator<T> implements Iterator<T> {
     
     private T[] array;

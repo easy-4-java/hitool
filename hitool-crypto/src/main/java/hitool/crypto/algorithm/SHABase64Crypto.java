@@ -14,6 +14,11 @@ import hitool.crypto.StringVerifier;
 import hitool.crypto.digest.DigestUtils;
 import hitool.crypto.utils.StringUtils;
 
+/**
+ * Implementation of s h a base64 crypto functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class SHABase64Crypto  implements StringEncoder,BinaryEncoder,InputStreamEncryptor,StringVerifier  {
 	
 	private static SHABase64Crypto instance = null;
@@ -62,7 +67,7 @@ public class SHABase64Crypto  implements StringEncoder,BinaryEncoder,InputStream
 		return Base64.encodeBase64String(binaryData);
 	}
 	
-	/*
+	/**
 	 * 
 	 *  SHA-256消息摘要
 	 * @param plainText
@@ -130,7 +135,7 @@ public class SHABase64Crypto  implements StringEncoder,BinaryEncoder,InputStream
 		return encode(plainText).equals(encrypt);
 	}
 
-	/*
+	/**
 	 * 重载一个多次加密时的密码验证方法
 	 * @throws EncoderException 
 	 */

@@ -1,9 +1,14 @@
-/*
+/**
  * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
  * All Rights Reserved. 
  */
 package hitool.core.collections.stack;
 
+/**
+ * Implementation of stack array functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class StackArray implements Stack{
 	
 	private final int LEN = 8;//数组默认大小

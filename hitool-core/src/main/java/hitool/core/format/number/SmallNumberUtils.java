@@ -1,5 +1,10 @@
 package hitool.core.format.number;
 
+/**
+ * Implementation of small number utils functionality.
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ */
 public class SmallNumberUtils {
     
     public static short shortValue(Object obj, short dfl) {
