@@ -576,6 +576,11 @@
         <maven-source-plugin.version>3.4.0</maven-source-plugin.version>
         <maven-surefire-plugin.version>3.5.2</maven-surefire-plugin.version>
         <maven-war-plugin.version>3.4.0</maven-war-plugin.version>
+        <jakarta-mail-impl.version>2.0.2</jakarta-mail-impl.version>
+        <maven-jacoco-plugin.version>0.8.15</maven-jacoco-plugin.version>
+        <xalan-serializer.version>2.7.2</xalan-serializer.version>
+        <xml-resolver.version>1.2</xml-resolver.version>
+        <zip4j.version>2.11.6</zip4j.version>
     </properties>
 
     <!-- 依赖版本统一管理（dependencyManagement） -->
