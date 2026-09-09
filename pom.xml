@@ -337,7 +337,6 @@
                 <jdk>[1.8,)</jdk>
             </activation>
             <properties>
-                <additionalparam>-Xdoclint:none</additionalparam>
                 <jakarta-mail-impl.version>2.0.2</jakarta-mail-impl.version>
 		<xml-resolver.version>1.2</xml-resolver.version>
 		<xalan-serializer.version>2.7.2</xalan-serializer.version>
@@ -1046,12 +1045,12 @@
     </dependencies>
 
     
-    <modules>
-        <module>hitool-core</module>
-        <module>hitool-crypto</module>
-        <module>hitool-freemarker</module>
-        <module>hitool-lrc4j</module>
-        <module>hitool-mail</module>
-        <module>hitool-web</module>
-    </modules>
+    <subprojects>
+        <subproject>hitool-core</subproject>
+        <subproject>hitool-crypto</subproject>
+        <subproject>hitool-freemarker</subproject>
+        <subproject>hitool-lrc4j</subproject>
+        <subproject>hitool-mail</subproject>
+        <subproject>hitool-web</subproject>
+    </subprojects>
 </project>
