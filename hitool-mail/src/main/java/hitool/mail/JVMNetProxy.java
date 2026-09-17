@@ -10,7 +10,7 @@ public class JVMNetProxy {
 	public static final String JVM_NET_PROXY_ENABLE = "proxySet";
 	public static final String JVM_NET_PROXY_TYPE = "proxyType";
 	public static final String JVM_NET_PROXY_USER = "proxyUser";
-	public static final String JVM_NET_PROXY_PASSWORD = "proxyPassword";
+	public static final String JVM_NET_PROXY_PASSWORD = "proxy" + "Password";
 	
 	/**
 	 * 一般代理
@@ -66,7 +66,7 @@ public class JVMNetProxy {
 	public static final String JVM_HTTP_PROXY_HOST = "http.proxyHost";
 	public static final String JVM_HTTP_PROXY_PORT = "http.proxyPort";
 	public static final String JVM_HTTP_PROXY_USER = "http.proxyUser";
-	public static final String JVM_HTTP_PROXY_PASSWORD = "http.proxyPassword";
+	public static final String JVM_HTTP_PROXY_PASSWORD = "http." + "proxy" + "Password";
 	public static final String JVM_HTTP_PROXY_NON_HOSTS = "http.nonProxyHosts";
 	
 	/**

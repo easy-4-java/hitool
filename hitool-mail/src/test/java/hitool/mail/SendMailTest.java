@@ -307,9 +307,9 @@ public class SendMailTest {
 	 */
 	static class MyAuthenticator extends Authenticator {
 
-		private String username = "xyang0917";
+		private String username = System.getenv().getOrDefault("MAIL_TEST_USER", "test-user@example.com");
 
-		private String password = "123456abc";
+		private String password = System.getenv().getOrDefault("MAIL_TEST_PASSWORD", "change-me");
 
 		public MyAuthenticator() {
 			super();

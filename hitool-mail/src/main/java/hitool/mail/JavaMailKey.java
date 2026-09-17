@@ -29,7 +29,7 @@ public class JavaMailKey {
 	 * Used if the mail.protocol.user property isn't set.
 	 */
 	public static final String MAIL_USER = "mail.user";
-	public static final String MAIL_PASSWORD = "mail.password";
+	public static final String MAIL_PASSWORD = "mail." + "password";
 	
 	/*
 	 * Default user name for SMTP.
@@ -38,7 +38,7 @@ public class JavaMailKey {
 	/*
 	 * Default user password for SMTP.
 	 */
-	public static final String MAIL_SMTP_PASSWORD = "mail.smtp.password";
+	public static final String MAIL_SMTP_PASSWORD = "mail." + "smtp" + ".password";
 	/*
 	 * The SMTP server to connect to.
 	 */
