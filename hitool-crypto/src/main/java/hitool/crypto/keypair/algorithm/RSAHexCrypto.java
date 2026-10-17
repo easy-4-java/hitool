@@ -1,5 +1,6 @@
  package hitool.crypto.keypair.algorithm;
  import java.security.GeneralSecurityException;
+import java.nio.charset.StandardCharsets;
 import java.security.Signature;
 import java.security.interfaces.RSAPrivateKey;
 import java.security.interfaces.RSAPublicKey;
@@ -9,6 +10,7 @@ import org.apache.commons.codec.binary.Hex;
 
 import hitool.crypto.enums.Algorithm;
 import hitool.crypto.utils.SignatureUtils;
+import hitool.crypto.utils.StringUtils;
 
 
  /*
@@ -31,7 +33,7 @@ import hitool.crypto.utils.SignatureUtils;
 
 	@Override
 	public String encrypt(String plainText, RSAPublicKey pubKey) throws GeneralSecurityException {
-		return Hex.encodeHexString(super.encrypt(plainText.getBytes(), pubKey));
+		return Hex.encodeHexString(super.encrypt(StringUtils.getBytesUtf8(plainText), pubKey));
 	}
 
 	@Override
@@ -51,7 +53,7 @@ import hitool.crypto.utils.SignatureUtils;
 	@Override
 	public String decrypt(String encryptedText, RSAPrivateKey priKey) throws GeneralSecurityException {
 		try {
-			return super.decrypt(new String(Hex.decodeHex(encryptedText)), priKey);
+			return new String(super.decrypt(Hex.decodeHex(encryptedText), priKey), StandardCharsets.UTF_8);
 		} catch (DecoderException e) {
 			throw new GeneralSecurityException(e);
 		}

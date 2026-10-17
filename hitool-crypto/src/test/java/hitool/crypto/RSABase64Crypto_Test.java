@@ -26,11 +26,11 @@ import org.junit.Before;
 import org.junit.Test;
 
 import hitool.crypto.keypair.KeyPairCrypto.KeyPairEntry;
-import hitool.crypto.keypair.algorithm.RSACrypto;
+import hitool.crypto.keypair.algorithm.RSABase64Crypto;
 
 public class RSABase64Crypto_Test {
 
-	private RSACrypto crypto = new RSACrypto();
+	private RSABase64Crypto crypto = RSABase64Crypto.instance();
 	private String plainText = "这是一段加密测试内容.";
 	private String encryptedText = null;
 	private RSAPublicKey pubKey;
@@ -64,6 +64,7 @@ public class RSABase64Crypto_Test {
 	@Test
 	public void test3() throws Exception {
 
+		encryptedText = crypto.encrypt(plainText, pubKey);
 		String dString = crypto.decrypt(encryptedText, priKey);
 		assertEquals(dString, plainText);
 		System.out.println("dString: " + dString);
