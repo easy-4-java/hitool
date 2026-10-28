@@ -5,6 +5,7 @@ import java.security.KeyPair;
 import java.security.Signature;
 import java.security.interfaces.RSAPrivateKey;
 import java.security.interfaces.RSAPublicKey;
+import java.util.Base64;
 
 import javax.crypto.Cipher;
 
@@ -109,7 +110,7 @@ public class RSACrypto extends KeyPairCrypto<RSAPublicKey, RSAPrivateKey> {
 	
 	@Override
 	public byte[] encrypt(byte[] plainBytes, RSAPublicKey pubKey) throws GeneralSecurityException {
-		Cipher cipher = CipherUtils.getCipher(Algorithm.KEY_RSA);
+		Cipher cipher = CipherUtils.getCipher(Algorithm.KEY_CIPHER_RSA_ECB_PKCS1PADDING);
 		return EncryptUtils.encrypt(cipher, plainBytes, pubKey);
 	}
 
@@ -120,8 +121,7 @@ public class RSACrypto extends KeyPairCrypto<RSAPublicKey, RSAPrivateKey> {
 	
 	@Override
 	public String encrypt(String plainText, RSAPublicKey pubKey) throws GeneralSecurityException {
-		Cipher cipher = CipherUtils.getCipher(Algorithm.KEY_RSA);
-		return EncryptUtils.encryptString(cipher, plainText, pubKey);
+		return Base64.getEncoder().encodeToString(encrypt(StringUtils.getBytesUtf8(plainText), pubKey));
 		/*
 		StringBuffer sbf = new StringBuffer(200);
 		try {
@@ -175,8 +175,7 @@ public class RSACrypto extends KeyPairCrypto<RSAPublicKey, RSAPrivateKey> {
 
 	@Override
 	public String decrypt(String encryptedText, RSAPrivateKey priKey) throws GeneralSecurityException {
-		Cipher cipher = CipherUtils.getCipher(Algorithm.KEY_CIPHER_RSA_ECB_PKCS1PADDING);
-		return DecryptUtils.decryptString(cipher, encryptedText, priKey);
+		return StringUtils.newStringUtf8(decrypt(Base64.getDecoder().decode(encryptedText), priKey));
 	}
 
 	@Override

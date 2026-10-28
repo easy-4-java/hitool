@@ -12,6 +12,7 @@ import hitool.crypto.enums.Algorithm;
 import hitool.crypto.utils.CipherUtils;
 import hitool.crypto.utils.DecryptUtils;
 import hitool.crypto.utils.SignatureUtils;
+import hitool.crypto.utils.StringUtils;
 
 
  /*
@@ -35,7 +36,7 @@ import hitool.crypto.utils.SignatureUtils;
 
 	@Override
 	public String encrypt(String plainText, RSAPublicKey pubKey) throws GeneralSecurityException {
-		return Base64.encodeBase64String(super.encrypt(plainText.getBytes(), pubKey));
+		return Base64.encodeBase64String(super.encrypt(StringUtils.getBytesUtf8(plainText), pubKey));
 	}
 
 	@Override
