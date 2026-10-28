@@ -65,6 +65,7 @@ public class RSAHexCrypto_Test {
 	@Test
 	public void test3() throws Exception {
 
+		encryptedText = crypto.encrypt(plainText, pubKey);
 		String dString = crypto.decrypt(encryptedText, priKey);
 		assertEquals(dString, plainText);
 		System.out.println("dString: " + dString);
