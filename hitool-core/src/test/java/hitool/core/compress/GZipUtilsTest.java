@@ -38,17 +38,20 @@ public class GZipUtilsTest {
     @Test  
     public final void testFileCompress() throws Exception {  
   
-        FileOutputStream fos = new FileOutputStream("d:/f.txt");  
+        File inputFile = File.createTempFile("hitool-compress-", ".txt");
+        inputFile.deleteOnExit();
+        new File(inputFile.getAbsolutePath() + ".gz").deleteOnExit();
+        FileOutputStream fos = new FileOutputStream(inputFile);  
   
         fos.write(inputStr.getBytes());  
         fos.flush();  
         fos.close();  
   
-        GZipUtils.compress("d:/f.txt", false);  
+        GZipUtils.compress(inputFile.getAbsolutePath(), false);  
   
-        GZipUtils.decompress("d:/f.txt.gz", false);  
+        GZipUtils.decompress(inputFile.getAbsolutePath() + ".gz", false);  
   
-        File file = new File("d:/f.txt");  
+        File file = new File(inputFile.getAbsolutePath());  
   
         FileInputStream fis = new FileInputStream(file);  
   

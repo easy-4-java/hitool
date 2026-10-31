@@ -36,17 +36,20 @@ public class BZip2UtilsTest {
 	@Test
 	public final void testFileCompress() throws Exception {
 
-		FileOutputStream fos = new FileOutputStream("d:/f.txt");
+		File inputFile = File.createTempFile("hitool-compress-", ".txt");
+        inputFile.deleteOnExit();
+        new File(inputFile.getAbsolutePath() + ".bz2").deleteOnExit();
+        FileOutputStream fos = new FileOutputStream(inputFile);
 
 		fos.write(inputStr.getBytes());
 		fos.flush();
 		fos.close();
 
-		BZip2Utils.compress("d:/f.txt");
+		BZip2Utils.compress(inputFile.getAbsolutePath());
 
-		BZip2Utils.decompress("d:/f.txt.bz2");
+		BZip2Utils.decompress(inputFile.getAbsolutePath() + ".bz2");
 
-		File file = new File("d:/f.txt");
+		File file = new File(inputFile.getAbsolutePath());
 
 		FileInputStream fis = new FileInputStream(file);
 
