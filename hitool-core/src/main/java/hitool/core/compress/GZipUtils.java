@@ -14,6 +14,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.nio.file.Files;
 
 import org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream;
 import org.apache.commons.compress.compressors.gzip.GzipCompressorOutputStream;
@@ -194,6 +195,9 @@ public abstract class GZipUtils extends CompressUtils {
 	
 	public static void decompress(File srcFile, File destDir) throws IOException {
 		File destFile = new File(destDir, FilenameUtils.getBaseName(srcFile.getName()));
+		if (Files.exists(destFile.toPath()) && Files.isSameFile(srcFile.toPath(), destFile.toPath())) {
+			throw new IOException("Decompression output must differ from compressed input: " + srcFile);
+		}
 		try (InputStream input = new FileInputStream(srcFile);
 				OutputStream output = new FileOutputStream(destFile);){
 			GZipUtils.decompress(input, output);
