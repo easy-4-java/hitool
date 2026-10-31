@@ -127,7 +127,7 @@ protected void sendMail(EmailBody email,boolean isHtml) throws Exception{
 		}
 		
 		// 设置收件人的名片和地址
-		if(email.getMailto() != null){
+		if(email.getMailto() != null && !email.getMailto().isEmpty()){
  			List<String> mailtoList = new ArrayList<String>();
  			for (String mailto : email.getMailto().keySet()) {
  				// 添加一个收件人
@@ -138,7 +138,7 @@ protected void sendMail(EmailBody email,boolean isHtml) throws Exception{
  		}
  		
 		// 设置抄送的名片和地址
-		if(email.getMailcc() != null){
+		if(email.getMailcc() != null && !email.getMailcc().isEmpty()){
 			List<String> mailccList = new ArrayList<String>();
 			for (String mailcc : email.getMailcc().keySet()) {
 				// 添加一个抄送
@@ -149,7 +149,7 @@ protected void sendMail(EmailBody email,boolean isHtml) throws Exception{
 		}
 		
 		// 设置密送的名片和地址
-		if(email.getMailBcc() != null){
+		if(email.getMailBcc() != null && !email.getMailBcc().isEmpty()){
 			List<String> mailBccList = new ArrayList<String>();
 			for (String mailcc : email.getMailBcc().keySet()) {
 				// 添加一个密送
