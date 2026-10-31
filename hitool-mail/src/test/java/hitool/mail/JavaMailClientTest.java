@@ -21,6 +21,7 @@ public class JavaMailClientTest {
         Properties props = new Properties();
         props.setProperty(JavaMailKey.MAIL_HOST, "127.0.0.1");
         props.setProperty(JavaMailKey.MAIL_PORT, Integer.toString(smtp.port()));
+        props.setProperty(JavaMailKey.MAIL_SMTP_PORT, Integer.toString(smtp.port()));
         props.setProperty(JavaMailKey.MAIL_USER, "sender@example.test");
         props.setProperty(JavaMailKey.MAIL_SMTP_AUTH, "false");
         DefaultEmailPropertiesProvider provider = new DefaultEmailPropertiesProvider();
