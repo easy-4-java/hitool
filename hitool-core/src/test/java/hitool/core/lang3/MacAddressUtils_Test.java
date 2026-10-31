@@ -21,7 +21,7 @@ public class MacAddressUtils_Test extends TestCase {
 	}
 	
 	public void testRemoteMacAddr_3() {
-		System.out.println("HostMacAddress is : " + MacAddressUtils.getHostMacAddress("192.168.31.1"));
+		assertNull(MacAddressUtils.getHostMacAddress("127.0.0.1"));
 	}
 	
 }

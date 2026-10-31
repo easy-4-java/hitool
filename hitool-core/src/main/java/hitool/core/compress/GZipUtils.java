@@ -80,7 +80,7 @@ public abstract class GZipUtils extends CompressUtils {
 	 * @throws Exception
 	 */
 	public static void compress(File srcFile, boolean delete) throws IOException {
-		File destFile = new File(srcFile.getParentFile(), FilenameUtils.getBaseName(srcFile.getName()) + EXT);
+		File destFile = new File(srcFile.getParentFile(), srcFile.getName() + EXT);
 		// 压缩
 		GZipUtils.compress(srcFile, destFile);
 		if (delete) {
@@ -193,7 +193,7 @@ public abstract class GZipUtils extends CompressUtils {
 	}
 	
 	public static void decompress(File srcFile, File destDir) throws IOException {
-		File destFile = new File(destDir, FilenameUtils.getBaseName(srcFile.getName()) + EXT);
+		File destFile = new File(destDir, FilenameUtils.getBaseName(srcFile.getName()));
 		try (InputStream input = new FileInputStream(srcFile);
 				OutputStream output = new FileOutputStream(destFile);){
 			GZipUtils.decompress(input, output);
