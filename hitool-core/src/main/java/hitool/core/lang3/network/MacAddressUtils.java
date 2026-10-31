@@ -273,7 +273,11 @@ public class MacAddressUtils {
 		// 获得网络接口对象（即网卡），并得到mac地址，mac地址存在于一个byte数组中。
 		byte[] mac = null;
 		try {
-			mac = NetworkInterface.getByInetAddress(InetAddress.getByName(host)).getHardwareAddress();
+			NetworkInterface networkInterface = NetworkInterface.getByInetAddress(InetAddress.getByName(host));
+			if (networkInterface == null) {
+				return null;
+			}
+			mac = networkInterface.getHardwareAddress();
 		} catch (SocketException e) {
 			e.printStackTrace();
 		} catch (UnknownHostException e) {
