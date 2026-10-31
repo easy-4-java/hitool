@@ -11,7 +11,8 @@ public class FiletypeUtils_Test extends TestCase {
 	public void testname() throws Exception {
 		
 		
-		assertSame(FiletypeUtils.getFileType(new File("D://cos.jar")), "jar");
+		byte[] jarHeader = new byte[] {0x50, 0x4B, 0x03, 0x04, 0x0A, 0, 0, 0, 0, 0, 0};
+		assertEquals("jar", FiletypeUtils.getFileType(jarHeader));
 		
 	}
 	
