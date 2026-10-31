@@ -248,12 +248,14 @@ public abstract class BeanPropertyUtils{
 									Class<?> fieldType = getPropertyUtils().getPropertyType(propertyVlaue, name3);
 									if (fieldType != null && fieldType.isArray()) {
 										int length = current == null ? 0 : Array.getLength(current);
-										Object array = Array.newInstance(fieldType.getComponentType(), Math.max(length, index + 1));
-										if (length > 0) {
-											System.arraycopy(current, 0, array, 0, length);
+										if (length <= index) {
+											Object array = Array.newInstance(fieldType.getComponentType(), index + 1);
+											if (length > 0) {
+												System.arraycopy(current, 0, array, 0, length);
+											}
+											getPropertyUtils().setProperty(propertyVlaue, name3, array);
 										}
-										Array.set(array, index, value);
-										getPropertyUtils().setProperty(propertyVlaue, name3, array);
+										BeanUtils.setProperty(propertyVlaue, name2, value);
 									} else if (current instanceof List) {
 										List<Object> list = (List<Object>) current;
 										while (list.size() <= index) {
