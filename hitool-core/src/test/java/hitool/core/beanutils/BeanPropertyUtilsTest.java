@@ -36,8 +36,8 @@ public class BeanPropertyUtilsTest {
 		BeanPropertyUtils.populate(entity, source, true);
 		// System.out.println(entity.getMethodName());
 		System.out.println("===========================RESULT================================");
-		System.out.println(entity.getProxyBean().getArray()[0]);
-		System.out.println("proxyBean.proxyBean.methodName："+entity.getProxyBean().getProxyBean().getMethodName());
+		org.junit.Assert.assertEquals("测试名称1", entity.getProxyBean().getArray()[1]);
+		org.junit.Assert.assertEquals("测试名称1", entity.getProxyBean().getProxyBean().getMethodName());
  	}
  	
  	 
