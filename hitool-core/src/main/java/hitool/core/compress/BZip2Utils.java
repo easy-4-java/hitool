@@ -14,6 +14,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.nio.file.Files;
 
 import org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream;
 import org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream;
@@ -176,6 +177,9 @@ public abstract class BZip2Utils extends CompressUtils {
 
 	public static void decompress(File srcFile, File destDir) throws IOException {
 		File destFile = new File(destDir, FilenameUtils.getBaseName(srcFile.getName()));
+		if (Files.exists(destFile.toPath()) && Files.isSameFile(srcFile.toPath(), destFile.toPath())) {
+			throw new IOException("Decompression output must differ from compressed input: " + srcFile);
+		}
 		try(InputStream input = new FileInputStream(srcFile);
 				OutputStream output = new FileOutputStream(destFile);) {
 			BZip2Utils.decompress(input, output);
