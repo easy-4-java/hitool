@@ -244,36 +244,25 @@ public abstract class BeanPropertyUtils{
 									String name3 = matcher.group(1);
 									int index = Integer.parseInt(matcher.group(2));
 									System.out.println(matcher.group(0));
-									Object value3 = BeanUtils.getProperty(propertyVlaue, name3);
-									if (value3 != null) {
-										if (value3 instanceof Collection) {
-											ArrayList<Object> values = new ArrayList<Object>();
-											Iterator<Object> items = ((Collection<Object>) value).iterator();
-											while (items.hasNext()) {
-												Object item = items.next();
-												if (item == null) {
-													values.add(null);
-												} else {
-													values.add(item);
-												}
-											}
-											BeanUtils.setProperty(propertyVlaue, name3,values);
-										} else if (value.getClass().isArray()) {
-											int length = Array.getLength(value);
-											Object[] results = new Object[length];
-											for (int i = 0; i < length; i++) {
-												Object item = Array.get(value, i);
-												if (item == null) {
-													results[i] = null;
-												} else {
-													results[i] = item;
-												}
-											}
-											BeanUtils.setProperty(propertyVlaue, name3,results);
-										}  else {
-											BeanUtils.setProperty(propertyVlaue, name3,value);	
+									Object current = getPropertyUtils().getProperty(propertyVlaue, name3);
+									Class<?> fieldType = getPropertyUtils().getPropertyType(propertyVlaue, name3);
+									if (fieldType != null && fieldType.isArray()) {
+										int length = current == null ? 0 : Array.getLength(current);
+										Object array = Array.newInstance(fieldType.getComponentType(), Math.max(length, index + 1));
+										if (length > 0) {
+											System.arraycopy(current, 0, array, 0, length);
 										}
-									} 
+										Array.set(array, index, value);
+										getPropertyUtils().setProperty(propertyVlaue, name3, array);
+									} else if (current instanceof List) {
+										List<Object> list = (List<Object>) current;
+										while (list.size() <= index) {
+											list.add(null);
+										}
+										list.set(index, value);
+									} else {
+										BeanUtils.setProperty(propertyVlaue, name2, value);
+									}
 								} else {
 									BeanUtils.setProperty(propertyVlaue,name2,value);
 								}
